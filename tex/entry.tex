@@ -1,0 +1,35 @@
+%! Author = ben
+%! Date = 22.10.2023
+
+% Preamble
+\documentclass[a4paper, 12pt]{report}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{subfiles}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage[german]{babel}
+\usepackage[a4paper, left=4cm, right=2cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{lipsum}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+
+\titleformat{\chapter}{\normalfont\large}{\thechapter.}{15pt}{\large}
+
+% Document
+\begin{document}
+    \renewcommand{\baselinestretch}{1.50}\normalsize
+
+    \subfile{./tex/title}
+    \newpage
+    \subfile{./tex/toc}
+    \clearpage
+
+    \pagenumbering{arabic}
+    \setcounter{page}{3}
+
+    \subfile{./tex/main-part}
+    \subfile{./tex/bibliography}
+
+\end{document}
