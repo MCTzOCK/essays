@@ -15,9 +15,12 @@
 \usepackage{lipsum}
 \usepackage{mathptmx}
 \usepackage{titlesec}
+\usepackage{graphicx}
 
 \titleformat{\chapter}{\normalfont\LARGE}{\thechapter.}{15pt}{\Large}
 \titlespacing*{\chapter}{0pt}{*0}{10pt}
+
+\graphicspath{ {./assets/} }
 
 % Document
 \begin{document}
@@ -34,5 +37,6 @@
     \subfile{./tex/main-part}
     \subfile{./tex/bibliography}
     \subfile{./tex/attachment}
+    \subfile{./tex/explanation}
 
 \end{document}
