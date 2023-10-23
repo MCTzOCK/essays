@@ -6,6 +6,7 @@
 
 % Packages
 \usepackage{amsmath}
+\usepackage{siunitx}
 \usepackage{subfiles}
 \usepackage[T1]{fontenc}
 \usepackage{color}
@@ -16,6 +17,7 @@
 \usepackage{titlesec}
 
 \titleformat{\chapter}{\normalfont\LARGE}{\thechapter.}{15pt}{\Large}
+\titlespacing*{\chapter}{0pt}{*0}{10pt}
 
 % Document
 \begin{document}
@@ -31,5 +33,6 @@
 
     \subfile{./tex/main-part}
     \subfile{./tex/bibliography}
+    \subfile{./tex/attachment}
 
 \end{document}
