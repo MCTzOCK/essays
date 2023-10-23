@@ -17,4 +17,28 @@
     die eine sequentielle Zugriffsmöglichkeit auf die Elemente bieten.
     %\footnote{\cite{informatik-bg}, \citetitle{informatik-bg}}
     \footnote{\bscite{informatik-bg}}
+
+    \paragraph{Beispiel} \mbox{}\\
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \textbf{1. Durchlauf} & 3 & 1 & 2 \\
+            \hline
+            \textbf{2. Durchlauf} & 1 & 3 & 2 \\
+            \hline
+            \textbf{3. Durchlauf} & 1 & 2 & 3 \\
+            \hline
+        \end{tabular}
+        \caption{Beispiel für das \dq BubbleSort\dq-Verfahren}
+        \label{tab:bubblesort}
+    \end{table}
+
+    \paragraph{Aufwandsanalyse} \mbox{}\\
+    Die Laufzeit des \dq BubbleSort\dq-Verfahrens ist abhängig von der Anzahl der zu sortierenden Elemente.
+    Im besten Fall ist die Laufzeit linear ($O(n)$), im schlechtesten Fall quadratisch ($O(n^2)$).
+    Im Durchschnitt ist die Laufzeit ebenfalls quadratisch ($O(n^2)$).
+    \footnote{\bscite{bubble-sort-aufwand}}
+
 \end{document}
