@@ -16,6 +16,7 @@
 \usepackage{mathptmx}
 \usepackage{titlesec}
 \usepackage{graphicx}
+\usepackage{hyperref}
 
 \titleformat{\chapter}{\normalfont\LARGE}{\thechapter.}{15pt}{\Large}
 \titlespacing*{\chapter}{0pt}{*0}{10pt}
@@ -26,17 +27,33 @@
 \begin{document}
     \renewcommand{\baselinestretch}{1.50}\normalsize
 
+    % Show subsubsection in toc
+    \setcounter{tocdepth}{3}
+    % Number subsubsection
+    \setcounter{secnumdepth}{3}
+    \renewcommand\thesubsubsection{\arabic{subsubsection}.\arabic{subsection}.\arabic{section}}
+
     \subfile{./tex/title}
     \newpage
     \subfile{./tex/toc}
     \clearpage
 
     \pagenumbering{arabic}
+    % Start page numbering at 3
     \setcounter{page}{3}
 
+    % Textteil
     \subfile{./tex/main-part}
+    %% Einleitung
+    \subfile{./tex/introduction}
+    %% Algorithmen
+    \subfile{./tex/algorithms/main}
+
+    % Literaturverzeichnis
     \subfile{./tex/bibliography}
+    % Anhang
     \subfile{./tex/attachment}
+    % Erklärung
     \subfile{./tex/explanation}
 
 \end{document}
