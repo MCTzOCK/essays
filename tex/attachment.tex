@@ -25,41 +25,5 @@
     die obere Schranke der Laufzeit.
     \footnote{\bscite{big-o-notation}}
 
-    \begin{multicols}{2}
-
-        \begin{tikzpicture}[scale=0.75]
-            \begin{axis}
-                [
-                title={Laufzeitanalyse $O(n)$},
-                xlabel={Anzahl der zu sortierenden Elemente},
-                ylabel={Anzahl der Vergleiche},
-                grid,
-                xmin=0,
-                xmax=17,
-                ymin=0,
-                ymax=20
-                ]
-
-                \addplot[domain=0:15, color=red]{x};
-            \end{axis}
-        \end{tikzpicture}
-
-        \begin{tikzpicture}[scale=0.75]
-            \begin{axis}
-                [
-                title={Laufzeitanalyse $O(n^2)$},
-                xlabel={Anzahl der zu sortierenden Elemente},
-                ylabel={Anzahl der Vergleiche},
-                grid,
-                xmin=0,
-                xmax=17,
-                ymin=0,
-                ymax=210
-                ]
-
-                \addplot[domain=0:15, color=red]{x^2};
-            \end{axis}
-        \end{tikzpicture}
-    \end{multicols}
 
 \end{document}
