@@ -1,0 +1,88 @@
+%! Author = ben
+%! Date = 24.10.2023
+
+\documentclass[./entry.tex]{subfiles}
+\usepackage{biblatex}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\begin{document}
+    \chapter{Integration in den Unterricht}
+
+    Im Unterricht können Sortieralgorithmen auf verschiedene Arten integriert werden
+    Die einfachste Möglichkeit ist die visuelle Darstellung der Algorithmen.
+    Hierbei bekommt jeder Schüler ein Blatt Papier, auf dem eine Zahl abgebildet ist.
+    Jede Zahl sollte, wenn möglich, nur einmal verwendet werden, damit eine deutliche Sortierung erkennbar ist.
+    Die Schüler stellen sich nun in einer Reihe auf, die zu Anfang unsortiert ist.
+    Anschließend wird der gewählte Algorithmus schrittweise durchgeführt.
+    Es ist zu empfehlen, mit einem einfachen Algorithmus, wie dem \dq Bubble-Sort\dq-Verfahren zu beginnen,
+    damit das Prinzip verstanden werden kann.
+
+    \paragraph{Beispiel}
+    Es wurden die Zahlen eins bis vier unter den Schülern aufgeteilt, welche sich in eine
+    unsortierte Reihefolge aufgestellt haben und anschließend das \dq Bubble-Sort\dq-Verfahren
+    durchführen. Die Anfangsreihefolge ist in der Tabelle \ref{tab:lessons-unsorted} dargestellt.
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            4 & 1 & 2 & 3 \\
+            \hline
+        \end{tabular}
+        \caption{Anfangsreihefolge}
+        \label{tab:lessons-unsorted}
+    \end{table}
+
+    Nun wird der Algorithmus schrittweise durchgeführt.
+    In der Tabelle \ref{tab:lessons-step1} ist der erste Schritt dargestellt.
+    Die Schüler vergleichen die erste und zweite Zahl.
+    Da die erste Zahl größer ist, werden die beiden Zahlen getauscht.
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            1 & 4 & 2 & 3 \\
+            \hline
+        \end{tabular}
+        \caption{Schritt 1}
+        \label{tab:lessons-step1}
+    \end{table}
+
+    Anschließend werden die zweite und dritte Zahl verglichen.
+    Da die zweite Zahl größer ist, werden die beiden Zahlen getauscht.
+    In der Tabelle \ref{tab:lessons-step2} ist der zweite Schritt dargestellt.
+
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            1 & 2 & 4 & 3 \\
+            \hline
+        \end{tabular}
+        \caption{Schritt 2}
+        \label{tab:lessons-step2}
+    \end{table}
+
+    Abschließend werden die dritte und vierte Zahl verglichen.
+    Da die dritte Zahl größer ist, werden die beiden Zahlen getauscht.
+    In der Tabelle \ref{tab:lessons-step3} ist der dritte Schritt dargestellt.
+
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            1 & 2 & 3 & 4 \\
+            \hline
+        \end{tabular}
+        \caption{Sortierte Reihefolge}
+        \label{tab:lessons-step3}
+    \end{table}
+
+    Jetzt ist die Reihefolge sortiert und die Prozedur kann
+    mit einer neuen Reihenfolge oder einem anderen Algorithmus wiederholt werden.
+
+\end{document}

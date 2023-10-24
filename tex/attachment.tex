@@ -25,12 +25,71 @@
     Die Laufzeit wird in Abhängigkeit von $n$ angegeben. Die Laufzeit wird mit $O(n)$ angegeben. Dabei ist $O(n)$
     die obere Schranke der Laufzeit.
     \footnote{\bscite{big-o-notation}}
-    
+
     \paragraph{Rekursion}
     Rekursion ist ein Prinzip, das in der Informatik verwendet wird, um ein Problem in kleinere Teilprobleme zu
     zerlegen. Dabei wird das Problem so lange in kleinere Teilprobleme zerlegt, bis diese einfach zu lösen sind.
     Anschließend werden die Teilprobleme gelöst und die Lösungen werden zu einer Lösung des ursprünglichen Problems
     zusammengefügt.
     \footnote{\bscite{recursion}}
+
+
+    \subsection{Java-Quellcode der Sortieralgorithmen}
+
+    \paragraph{BubbleSort} \mbox{}\\
+    \begin{lstlisting}
+        public static int[] bubbleSort(int[] unsorted) {
+            int[] sorted = unsorted.clone();
+            int temp = 0;
+            for (int i = 0; i < sorted.length; i++) {
+                for (int j = 1; j < (sorted.length - i); j++) {
+                    if (sorted[j - 1] > sorted[j]) {
+                        temp = sorted[j - 1];
+                        sorted[j - 1] = sorted[j];
+                        sorted[j] = temp;
+                    }
+                }
+            }
+            return sorted;
+        }
+    \end{lstlisting}
+
+    \paragraph{SelectionSort} \mbox{}\\
+    \begin{lstlisting}
+        public static int[] selectionSort(int[] unsorted) {
+            int[] sorted = unsorted.clone();
+            int temp = 0;
+            for (int i = 0; i < sorted.length - 1; i++) {
+                int min = i;
+                for (int j = i + 1; j < sorted.length; j++) {
+                    if (sorted[j] < sorted[min]) {
+                        min = j;
+                    }
+                }
+                temp = sorted[min];
+                sorted[min] = sorted[i];
+                sorted[i] = temp;
+            }
+            return sorted;
+        }
+    \end{lstlisting}
+
+    \paragraph{InsertionSort} \mbox{}\\
+    \begin{lstlisting}
+        public static int[] insertionSort(int[] unsorted) {
+            int[] sorted = unsorted.clone();
+            int temp = 0;
+            for (int i = 1; i < sorted.length; i++) {
+                for (int j = i; j > 0; j--) {
+                    if (sorted[j] < sorted[j - 1]) {
+                        temp = sorted[j];
+                        sorted[j] = sorted[j - 1];
+                        sorted[j - 1] = temp;
+                    }
+                }
+            }
+            return sorted;
+        }
+    \end{lstlisting}
 
 \end{document}
