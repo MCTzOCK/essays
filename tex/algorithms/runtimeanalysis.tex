@@ -27,7 +27,7 @@
             \hline
             \textbf{InsertionSort}\tablefootnote{\bscite{insertion-sort}}            & $O(n)$               & $O(n^2)$                    & $O(n^2)$             \\
             \hline
-            \textbf{QuickSort}\tablefootnote{\bscite{quick-sort}}                    & $O(n \times log(n))$ & $O(n^2)$                    & $O(n^2)$             \\
+            \textbf{QuickSort}\tablefootnote{\bscite{quick-sort}}                    & $O(n \times log(n))$ & $O(n^2)$                    & $O(n \times log(n))$             \\
             \hline
         \end{tabular}
         \caption{Laufzeit-/Aufwandsanalyse der Sortieralgorithmen}
@@ -92,4 +92,15 @@
             \end{axis}
         \end{tikzpicture}
     \end{multicols}
+
+    \paragraph{Auswertung}
+    Man kann erkennen, dass sowohl der BubbleSort-Algorithmus als auch der SelectionSort-Algorithmus
+    und der InsertionSort-Algorithmus im Durchschnitt eine quadratische Laufzeit haben, was bei allen
+    drei Algorithmen dem schlechtesten Fall entspricht.
+    Vergleicht man nun diese Algorithmen mit dem QuickSort-Algorithmus, so fällt auf, dass dieser
+    im Durchschnitt eine deutlich geringere Laufzeit hat und somit effizienter arbeitet.
+    Dies liegt daran, dass der QuickSort-Algorithmus die Datenmenge in jedem Schritt halbiert,
+    wodurch die Anzahl der Vergleiche deutlich geringer ist.
+    Der QuickSort-Algorithmus hat allerdings auch einen schlechtesten Fall, in dem er eine quadratische Laufzeit hat.
+    Dieser Fall tritt ein, wenn die Datenmenge bereits sortiert ist und das Pivot-Element immer das kleinste oder größte Element ist.
 \end{document}
