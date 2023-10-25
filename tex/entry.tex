@@ -6,6 +6,7 @@
 
 % Packages
 \usepackage{amsmath}
+\usepackage{tocloft}
 \usepackage{siunitx}
 \usepackage{subfiles}
 \usepackage[T1]{fontenc}
@@ -44,6 +45,7 @@
     % Number subsubsection
     \setcounter{secnumdepth}{3}
     \renewcommand\thesubsubsection{\arabic{subsubsection}.\arabic{subsection}.\arabic{section}}
+    \renewcommand{\cftafterlottitle}{\vskip\baselineskip} % Add some vertical space after the chapter title
 
     \subfile{./tex/title}
     \newpage
@@ -64,6 +66,8 @@
     \subfile{./tex/lesson}
 
     % Literaturverzeichnis
+
+
     \chapter{Literaturverzeichnis}
     \printbibliography[heading=none]
 
