@@ -4,16 +4,17 @@
 \documentclass[./entry.tex]{subfiles}
 \usepackage{biblatex}
 \usepackage{multirow}
-\usepackage{colortbl}
 
 \begin{document}
-    Das \dq QuickSort\dq-Verfahren ist im Vergleich zu anderen Verfahren,
-    wie dem \dq BubbleSort\dq-Verfahren, ein sehr effizienter, aber auch komplexerer
-    Sortieralgorithmus.
+    Das \dq QuickSort\dq-Verfahren ist im Vergleich den anderen Verfahren, ein sehr effizienter,
+    aber auch komplexerer Sortieralgorithmus.
     Es basiert auf dem Prinzip \dq Teile und Herrsche\dq.
-    Dabei wird die zu sortierende Datenmenge in zwei Teilmengen aufgeteilt.
-    Die Elemente der ersten Teilmengen sind kleiner als die Elemente der zweiten Teilmengen.
-    Anschließend werden die Teilmengen rekursiv sortiert.
+    Dabei wird zunächst ein Element aus der zu sortierenden Datenmenge ausgewählt,
+    welches als \dq Pivotelement\dq\ bezeichnet wird.
+    Anschließend werden alle Elemente der Datenmenge mit dem Pivotelement verglichen.
+    Die Elemente, die kleiner als das Pivotelement sind, werden in eine Teilliste einsortiert.
+    Die Elemente, die größer als das Pivotelement sind, werden in eine andere Teilliste einsortiert.
+    Die beiden Teillisten werden anschließend rekursiv sortiert.
     \footnote{\bscite{quick-sort}}
 
     \paragraph{Beispiel} \mbox{}\\
@@ -22,11 +23,13 @@
         \centering
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            \textbf{1. Durchlauf} & 5 & 1 & 3 & 2 & 4\\
+            \textbf{1. Durchlauf} & 3 & 1 & {\color{red}2} & 5 & 4 \\
             \hline
-            \textbf{2. Durchlauf} & 1 & 3 & 2 & 4 & 5\\
+            \textbf{2. Durchlauf} & 1 & {\color{red}2} & 3 & 5 & 4 \\
             \hline
-            \textbf{3. Durchlauf} & 1 & 2 & 3 & 4 & 5\\
+            \textbf{3. Durchlauf} & 1 & 2 & 3 & {\color{red}4} & 5 \\
+            \hline
+            \textbf{4. Durchlauf} & 1 & 2 & 3 & 4 & 5 \\
             \hline
         \end{tabular}
         \caption{Beispiel für das \dq QuickSort\dq-Verfahren}
