@@ -48,9 +48,9 @@
     \renewcommand\thesubsubsection{\arabic{subsubsection}.\arabic{subsection}.\arabic{section}}
     \renewcommand{\cftafterlottitle}{\vskip\baselineskip} % Add some vertical space after the chapter title
 
-    \subfile{./tex/title}
+    \subfile{./title.tex}
     \newpage
-    \subfile{./tex/toc}
+    \subfile{./toc.tex}
     \clearpage
 
     \pagenumbering{arabic}
@@ -58,13 +58,13 @@
     \setcounter{page}{3}
 
     % Einleitung
-    \subfile{./tex/introduction}
+    \subfile{./introduction.tex}
 
     % Algorithmen
-    \subfile{./tex/algorithms/main}
+    \subfile{./algorithms/main.tex}
 
     % Integration in den Unterricht
-    \subfile{./tex/lesson}
+    \subfile{./lesson.tex}
 
     % Literaturverzeichnis
 
@@ -73,9 +73,9 @@
     \printbibliography[heading=none]
 
     % Anhang
-    \subfile{./tex/attachment}
+    \subfile{./attachment.tex}
 
     % Erklärung
-    \subfile{./tex/explanation}
+    \subfile{./explanation.tex}
 
 \end{document}

@@ -1,1 +1,3 @@
-"C:\Program Files\MiKTeX\miktex\bin\x64\pdflatex.exe" -output-directory pdf -job-name "Projektarbeit" tex/entry.tex
+cd src
+pdflatex -output-directory ../pdf -job-name "Projektarbeit" entry.tex
+cd ..
