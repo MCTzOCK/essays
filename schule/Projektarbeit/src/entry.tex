@@ -1,0 +1,82 @@
+%! Author = ben
+%! Date = 22.10.2023
+
+% Preamble
+\documentclass[a4paper, 12pt]{report}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{tocloft}
+\usepackage{siunitx}
+\usepackage{subfiles}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage[german]{babel}
+\usepackage[a4paper, left=4cm, right=2cm, top=2cm, bottom=3cm]{geometry}
+\usepackage{lipsum}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{./bib/sources.bib}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{tablefootnote}
+\usepackage{xcolor}
+\usepackage{bookman}
+
+\titleformat{\chapter}{\normalfont\LARGE}{\thechapter.}{15pt}{\Large}
+\titlespacing*{\chapter}{0pt}{*0}{10pt}
+
+\graphicspath{ {./assets/} }
+\pgfplotsset{compat=1.11}
+
+
+% Document
+\begin{document}
+    \renewcommand{\baselinestretch}{1.50}\normalsize
+
+    % Custom Commands
+    \newcommand{\bscite}[1]{\citeauthor{#1}: \citetitle{#1} (Stand: \citedate{#1}) \citeurl{#1}}
+
+    % Show subsubsection in toc
+    \setcounter{tocdepth}{3}
+    % Number subsubsection
+    \setcounter{secnumdepth}{3}
+    \renewcommand\thesubsubsection{\arabic{subsubsection}.\arabic{subsection}.\arabic{section}}
+    \renewcommand{\cftafterlottitle}{\vskip\baselineskip} % Add some vertical space after the chapter title
+
+    \subfile{./title.tex}
+    \newpage
+    \subfile{./toc.tex}
+    \clearpage
+
+    \pagenumbering{arabic}
+    % Start page numbering at 3
+    \setcounter{page}{3}
+
+    % Einleitung
+    \subfile{./introduction.tex}
+
+    % Algorithmen
+    \subfile{./algorithms/main.tex}
+
+    % Integration in den Unterricht
+    \subfile{./lesson.tex}
+
+    % Literaturverzeichnis
+
+
+    \chapter{Literaturverzeichnis}
+    \printbibliography[heading=none]
+
+    % Anhang
+    \subfile{./attachment.tex}
+
+    % Erklärung
+    \subfile{./explanation.tex}
+
+\end{document}
