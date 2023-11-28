@@ -1,0 +1,37 @@
+%! Author = ben
+%! Date = 23.10.2023
+
+\documentclass[./entry.tex]{subfiles}
+\usepackage{biblatex}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\begin{document}
+    % Source: https://informatik-bg.de/jg2-bpe-7-2-sortier-und-suchalgorithmen/bubble-sort (Oliver Kilthau, Berthold Metz) letzter Zugriff: 23.10.2023
+
+    Das \dq BubbleSort\dq-Verfahren ist ein einfacher Sortieralgorithmus,
+    der nach dem Prinzip des \dq Vergleichens und Vertauschens\dq\ arbeitet.
+    Dabei werden die zu sortierenden Elemente paarweise verglichen und bei Bedarf vertauscht.
+    Dieser Vorgang wird so lange wiederholt, bis die Elemente in der gewünschten Reihenfolge angeordnet sind.\\
+    Das \dq BubbleSort\dq-Verfahren ist auf alle linearen Datenstrukturen anwendbar,
+    die eine sequentielle Zugriffsmöglichkeit auf die Elemente bieten.
+    %\footnote{\cite{informatik-bg}, \citetitle{informatik-bg}}
+    \footnote{\bscite{informatik-bg}}
+
+    \paragraph{Beispiel} \mbox{}\\
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \textbf{1. Durchlauf} & {\color{red}3} & {\color{red}1} & 2 \\
+            \hline
+            \textbf{2. Durchlauf} & 1 & {\color{red}3} & {\color{red}2} \\
+            \hline
+            \textbf{3. Durchlauf} & 1 & 2 & 3 \\
+            \hline
+        \end{tabular}
+        \caption{Beispiel für das \dq BubbleSort\dq-Verfahren}
+        \label{tab:bubblesort}
+    \end{table}
+\end{document}

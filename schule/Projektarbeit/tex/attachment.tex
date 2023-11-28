@@ -1,0 +1,101 @@
+%! Author = ben
+%! Date = 23.10.2023
+
+\documentclass[./entry.tex]{subfiles}
+\usepackage{biblatex}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{lipsum}
+
+\begin{document}
+    \chapter{Anhang}
+
+    \section{Fachspezifische Begriffe und Konzepte}
+
+    \paragraph{Lineare\ Datenstrukturen}
+    Lineare Datenstrukturen sind Datenstrukturen, die die Elemente in einer bestimmten Reihenfolge speichern. Die
+    Reihenfolge wird durch die Reihenfolge der Elemente bestimmt. Die Elemente werden nacheinander gespeichert und
+    können nur über die Position im Speicher angesprochen werden. Die bekannteste linearen Datenstrukture ist
+    das Array. Weitere lineare Datenstrukturen sind Listen, Schlangen und Stapel.
+    Einer der größten Unterschiede der verschiedenen linearen Datenstrukturen ist die Zugriffsmöglichkeit auf die
+    Elemente. Bei Arrays kann auf die Elemente über den Index zugegriffen werden. Bei Listen kann auf die Elemente
+    über einen Zeiger zugegriffen werden. Bei Schlangen kann nur auf das erste Element und bei
+    Stapeln nur auf das oberste Element zugegriffen werden.
+    \footnote{\bscite{linear-datastructures}}
+
+    \paragraph{Big-O Notation}
+    Die Big-O-Notation ist eine mathematische Notation, die verwendet wird, um das asymptotische Verhalten von
+    Funktionen zu beschreiben, das heißt das Grenzwertverhalten der Funktion zu klassifizieren\footnote{\bscite{asymptomic-analysis}}.
+    Die Big-O-Notation wird verwendet, um die Laufzeit eines Algorithmus in Abhängigkeit von der Anzahl der zu
+    sortierenden Elemente zu beschreiben. Dabei wird die Anzahl der zu sortierenden Elemente mit $n$ bezeichnet.
+    Die Laufzeit wird in Abhängigkeit von $n$ angegeben. Die Laufzeit wird mit $O(n)$ angegeben. Dabei ist $O(n)$
+    die obere Schranke der Laufzeit.
+    \footnote{\bscite{big-o-notation}}
+
+    \paragraph{Rekursion}
+    Rekursion ist ein Prinzip, das in der Informatik verwendet wird, um ein Problem in kleinere Teilprobleme zu
+    zerlegen. Dabei wird das Problem so lange in kleinere Teilprobleme zerlegt, bis diese einfach zu lösen sind.
+    Anschließend werden die Teilprobleme gelöst und die Lösungen werden zu einer Lösung des ursprünglichen Problems
+    zusammengefügt.
+    \footnote{\bscite{recursion}}
+
+
+    \section{Java-Quellcode der Sortieralgorithmen}
+
+    \paragraph{BubbleSort} \mbox{}\\
+    \begin{lstlisting}
+        public static int[] bubbleSort(int[] unsorted) {
+            int[] sorted = unsorted.clone();
+            int temp = 0;
+            for (int i = 0; i < sorted.length; i++) {
+                for (int j = 1; j < (sorted.length - i); j++) {
+                    if (sorted[j - 1] > sorted[j]) {
+                        temp = sorted[j - 1];
+                        sorted[j - 1] = sorted[j];
+                        sorted[j] = temp;
+                    }
+                }
+            }
+            return sorted;
+        }
+    \end{lstlisting}
+
+    \paragraph{SelectionSort} \mbox{}\\
+    \begin{lstlisting}
+        public static int[] selectionSort(int[] unsorted) {
+            int[] sorted = unsorted.clone();
+            int temp = 0;
+            for (int i = 0; i < sorted.length - 1; i++) {
+                int min = i;
+                for (int j = i + 1; j < sorted.length; j++) {
+                    if (sorted[j] < sorted[min]) {
+                        min = j;
+                    }
+                }
+                temp = sorted[min];
+                sorted[min] = sorted[i];
+                sorted[i] = temp;
+            }
+            return sorted;
+        }
+    \end{lstlisting}
+
+    \paragraph{InsertionSort} \mbox{}\\
+    \begin{lstlisting}
+        public static int[] insertionSort(int[] unsorted) {
+            int[] sorted = unsorted.clone();
+            int temp = 0;
+            for (int i = 1; i < sorted.length; i++) {
+                for (int j = i; j > 0; j--) {
+                    if (sorted[j] < sorted[j - 1]) {
+                        temp = sorted[j];
+                        sorted[j] = sorted[j - 1];
+                        sorted[j - 1] = temp;
+                    }
+                }
+            }
+            return sorted;
+        }
+    \end{lstlisting}
+
+\end{document}
