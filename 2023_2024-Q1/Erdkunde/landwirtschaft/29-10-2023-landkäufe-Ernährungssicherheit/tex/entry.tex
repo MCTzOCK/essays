@@ -1,0 +1,43 @@
+%! Author = ben
+%! Date = 22.10.2023
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{subfiles}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage[german]{babel}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./assets/} }
+
+% Document
+\begin{document}
+
+
+    \fontfamily{phv}\selectfont
+
+    \renewcommand{\baselinestretch}{1.50}\normalsize
+
+    \title{Landkäufe als Beitrag zur Ernährungssicherheit?}
+    \author{Ben Siebert}
+    \date{29.10.2023}
+    \maketitle
+
+    \section{Kartenskizze}
+
+    \subfile{./tex/ex1}
+
+    \section{Globale Verteilung der Landk\"aufe und die von Saudi-Arabien}
+
+    \subfile{./tex/ex2}
+
+    \section{Konflikte rund um den Sojaanbau}
+
+    \subfile{./tex/ex3}
+
+
+\end{document}
