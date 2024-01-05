@@ -1,0 +1,39 @@
+%! Author = ben
+%! Date = 23.10.2023
+
+\documentclass[../entry.tex]{subfiles}
+
+\begin{document}
+    Das \dq SelectionSort\dq-Verfahren ist ebenfalls ein einfacher Sortieralgorithmus,
+    der, wie das \dq BubbleSort\dq-Verfahren, nach dem Prinzip des \dq Vergleichens und Vertauschens\dq\ arbeitet.
+    Dieses Verfahren ist auf alle linearen Datenstrukturen anwendbar,
+    die eine sequentielle Zugriffsmöglichkeit auf die Elemente bieten.
+    Der Algorithmus arbeitet wie folgt\footnote{\bscite{selection-sort}}:
+    \begin{itemize}
+        \item Das erste Element wird mit allen anderen Elementen verglichen.
+        \item Das kleinste Element wird an die erste Stelle gesetzt.
+        \item Das zweite Element wird mit allen anderen Elementen verglichen.
+        \item Das kleinste Element wird an die zweite Stelle gesetzt.
+        \item Dieser Vorgang wird so lange wiederholt, bis die Elemente in der gewünschten Reihenfolge angeordnet sind.
+    \end{itemize}
+
+    \paragraph{Beispiel} \mbox{}\\
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            \textbf{1. Durchlauf} & 3 & 4 & {\color{red}1} & 2 \\
+            \hline
+            \textbf{2. Durchlauf} & 1 & 3 & 4 & {\color{red}2} \\
+            \hline
+            \textbf{3. Durchlauf} & 1 & 2 & 4 & {\color{red}3} \\
+            \hline
+            \textbf{4. Durchlauf} & 1 & 2 & 3 & 4 \\
+            \hline
+        \end{tabular}
+        \caption{Beispiel für das \dq SelectionSort\dq-Verfahren}
+        \label{tab:selectionsort}
+    \end{table}
+
+
+\end{document}

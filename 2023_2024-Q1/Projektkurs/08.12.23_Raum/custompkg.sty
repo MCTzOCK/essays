@@ -1,0 +1,16 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{custom}[custom mappings]
+\usepackage{titlesec}
+
+\newcommand{\bslinespacing}[1]{\renewcommand{\baselinestretch}{
+#1}\normalsize}
+
+\newcommand{\bsremovechaptertitle}{\titleformat{\chapter}{\normalfont\LARGE}{\thechapter.}{15pt}{\Large}
+\titlespacing*{\chapter}{0pt}{*0}{10pt}}
+
+\newcommand{\bsremoveparttitle}{
+\titleformat{\part}{\centering\normalfont\Huge}{}{15pt}{\Huge}
+}
+
+
+\newcommand{\bsunit}[2]{$\frac{#1}{#2}$}
