@@ -4,12 +4,83 @@
 \usepackage[utf8]{inputenc}
 \usepackage{ngerman}
 \usepackage{charter}
-\usepackage{custompkg}
+\usepackage{titlesec}
+\usepackage{tabularx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 \begin{document}
-	\bslinespacing{1.5}
-	\bsremovechaptertitle
-	\chapter*{Die String Klasse in Java}
-	Die String Klasse 
+    % line spacing 1.5
+    \renewcommand{\baselinestretch}{1.5}
+    % remove chapter title
+    \titleformat{\chapter}{\normalfont\LARGE}{\thechapter.}{15pt}{\Large}
+    \titlespacing*{\chapter}{0pt}{*0}{10pt}
+    \chapter*{Die String Klasse in Java}
+    Die String Klasse in Java ist eine Klasse, die es ermöglicht, Strings zu erstellen und zu manipulieren.
+    Sie ist eine Klasse, die in Java bereits vordefiniert ist und muss nicht importiert werden.\\
+    \textbf{Beispiel:}
+    \begin{verbatim}
+    String s = "Hallo Welt";
+    \end{verbatim}
+    Man kann Strings auch mit dem \texttt{new} Operator erstellen, dies ist aber nicht zu empfehlen, da es zu Problemen mit dem \texttt{==} Operator kommen kann.\\
+    \textbf{Beispiel:}
+    \begin{verbatim}
+    String s = new String("Hallo Welt");
+    \end{verbatim}
+    Um zwei Strings zusammen zufügen, kann der \texttt{+} Operator verwendet werden.\\
+    \textbf{Beispiel:}
+    \begin{verbatim}
+    String s = "Hallo" + "Welt";
+    \end{verbatim}
+
+
+    \section*{Methoden}
+
+    \begin{tabularx}{\textwidth}{|X|X|}
+        \hline
+        \textbf{Methode}                                     & \textbf{Beschreibung}                                                                                                                     \\
+        \hline
+        \texttt{length()}                                    & Gibt die Länge des Strings zurück.                                                                                                        \\
+        \hline
+        \texttt{charAt(int index)}                           & Gibt das Zeichen an der Stelle \texttt{index} zurück.                                                                                     \\
+        \hline
+        \texttt{substring(int beginIndex, int endIndex)}     & Gibt den Teilstring von \texttt{beginIndex} bis \texttt{endIndex} zurück.                                                                 \\
+        \hline
+        \texttt{substring(int beginIndex)}                   & Gibt den Teilstring von \texttt{beginIndex} bis zum Ende des Strings zurück.                                                              \\
+        \hline
+        \texttt{indexOf(String s)}                           & Gibt den Index des ersten Vorkommens von \texttt{s} zurück.                                                                               \\
+        \hline
+        \texttt{lastIndexOf(String s)}                       & Gibt den Index des letzten Vorkommens von \texttt{s} zurück.                                                                              \\
+        \hline
+        \texttt{startsWith(String s)}                        & Gibt \texttt{true} zurück, wenn der String mit \texttt{s} beginnt.                                                                        \\
+        \hline
+        \texttt{endsWith(String s)}                          & Gibt \texttt{true} zurück, wenn der String mit \texttt{s} endet.                                                                          \\
+        \hline
+        \texttt{contains(String s)}                          & Gibt \texttt{true} zurück, wenn der String \texttt{s} enthält.                                                                            \\
+        \hline
+        \texttt{equals(String s)}                            & Gibt \texttt{true} zurück, wenn der String gleich \texttt{s} ist.                                                                         \\
+        \hline
+        \texttt{equalsIgnoreCase(String s)}                  & Gibt \texttt{true} zurück, wenn der String gleich \texttt{s} ist, ohne auf Groß- und Kleinschreibung zu achten.                           \\
+        \hline
+        \texttt{compareTo(String s)}                         & Gibt einen Wert kleiner als 0 zurück, wenn der String lexikographisch vor \texttt{s} kommt.                                               \\
+        \hline
+        \texttt{compareToIgnoreCase(String s)}               & Gibt einen Wert kleiner als 0 zurück, wenn der String lexikographisch vor \texttt{s} kommt, ohne auf Groß- und Kleinschreibung zu achten. \\
+        \hline
+        \texttt{toUpperCase()}                               & Gibt den String in Großbuchstaben zurück.                                                                                                 \\
+        \hline
+        \texttt{toLowerCase()}                               & Gibt den String in Kleinbuchstaben zurück.                                                                                                \\
+        \hline
+        \texttt{trim()}                                      & Gibt den String ohne Leerzeichen am Anfang und Ende zurück.                                                                               \\
+        \hline
+        \texttt{replace(String oldString, String newString)} & Gibt den String zurück, in dem alle Vorkommen von \texttt{oldString} durch \texttt{newString} ersetzt wurden.                             \\
+        \hline
+        \texttt{split(String regex)}                         & Gibt ein String Array zurück, das den String an den Stellen, an denen \texttt{regex} vorkommt, aufteilt.                                  \\
+        \hline
+        \texttt{startsWith(String prefix)}                   & Gibt \texttt{true} zurück, wenn der String mit \texttt{prefix} beginnt.                                                                   \\
+        \hline
+        \texttt{endsWith(String suffix)}                     & Gibt \texttt{true} zurück, wenn der String mit \texttt{suffix} endet.                                                                     \\
+        \hline
+        \texttt{valueOf(int i)}                              & Gibt den String zurück, der die Zahl \texttt{i} repräsentiert.                                                                            \\
+        \hline
+    \end{tabularx}
+
 \end{document}
