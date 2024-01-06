@@ -1,0 +1,135 @@
+%! Author = ben
+%! Date = 06.01.2024
+
+% Preamble
+\documentclass[25pt, a3paper, portrait]{tikzposter}
+
+\title{Funktionsuntersuchung}
+\author{Ben Siebert}
+\date{\today}
+\institute{Gymnasium Holthausen Hattingen}
+
+\usetheme{Rays}
+\tikzposterlatexaffectionproofoff
+
+
+% Packages
+\usepackage{ngerman}
+\usepackage{charter}
+\usepackage[fleqn]{mathtools}
+
+% Document
+\begin{document}
+
+    \maketitle
+    \begin{columns}
+        \column{0.2}
+        \block{Einleitung}
+        {Bei der Funktionsuntersuchung geht es darum, eine Funktion zu analysieren.
+        Dazu gehören alle wichtigen Eigenschaften einer Funktion.
+        }
+        \column{0.4}
+        \block{Nullstellen}
+        {
+            Um die Nullstellen einer Funktion zu bestimmen, musst du die Funktion gleich Null setzen: $f(x) = 0$.
+        Anschließend musst du die Gleichung nach x auflösen. \\
+        \textbf{Beispiel:}
+            \begin{align*}
+                f(x) &= x^2 - 4x + 3\\
+                f(x) &= 0\\
+                x^2 - 4x + 3 &= 0\\
+                (x - 3)(x - 1) &= 0\\
+                x_1 &= 3 \quad x_2 = 1
+            \end{align*}
+        }
+        \column{0.4}
+        \block{Symmetrie}
+        {
+            Es gibt zwei verschiedene Arten von Symmetrie: Achsensymmetrie und Punktsymmetrie. \\
+            Achsensymmetrie bedeutet, dass die Funktion an der y-Achse gespiegelt werden kann.
+        Punktsymmetrie bedeutet, dass die Funktion an einem Punkt (meist der Urpsung) gespiegelt werden kann. \\
+        \textbf{Achsensymmetrie:} \\
+        Eine Funktion ist achsensymmetrisch, wenn sie die Gleichung $f(x) = f(-x)$ erfüllt. \\
+        \textbf{Punktsymmetrie:} \\
+        Eine Funktion ist punktsymmetrisch, wenn sie die Gleichung $f(x) = -f(-x)$ erfüllt. \\
+        }
+    \end{columns}
+    \begin{columns}
+        \column{0.4}
+        \block{Randverhalten}
+        {
+            Das Randverhalten einer Funktion beschreibt, wie sich die Funktion für sehr große und sehr kleine x-Werte verhält. \\
+            \textbf{Beispiel:}
+            \begin{align*}
+                f(x) &= x^2 - 4x + 3\\
+                \lim_{x \to \infty} f(x) &= \infty\\
+                \lim_{x \to -\infty} f(x) &= \infty
+            \end{align*}
+            Man kann also sagen, dass die Funktion für sehr große und sehr kleine x-Werte gegen unendlich geht.
+        }
+        \column{0.6}
+        \block{Verhalten nahe Null}
+        {
+            Nahe Null verhält sich eine Funktion $f(x)$ wie der Graph der Funktion $f(x) = ax^n$ mit $n$ als der niedrigsten Potenz von x der Ursprungsfunktion. \\
+        \textbf{Beispiel:}
+        \begin{align*}
+            f(x) &= \frac{1}{4}x^4 + 3x^2 - 2\\
+            g(x) &= 3x^2\\
+        \end{align*}
+        Hier ist $g(x)$ die Funktion, die das Verhalten von $f(x)$ nahe Null beschreibt.
+        }
+    \end{columns}
+    \begin{columns}
+        \column{0.5}
+        \block{Extremstellen}
+        {
+            Um die Extremstellen einer Funktion zu bestimmen benötigst du zunächst die erste Ableitung der Funktion.
+        Anschließend musst du die erste Ableitung gleich Null setzen und nach x auflösen.
+        Die x-Werte, die du erhältst, sind die x-Werte der Extremstellen. \\
+        Zuletzt musst du noch die zweite Ableitung der Funktion an den x-Werten der Extremstellen berechnen.
+        Ist die zweite Ableitung an einer Extremstelle positiv, so handelt es sich um einen Tiefpunkt.
+        Ist die zweite Ableitung an einer Extremstelle negativ, so handelt es sich um einen Hochpunkt. \\
+        \textbf{Beispiel}: \\\\
+        Funktion: $f(x) = 2x^2$\\
+        Erste Ableitung: $f'(x) = 4x$\\
+        Zweite Ableitung: $f''(x) = 4$\\\\
+        \textbf{notwendige Bedingung für EST: $f'(x) = 0$}\\
+        $
+        f'(x) = 0 \\
+        4x = 0 \\
+        x_1 = 0
+        $
+        \\\\
+        \textbf{hinreichende Bedingung für EST: $f'(x) = 0 \land f''(x) \ne 0$}\\
+        $
+        f''(x_1) = 4 \ne 0 > 0 \Rightarrow \text{Hochpunkt bei } x_1 = 0
+        $
+        }
+
+        \column{0.5}
+        \block{Wendestellen}
+        {
+            Um die Wendestellen einer Funktion zu bestimmen benötigst du zunächst die zweite Ableitung der Funktion.
+            Anschließend musst du die zweite Ableitung gleich Null setzen und nach x auflösen.
+            Die x-Werte, die du erhältst, sind die x-Werte der Wendestellen. \\
+        Zuletzt musst du noch die dritte Ableitung der Funktion an den x-Werten der Extremstellen berechnen.
+        Ist die dritte Ableitung an einer berechneten $x$-Koordinate ungleich Null, so handelt es sich um eine Wendestelle.
+        \textbf{Beispiel}: \\
+        Funktion: $f(x) = 4x^3$\\
+        Zweite Ableitung: $f''(x) = 24x$\\
+        Dritte Ableitung: $f'''(x) = 24$\\\\
+        \textbf{notwendige Bedingung für WDS: $f''(x) = 0$}\\
+            $
+            f''(x) = 0 \\
+            24x = 0 \\
+            x_1 = 0
+            $
+            \\
+            \textbf{hinreichende Bedingung für WDS: $f''(x) = 0 \land f'''(x) \ne 0$}\\
+            $
+            f'''(x_1) = 24 \ne 0 \Rightarrow \text{Wendestelle bei } x_1 = 0
+            $
+        }
+    \end{columns}
+
+\end{document}
