@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{report}
+\documentclass[11pt, a4paper]{report}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -9,6 +9,7 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{tabularx}
 \usepackage{amsmath}
+\usepackage{hyperref}
 
 \begin{document}
 	\bslinespacing{1.5}
@@ -19,7 +20,7 @@
 	\maketitle
 	\tableofcontents
 	\chapter{Ableitungsregeln für Produkte}
-	\section{a)}
+	\section{Teilaufgabe a)}
 	\begin{tabularx}{\textwidth}{|X|X|X|}
 	 \hline
 	 $f(x) = u(x) \times v(x)$ & $u'(x) \times v(x)$ & $u(x) \times v'(x)$ \\
@@ -35,9 +36,9 @@
 	 $x^6 = x^5 \times x^1$ & $5x^4 \times x^1 = 5x^5$ & $x^5 \times 1 = x^5$ \\
 	 \hline
 	\end{tabularx}
-	\section{b)}\label{sec:b_rule}
+	\section{Teilaufgabe b)}\label{sec:b_rule}
 	Die Formel lautet: $f'(x) = \Bigl(u'(x) \times v(x)\Bigl) + \Bigl(u(x) \times v'(x)\Bigl)$
-	\section{c)}
+	\section{Teilaufgabe c)}
 	$f(x) = 3x^4 = 3x^2 \times x^2 = u(x) \times v(x)$ \\
 	\paragraph{Anwendung der Regel (siehe \ref{sec:b_rule})} \mbox{} \\
 	$
@@ -59,6 +60,61 @@
 		\item $= \frac{(u(x_0 + h) - u(x_0)) \times v(x_0) + u(x_0 + h) \times (v(x_0 + h) - v(x_0))}{h}$
 	\end{enumerate}
 	
-	Für $h\to0$
+	Für $h \to 0 = -u(x_0)*v(x_0)$
+	
+	\chapter{Funktionen in Funktionen}
+	\section{Arbeitsauftrag A)}
+	\subsection{Teilaufgabe 1)}
+	Funktionen: $f(x) = x^2;\ g_1(x) = (x - 1)^2$ \\
+	Die Nullstellen von $f$ und die der Ableitung $f'$ sind identisch.
+	Man konnte sehen, dass $g$ identisch mit $f$ nur um eine Einheit verschoben ist.
+	Die Ableitung von $g$ und von $f$ verlaufen parallel.
+	Beide Ableitungen verlaufen durch die Scheitelpunkt der jeweiligen Funktion.
+	\subsection{Teilaufgabe 2)}
+	Auf Grund der in Teilaufgabe eins erarbeiteten Ergebnisse, ist die Ableitung von $g$ um $b$ verschoben.
+	\section{Arbeitsauftrag B)}
+	\subsection{Teilaufgabe 1)}
+	Funktionen: $f(x) = x^2;\  h_1(x) = (2x)^2$ \\
+	Ableitungen: $f'(x) = 2x;\ h_1'(x) = 2x + 4$ \\
+	Man erhält die Ableitung $h_1'(x)$ aus der Funktion $f'(x)$, indem man vier zu der Ableitung $h_1'(x)$ addiert.
+	\subsection{Teilaufgabe 2)}
+	Funktion: $h(x) = f(a \times x)$ \\
+	Um den Ableitungsgraphen von $h(x)$ aus $f'(x)$ zu erhalten, muss man diesen um den Faktor $a$ nach oben verschieben.
+	\section{Arbeitsauftrag C)}
+	\paragraph{Allgemeine Regel} Die Ableitung einer Funktion $k(x) = f(ax - b)$ kann mit Hilfe des Ableitungsgraphen $f(x) = x^2$ erhalten werden, wenn dieser um den Faktor $a$ nach oben und $b$ nach rechts verschoben wird.
+	\chapter{Die Ableitung von Verkettungen untersuchen}
+	\section{Teilaufgabe a)}
+	\begin{tabularx}{\textwidth}{|X|X|}
+	\hline
+	\textbf{Schnipsel} & \textbf{Zusammenhang} \\
+	\hline
+	$u(v) = v^2;\ u'(v) = 2v$ & Ableitung \\
+	\hline
+	$v(x) = 3x + 1;\ v'(x) = 3$ & Ableitung \\
+	\hline
+	$f(x) = 9x^2 + 6x + 1;\ f(x) = (3x + 1)^2$ & Klammern aufgelöst \\
+	\hline
+	$f(x) = 9x^2 + 6x + 1;\ f(x) = (3x + 1)^2;\ f'(x) = 18x + 6$ & Ableitung von $f(x)$ \\
+	\hline
+	$u'(v(x)) = 2\times(3x + 1);\ v(x) = 3x + 1;\ u'(v) = 2v $ & Eingesetzt\\
+	\hline
+	$f(x) = (3x + 1)^2$ & $u(v(x))$ eingesetzt \\
+	\hline
+	\end{tabularx}
+	\section{Teilaufgabe b)}
+	Funktionen: $f(x) = (x + 2)^2;\ g(x) = (e^x - 1)^2$ \\
+	$g(x) = (e^x - 1)^2 \Rightarrow g(x) = (e^x)^2  - e^x - e^x + 1 = (e^x)^2 - 2e^x + 1 = e^{2x} - 2e^x + 1$
+	\begin{enumerate}
+		\item 1
+		\item 2
+		\item $f'(x) = 2x + 4$
+		\item $f(x) = x^2 + 4x + 4$
+		\item $f(x) = (x + 2)^2$
+		\item $g(x) = (e^x - 1)^2$
+		\item 7
+		\item 8
+	\end{enumerate}
+	\chapter{Testwagen}
+	
 
 \end{document}
