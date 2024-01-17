@@ -43,6 +43,7 @@ Dies ist entweder das Maximum des linken Teilbaums oder das Minimum des rechten 
 | + remove(data: ContentType): void               |
 | + isEmpty(): boolean                            |
 | + getContent(): ContentType                     |
+| + setContent(data: ContenType): void            |
 | + getLeftTree(): BinarySearchTree<ContentType>  |
 | + getRightTree(): BinarySearchTree<ContentType> |
 +-------------------------------------------------+
