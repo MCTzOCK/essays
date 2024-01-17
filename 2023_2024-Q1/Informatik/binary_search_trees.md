@@ -27,12 +27,17 @@ Gibt es zwei Teilbäume, muss die passende Stelle im Baum gefunden werden, an de
 Dies ist entweder das Maximum des linken Teilbaums oder das Minimum des rechten Teilbaums.
 
 ## Modelierung
-```java
+
 +-----------------------------------ContentType---+
 |               BinarySearchTree                  |
 |-------------------------------------------------|
 | - root: Node                                    |
+| - leftTree: BinarySearchTree<ContentType>       |
+| - rightTree: BinarySearchTree<ContentType>      |
+| - content: ContentType                          |
 |-------------------------------------------------|
+| + BinarySearchTree()                            |
+| + BinarySearchTree(data: ContentType)           |
 | + insert(data: ContentType): void               |
 | + search(data: ContentType): Node               |
 | + remove(data: ContentType): void               |
@@ -41,4 +46,3 @@ Dies ist entweder das Maximum des linken Teilbaums oder das Minimum des rechten 
 | + getLeftTree(): BinarySearchTree<ContentType>  |
 | + getRightTree(): BinarySearchTree<ContentType> |
 +-------------------------------------------------+
-```
