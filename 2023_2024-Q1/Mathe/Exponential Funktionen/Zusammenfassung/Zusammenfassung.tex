@@ -1,0 +1,126 @@
+\documentclass[25pt, a3paper]{tikzposter}
+\title{Exponentialfunktionen}
+\author{Ben Siebert}
+\date{\today}
+\institute{Gymnasium Holthausen Hattingen}
+
+\usetheme{Wave}
+\tikzposterlatexaffectionproofoff
+
+% Packages
+\usepackage{ngerman}
+\usepackage{charter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[fleqn]{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+
+
+\begin{document}
+\maketitle
+\begin{columns}
+    \column{0.5}
+    \block{Einleitung}{
+        Eine Exponentialfunktion ist eine Funktion, bei der die Variable im Exponenten steht. \\
+        \begin{center}
+            $f(x) = a^x \Bigl[a \in \mathbb{R}\Bigl]$
+        \end{center}
+        \vspace{1cm}
+        Eine solche Funktion ist nicht symmetrisch zu einer Achse. \\
+        \begin{tikzpicture}[scale=1.5]
+            \begin{axis}[
+                    axis lines = center,
+                    xlabel = $x$,
+                    ylabel = {$f(x) = 2^x$},
+                    xmin = -5,
+                    xmax = 5,
+                    ymin = -5,
+                    ymax = 5,
+                    xtick = {-5,5},
+                    ytick = {-5,5},
+                ]
+                \addplot [
+                    domain=-5:5,
+                    samples=100,
+                    color=red,
+                ]
+                {2^x};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \column{0.5}
+    \block{e-Funktion}{
+        Die e-Funktion ist eine spezielle Exponentialfunktion, bei der die Basis die Eulersche Zahl $e$ ist. \\
+        \begin{center}
+            $f(x) = e^x$
+        \end{center}
+        \vspace{1cm}
+        Die e-Funktion ist die Umkehrfunktion des natürlichen Logarithmus. \\
+        \begin{center}
+            $f(x) = \ln(x)$
+        \end{center}
+        \vspace{1cm}
+        Die e-Funktion ist die einzige Exponentialfunktion, deren Ableitung gleich der Funktion selbst ist. \\
+        \begin{center}
+            $f(x) = e^x \Rightarrow f'(x) = e^x$
+        \end{center}
+        \vspace{1cm}
+        Die e-Funktion ist die einzige Exponentialfunktion, deren Stammfunktion gleich der Funktion selbst ist. \\
+        \begin{center}
+            $f(x) = e^x \Rightarrow F(x) = e^x$
+        \end{center}
+        \vspace{1cm}
+        \textbf{Grenzwerte der e-Funktion}: \\
+        \begin{center}
+            $\lim\limits_{x \to \infty} e^x = \infty$ \\
+            $\lim\limits_{x \to -\infty} e^x = 0$
+        \end{center}
+        \textbf{Symmetrie der e-Funktion}: \\
+        \begin{center}
+            $e^{-x} = \frac{1}{e^x}$
+        \end{center}
+    }
+\end{columns}
+\begin{columns}
+    \column{0.5}
+    \block{Rechenregeln}{
+        \begin{itemize}
+            \item $a^x \cdot a^y = a^{x+y}$
+            \item $\frac{a^x}{a^y} = a^{x-y}$
+            \item $(a^x)^y = a^{x \cdot y}$
+            \item $a^0 = 1$
+            \item $a^{-x} = \frac{1}{a^x}$
+            \item $a^{\frac{1}{2}} = \sqrt{a}$
+            \item $a^{\frac{1}{x}} = \sqrt[x]{a}$
+        \end{itemize}
+    }
+    \column{0.5}
+    \block{Wachstum}{
+        \begin{itemize}
+            \item $a > 1 \Rightarrow$ Funktion wächst
+            \item $a = 1 \Rightarrow$ Funktion konstant
+            \item $0 < a < 1 \Rightarrow$ Funktion fällt
+            \item $a = 0 \Rightarrow$ Funktion konstant
+        \end{itemize}
+    }
+\end{columns}
+\begin{columns}
+    \column{0.5}
+    \block{Ableitungsregeln für Produkte}{
+        \begin{itemize}
+            \item $f(x) = u(x) \cdot v(x)$
+            \item $f'(x) = u'(x) \cdot v(x) + u(x) \cdot v'(x)$
+        \end{itemize}
+        Beispiel: \\
+        \begin{center}
+            $f(x) = x^2 \cdot e^x$ \\
+            $f'(x) = 2x \cdot e^x + x^2 \cdot e^x$
+        \end{center}
+    }
+\end{columns}
+\end{document}
