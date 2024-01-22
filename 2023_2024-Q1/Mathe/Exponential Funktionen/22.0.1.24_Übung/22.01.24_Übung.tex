@@ -1,0 +1,103 @@
+\documentclass[11pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{charter}
+\usepackage{custompkg}
+\usepackage{amsmath}
+
+\begin{document}
+	\bsremovechaptertitle
+	\title{Exponentialfunktionen Übung}
+	\author{Ben Siebert \and Tanel Malak \and Julina Elfert \and Moritz Junkermann}
+	\date{\today}
+	\maketitle
+	\tableofcontents
+	\chapter{S. 136 Nr. 3}
+	\paragraph{Produktregel:}
+	$f'(x) = u'(x) \times v(x) + u(x) \times v'(x)$
+	
+	\section{Teilaufgabe a)}
+	$f(x) = x \times e^x$ \\
+	$u_1 = x;\  v_1 = e^x \Rightarrow u_1' = 1;\ v_1' = e^x $ \\\\
+	$f'(x) = 1 \times e^x + x \times e^x$ \\
+	$\Leftrightarrow f'(x) = e^x \times (1 + x)$ \\
+	$u_2 = e^x;\ v_2 = 1 + x;\ u_2' = e^x;\ v_2' =  1$ \\\\
+	$f''(x) = u_2' \times v_2 + u_2 \times v_2'$ \\
+	$\Leftrightarrow f''(x) = e^x \times (1+x) + e^x \times 1$ \\
+	$\Leftrightarrow f''(x) = e^x \times (2+x)$ \\
+
+	\paragraph{Extremstellen} \mbox{} \\
+	notwendige Bedingung für EST: $f'(x) = 0$ \\
+	$f'(x) = 0 \\
+	e^x \times (1 + x) = 0\ \Bigl|\div e^x \\
+	1 + x = 0\ \Bigl| -1 \\
+	x_1 = -1
+	$
+	\\
+	hinreichende Bedingung für EST: $f'(x) = 0\ \land\ f''(x) \ne 0 $
+	\\
+	$
+	f''(-1) = e^{-1} \times (2 - 1) \\
+	f''(-1) = e^{-1} \times 1 \\
+	f''(-1) = e^{-1}
+	$
+	\\
+	Y-Koordinate: $f(-1) = -1e^{-1}$
+	\\
+	Tiefpunkt bei P(-1|$-e^{-1} $)
+	
+	\section{Teilaufgabe c)}
+	$
+	f(x) = (4x - 1) \times e^x \\
+	u_1 = 4x - 1;\ v_1 = e^x;\ u_1' = 4;\ v_1' = e^x \\\\
+	f'(x) = 4 \times e^x + (4x - 1) \times e^x \\
+	\Leftrightarrow f'(x) = e^x \times (4x + 3) \\
+	u_2 = e^x;\ v_2 = 4x + 3;\ u_2' = e^x;\ v_2' = 4 \\\\
+	f''(x) = e^x \times (4x + 3) + e^x \times 4 \\
+	\Leftrightarrow f''(x) = e^x \times (4x + 7)
+	$
+	\\
+	\paragraph{Extremstellen} \mbox{} \\
+	notwendige Bedingung für EST: $f'(x) = 0$ \\
+	$
+	f'(x) = 0 \\
+	e^x \times (4x + 7) = 0\ \Bigl|\div e^x\\
+	4x+7= 0\ \Bigl|-7 \\
+	4x = -7\ \Bigl|\div 4 \\
+	x = -\frac{7}{4}
+	$
+	\\
+	hinreichende Bedingung für EST: $f'(x) = 0\ \land\ f''(x) \ne 0$ \\
+	$
+	f''(-\frac{7}{4}) = e^{-\frac{7}{4}} \times (4 \times -\frac{7}{4} + 7) \\
+	f''(-\frac{7}{4}) = 0
+	$
+	\\
+	Vorzeichenwechselkriterium (VZW): \\
+	$
+	f'(-2) = -5e^{-2} \Rightarrow negativ \\
+	f'(2) = 11e^2 \Rightarrow positiv \\
+	$
+	\\
+	Y-Koordinate: $f(-\frac{7}{4}) = -8 \times e^{-\frac{7}{4}}$ \\
+	Tiefpunkt bei T($-\frac{7}{4}$|$-8 \times e^{-\frac{7}{4}}$)
+	\section{Teilaufgabe f)}
+	$
+	f(x) = x^2 \times e^x \\
+	u_1 = x^2;\ v_1 = e^x;\ u_1' = 2x;\ v_1' = e^x \\\\
+	f'(x) = 2x \times e^x + x^2 \times e^x \\
+	\Leftrightarrow e^x \times (2x + x^2) \\
+	u_2 = e^x;\ v_2 = 2x + x^2;\ u_2' = e^x;\ v_2' = 2 + 2x \\\\
+	f''(x) = e^x \times (2x + x^2) + e^x \times (2 + 2x) \\
+	\Leftrightarrow f''(x) = e^x \times (x^2 + 2 + 4x)
+	$
+	\\
+	\chapter{S. 137 Nr. 5}
+	\section{Teilaufgabe a)}
+	$
+	f(x) = (3 - x) \times e^{-x} \\
+	u_1 = 3 - x;\ v_1 = e^{-x};\ u_1' = -1;\ v_1' = -e^{-x}\\\\
+	$
+\end{document}
