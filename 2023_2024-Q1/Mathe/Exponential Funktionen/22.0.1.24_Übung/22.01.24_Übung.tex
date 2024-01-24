@@ -6,6 +6,7 @@
 \usepackage{charter}
 \usepackage{custompkg}
 \usepackage{amsmath}
+\usepackage{graphicx}
 
 \begin{document}
 	\bsremovechaptertitle
@@ -96,8 +97,77 @@
 	\\
 	\chapter{S. 137 Nr. 5}
 	\section{Teilaufgabe a)}
+	$f(x) = (3 - x) \times e^{-x}$ \\
+	Nullstellen: \\
 	$
-	f(x) = (3 - x) \times e^{-x} \\
+	f(x) = 0 \\
+	(3 - x) \times e^{-x} = 0
+	$\\
+	Satz vom Nullprodukt: $x_1 = 3$ \\\\
+	$
 	u_1 = 3 - x;\ v_1 = e^{-x};\ u_1' = -1;\ v_1' = -e^{-x}\\\\
+	f'(x) = -1 \times e^{-x} + (3 - x) \times (-e^{-x}) \\
+	\Leftrightarrow f'(x) = e^{-x} \times (x - 4) \\
+	u_2 = e^{-x};\ v_2 = x - 4;\ u_2' = -e^{-x};\ v_2' = 1 \\\\
+	f''(x) = -e^{-x} \times (x - 4) + e^{-x} \times 1 \\
+	\Leftrightarrow f''(x) = e^{-x} \times (5 - x) \\
 	$
+	\section{Teilaufgabe b)}
+	notwendige Bedingung für EST: $f'(x) = 0$ \\
+	$
+	f'(x) = 0 \\
+	e^{-x} \times (x - 4) = 0
+	$ \\
+	Satz des Nullprodukts: $x_1 = 4$ \\
+	hinreichende Bedingung für EST: $f'(x) = 0\ \land\ f''(x) \ne 0$\\
+	$
+	f''(4) = e^{-4} \Rightarrow positiv \to TP\\
+	$
+	Y-Wert: $f(4) = -e^{-4}$
+	\\
+	Der Graph der Funktion $f$ hat einen Tiefpunkt $T(4\Bigl|-e^{-4})$ \\
+	\section{Teilaufgabe c)}
+	\includegraphics[width=10cm]{SKIZZE.JPEG}
+	\section{Teilaufgabe d)}
+	$
+	t(x) = mx + b \\
+	m = f'(0) = -4 \\
+	t(0) = -4 \times 0 + b = 3 \\
+	\Leftrightarrow b = 3 \\
+	t(x) = -4x + 3
+	$
+	\chapter{S. 139 Nr. 1}
+	\section{Teilaufgabe a)}
+	$
+	f(x) = (x + 2)^4\\
+	u^\circ v\\
+	u=x^4;\ v=x + 2;\ u' = 4x^3;\ v' = 1 \\
+	f'(x) = u'(v(x)) \times v'(x) \\
+	\Leftrightarrow f'(x) = 4 \times (x + 2)^3 \times 1 \\
+	\Leftrightarrow f'(x) = 4 \times (x + 2)^3 \\
+	$
+	\section{Teilaufgabe e)}
+	$
+	f(x) = e^{2x} \\
+	u^\circ v \\
+	u = e^x;\ v= 2x;\ u' = e^x;\ v' = 2 \\
+	f'(x) = u'(v(x)) \times v'(x) \\
+	\Leftrightarrow f'(x) = e^{2x} \times 2 \\
+	\Leftrightarrow f'(x) = 2e^{2x}
+	$
+	\chapter{S. 139 Nr. 2}
+	\section{Teilaufgabe a)}
+	$
+	f(x) = 2e^{x^3-x^2}\\
+	u^\circ v\\
+	u = 2e^x;\ v= x^3-x^2;\ u' = 2e^x;\ v' = 3x^2-2x \\
+	f'(x)= 2e^{x^3-x^2} \times 3x^2-2x\\
+	$
+	\section{Teilaufgabe b)}
+	$
+	f(x) = e^{\sqrt{x}} \\
+	u = e^x;\ v = \sqrt{x};\ u' = e^x;\ v' = \frac{1}{2}\sqrt{x} \\
+	f'(x) = e^{\sqrt{x}} \times \frac{1}{2}\sqrt{x}
+	$
+	
 \end{document}
