@@ -161,13 +161,52 @@
 	f(x) = 2e^{x^3-x^2}\\
 	u^\circ v\\
 	u = 2e^x;\ v= x^3-x^2;\ u' = 2e^x;\ v' = 3x^2-2x \\
-	f'(x)= 2e^{x^3-x^2} \times 3x^2-2x\\
+	f'(x) = 2e^{x^3-x^2} \times (3x^2-2x)\\
+	f'(x) = (6x^2 - 4x) \times e^{x^3 - x^2}
 	$
 	\section{Teilaufgabe b)}
 	$
 	f(x) = e^{\sqrt{x}} \\
-	u = e^x;\ v = \sqrt{x};\ u' = e^x;\ v' = \frac{1}{2}\sqrt{x} \\
-	f'(x) = e^{\sqrt{x}} \times \frac{1}{2}\sqrt{x}
+	u = e^x;\ v = \sqrt{x};\ u' = e^x;\ v' = \frac{1}{2 \times \sqrt{x}} \\
+	f'(x) = e^{\sqrt{x}} \times \frac{1}{2 \times \sqrt{x}} \\
+	\Leftrightarrow f'(x) = \frac{e^{\sqrt{x}}}{2\times \sqrt{x}}
 	$
+	
+	\section{Teilaufgabe g)}
+	$
+	f(x) = 3x \times ln(2x) \\
+	u = 3x;\ v = ln(2x) = ln(2) + ln(x);\ u' = 3;\ v' = \frac{1}{x} \\
+	f'(x) = 3 \times ln(2x) + 3x \times \frac{1}{x} \\
+	f'(x) = 3 \times (ln(2x) + 1)
+	$
+	
+	\section{Teilaufgabe h)}
+	$
+	f(x) = ln(\sqrt{x}) \\
+	u^\circ v\\
+	u = ln(x);\ u' = \frac{1}{x};\ v = \sqrt{x};\ v' = \frac{1}{2 \times \sqrt{x}} \\
+	f'(x) = \frac{1}{\sqrt{x}} \times \frac{1}{2 \times \sqrt{x}} \\
+	\Leftrightarrow f'(x) = \frac{1}{2x}
+	$
+	
+	\chapter{S. 139 Nr. 5}
+	$
+	f(x) = (2x - 1)^2 \times e^x
+	$
+	\section{Teilaufgabe a)}
+	$
+	u = e^x;\ u' = e^x;\ v = (2x - 1)^2 = 4x^2 - 4x + 1;\ v' = 8x - 4 \\
+	f'(x) = e^x \times (8x - 4) + e^x \times (4x^2 - 4x + 1) \\
+	f'(x) = e^x \times (8x - 4 + 4x^2 - 4x + 1) \\
+	f'(x) = e^x \times (4x - 3 + 4x^2) \\
+	$
+	\\
+	Steigung im Punkt $P\Bigl(2\Bigl|f(2)\Bigl)$ \\
+	$
+	f'(2) = e^2 \times (4 \times 2  - 3 + 4\times 2^2) \\
+	\Leftrightarrow e^2 \times 21 \\
+	$ \\
+	Die Steigung im Punkt $P\Bigl(2\Bigl|f(2)\Bigl)$ liegt bei $21 \times e^2$
+	\\
 	
 \end{document}
