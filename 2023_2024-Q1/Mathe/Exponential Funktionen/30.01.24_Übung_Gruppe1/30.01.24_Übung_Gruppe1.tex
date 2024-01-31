@@ -1,0 +1,95 @@
+\documentclass[11pt, a4paper]{report}
+
+\usepackage{custompkg}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{charter}
+\usepackage{amsmath}
+\usepackage{mathbbol}
+
+\begin{document}
+	\title{Exponentialfunktionen Übung (Gruppe 1)}
+	\author{Ben Siebert \and Tanel Malak \and Moritz Junkermann}
+	\date{\today}
+	\maketitle
+	\tableofcontents
+	\bsremovechaptertitle
+	\bslinespacing{1.5}
+	\chapter{S. 140 Nr. 10}
+	Gegeben ist die Funktion f mit $f(x) = 2x \times e^{x^2-2}$
+	\section{Teilaufgabe a)}
+	Zu überprüfende Stammfunktion: $F(x) = e^{x^2-2}$ \\
+	Stammfunktion bilden: $F(x) = $
+	\chapter{S. 142 Nr. 24}
+	\section{Teilaufgabe a)}
+	Ansatz:
+	\\
+	$\int_{1}^{e} (\frac{3}{x} + x) dx = F(e) - F(1)$
+	\\
+	Stammfunktion bilden:
+	\\
+	$\int_{1}^{e} (\frac{3}{x} + x) dx \Bigl[F(x) = 3 \times ln(|x|) + \frac{x^2}{2}\Bigl]$
+	\\
+	Integral bestimmen (und vereinfachen):
+	\\
+	$\int_{1}^{e} (\frac{3}{x} + x) dx = F(e) - F(1) \\
+	\Leftrightarrow (3 \times ln(|e|) + \frac{e^2}{2}) - (3 \times ln(|1|) + \frac{1^2}{2}) \\
+	\Leftrightarrow (3 \times ln(|e|) + \frac{e^2}{2}) - (3 \times 0 + \frac{1}{2}) \\
+	\Leftrightarrow (3 \times ln(|e|) + \frac{e^2}{2}) - \frac{1}{2} \\
+	\Leftrightarrow (3 \times 1 + \frac{e^2}{2}) - \frac{1}{2} \\
+	\Leftrightarrow (3 + \frac{e^2}{2}) - \frac{1}{2} \\
+	\Leftrightarrow \frac{6}{2} + \frac{e^2}{2} - \frac{1}{2} \\
+	\Rightarrow \frac{6 + e^2 - 1}{2} \\
+	\xrightarrow[]{CAS}\ \approx 6.19
+	$
+	\section{Teilaufgabe b)}
+	Ansatz:
+	\\
+	$\int_{1}^{e} (\frac{2 + 4x}{x}) dx = F(e) - F(1)$
+	\\
+	Stammfunktion bilden:
+	\\
+	$
+	\int_{1}^{e} (\frac{2 + 4x}{x}) dx\ \Rightarrow f(x) = 2 + 4x \times \frac{1}{x}\ \Bigl[F(x) = 2x + 2x^2 \times ln(|x|)\Bigl]
+	$
+	\\
+	Integral berechnen (und vereinfachen):
+	\\
+	$
+	\int_{1}^{e} (\frac{2 + 4x}{x}) dx = F(e) - F(1) \\
+	\Leftrightarrow (2e + 2e^2 \times ln(|e|)) - 2 + 2 \times ln(|1|) \\
+	\Leftrightarrow (2e + 2e^2 \times 1) - 2 + 2 \times 0 \\
+	\Leftrightarrow (2e + 2e^2) - 2 \\
+	\Leftrightarrow 2e^2 + 2e - 2 \\
+	\xrightarrow[]{CAS}\ \approx 18.21
+	$
+	\section{Teilaufgabe c)}
+	Ansatz:
+	\\
+	$\int_{e}^{e^2} (\frac{2x - 5}{x^2}) dx\ = F(e^2) - F(e)$
+	\\
+	Stammfunktion bilden:
+	\\
+	$
+	\int_{e}^{e^2} (\frac{2x - 5}{x^2}) dx \Rightarrow f(x) = 2x - 5 \times \frac{1}{x^2} = 2x - \frac{5}{x^2}\ \Bigl[F(x) = x^2 + \frac{5}{x}\Bigl]
+	$
+	\\
+	Integral berechnen (und vereinfachen):
+	\\
+	$
+	F(e^2) - F(e) \\
+	\Leftrightarrow e^4 + \frac{5}{e^2} - e^2 + \frac{5}{e} \\
+	\xrightarrow[]{CAS}\ \approx 49.72
+	$
+	
+	\chapter{S. 145 Nr. 5g}
+	Funktion: $f(x) = 2x \times e^{2x-7}$ \\
+	Nullstellen berechnen: \\
+	$f(x) = 0 \\
+	2x \times e^{2x-7} = 0$
+	\\
+	$\to x_0 = 0$, da $2x$ nur $0$, wenn $x=0$ ist und $e^x$ niemals gleich $0$ sein kann.
+	
+\end{document}
