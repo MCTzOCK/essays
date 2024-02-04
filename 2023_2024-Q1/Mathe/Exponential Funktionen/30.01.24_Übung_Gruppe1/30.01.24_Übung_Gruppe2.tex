@@ -1,0 +1,180 @@
+\documentclass[11pt, a4paper]{report}
+
+\usepackage{custompkg}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{charter}
+\usepackage{amsmath}
+\usepackage{mathbbol}
+\usepackage{amssymb}
+
+\begin{document}
+	\title{Exponentialfunktionen Übung (Gruppe 2)}
+	\author{Ben Siebert \and Tanel Malak \and Moritz Junkermann}
+	\date{\today}
+	\maketitle
+	\tableofcontents
+	\bsremovechaptertitle
+	\bslinespacing{1.5}
+	\chapter{S. 140 Nr. 10}
+	Gegeben ist die Funktion f mit $f(x) = 2x \times e^{x^2-2}$
+	\section{Teilaufgabe a)}
+	Zu überprüfende Stammfunktion: $F(x) = e^{x^2-2}$ \\
+	Gegebene Stammfunktion ableiten: \\
+	$u = e^x;\ v = x^2 - 2;\ u' = e^x;\ v' = 2x\\
+	f(x) = u'(v(x)) \times v'(x) \\
+	f(x) = e^{x^2 - 2} \times 2x \\
+	$
+	Die Stammfunktion $F(x) = e^{x^2-2}$ ist die korrekte Stammfunktion der Funktion $f(x) = 2x \times e^{x^2-2}$
+	\section{Teilaufgabe b)}
+	Intervall $I\Bigl[0;2\Bigl]$ \\
+	$
+	\int_{0}^{2}f(x) dx \Bigl[F(x) = e^{x^2-2}\Bigl]\\
+	\int_{0}^{2}f(x) dx = F(2) - F(0) \\
+	\Leftrightarrow e^{2^2-2} - e^{0^2-2} \\
+	\Leftrightarrow e^{2} - e^{-2} \\
+	\xrightarrow[]{CAS}\ \approx 7.25372 \\
+	$
+	Die Fläche, die von dem Graphen der Funktion $f$, der x-Achse und der Geraden $x=2$ eingeschlossen wird, beträgt in etwa $e^2 - e^{-2}$.
+	\section{Teilaufgabe c)}
+	Durch die Achsensymmetrie der Funktion $f(x)$ gleicht sich der Anteil der Integrale unterhalb und oberhalb der x-Achse aus, sodass das Intervall von $-a$ bis $a$ immer Null ist.
+	\chapter{S. 142 Nr. 24}
+	\section{Teilaufgabe a)}
+	Ansatz:
+	\\
+	$\int_{1}^{e} (\frac{3}{x} + x) dx = F(e) - F(1)$
+	\\
+	Stammfunktion bilden:
+	\\
+	$\int_{1}^{e} (\frac{3}{x} + x) dx \Bigl[F(x) = 3 \times ln(|x|) + \frac{x^2}{2}\Bigl]$
+	\\
+	Integral bestimmen (und vereinfachen):
+	\\
+	$\int_{1}^{e} (\frac{3}{x} + x) dx = F(e) - F(1) \\
+	\Leftrightarrow (3 \times ln(|e|) + \frac{e^2}{2}) - (3 \times ln(|1|) + \frac{1^2}{2}) \\
+	\Leftrightarrow (3 \times ln(|e|) + \frac{e^2}{2}) - (3 \times 0 + \frac{1}{2}) \\
+	\Leftrightarrow (3 \times ln(|e|) + \frac{e^2}{2}) - \frac{1}{2} \\
+	\Leftrightarrow (3 \times 1 + \frac{e^2}{2}) - \frac{1}{2} \\
+	\Leftrightarrow (3 + \frac{e^2}{2}) - \frac{1}{2} \\
+	\Leftrightarrow \frac{6}{2} + \frac{e^2}{2} - \frac{1}{2} \\
+	\Rightarrow \frac{6 + e^2 - 1}{2} \\
+	\xrightarrow[]{CAS}\ \approx 6.19
+	$
+	\section{Teilaufgabe b)}
+	Ansatz:
+	\\
+	$\int_{1}^{e} (\frac{2 + 4x}{x}) dx = F(e) - F(1)$
+	\\
+	Stammfunktion bilden:
+	\\
+	$
+	\int_{1}^{e} (\frac{2 + 4x}{x}) dx\ \Rightarrow f(x) = 2 + 4x \times \frac{1}{x}\ \Bigl[F(x) = 2x + 2x^2 \times ln(|x|)\Bigl]
+	$
+	\\
+	Integral berechnen (und vereinfachen):
+	\\
+	$
+	\int_{1}^{e} (\frac{2 + 4x}{x}) dx = F(e) - F(1) \\
+	\Leftrightarrow (2e + 2e^2 \times ln(|e|)) - 2 + 2 \times ln(|1|) \\
+	\Leftrightarrow (2e + 2e^2 \times 1) - 2 + 2 \times 0 \\
+	\Leftrightarrow (2e + 2e^2) - 2 \\
+	\Leftrightarrow 2e^2 + 2e - 2 \\
+	\xrightarrow[]{CAS}\ \approx 18.21
+	$
+	\section{Teilaufgabe c)}
+	Ansatz:
+	\\
+	$\int_{e}^{e^2} (\frac{2x - 5}{x^2}) dx\ = F(e^2) - F(e)$
+	\\
+	Stammfunktion bilden:
+	\\
+	$
+	\int_{e}^{e^2} (\frac{2x - 5}{x^2}) dx \Rightarrow f(x) = 2x - 5 \times \frac{1}{x^2} = 2x - \frac{5}{x^2}\ \Bigl[F(x) = x^2 + \frac{5}{x}\Bigl]
+	$
+	\\
+	Integral berechnen (und vereinfachen):
+	\\
+	$
+	F(e^2) - F(e) \\
+	\Leftrightarrow e^4 + \frac{5}{e^2} - e^2 + \frac{5}{e} \\
+	\xrightarrow[]{CAS}\ \approx 49.72
+	$
+	
+	\chapter{S. 145 Nr. 5g}
+	Funktion: $f(x) = 2x \times e^{2x-7}$ \\
+	\textbf{Nullstellen}: \\
+	$f(x) = 0 \\
+	2x \times e^{2x-7} = 0$
+	\\
+	$\to x_0 = 0$, da $2x$ nur $0$, wenn $x=0$ ist und $e^x$ niemals gleich $0$ sein kann.
+	\\
+	\textbf{Symmetrie}:
+	\\
+	$f(-x) = 2 \times (-x) \times e^{2 \times (-x) -7}$
+	\\
+	Es ist zu sehen, dass $f(-x) \ne f(x)$ bzw. $-f(x)$ ist, sodass der Graph der Funktion $f(x)$ keine Symmetrie besitzt. 
+	\\
+	\textbf{Ableitungen:}
+	\\
+	$
+	u = 2x;\ v = e^{2x - 7};\ u' = 2; \\
+	s = e^x;\ t = 2x - 7; \ s' = e^x;\ t' = 2; \\
+	v' = e^{2x - 7} \times 2 \\
+	f'(x) = u' \times v + v' \times u \\
+	f'(x) = 2 \times e^{2x - 7}+ e^{2x-7} \times 2 \times 2x \\
+	f'(x) = e^{2x-7} \times (2 + 2 \times 2x) \\
+	f'(x) = e^{2x-7} \times (2 + 4x) \\
+	\\
+	f''(x) = u_2' \times v_2 + u_2 \times v_2'\\
+	u_2 = 2 + 4x;\ u_2' = 4;\ v_2 = e^{2x - 7}; \\
+	s = e^x;\ t = 2x - 7;\ s' = e^x;\ t' = 2; \\
+	v' = e^{2x - 7} \times 2 \\
+	f''(x) = 4 \times e^{2x - 7} + (2x + 4) \times e^{2x - 7} \times 2 \\
+	f''(x) = e^{2x - 7} \times (4 + (2x + 4) \times 2) \\
+	f''(x) = e^{2x - 7} \times (4 + 4x + 8) \\
+	f''(x) = e^{2x - 7} \times (12 + 4x) \\
+	$
+	\\
+	\textbf{Verhalten nahe Null:}
+	\\
+	Das Verhalten nahe Null kann nicht bestimmt werden, da die Funktion keine Summanden enthält und so der geringste Exponent von $x$ nicht bestimmt werden kann.
+	\\
+	\textbf{Extremstellen:}
+	\\
+	notwendige Bedingung für EST: $f'(x) = 0$ \\
+	$
+	e^{2x-7} \times (2 + 4x) = 0 \\
+	\Leftrightarrow 2 + 4x = 0\ \ \Bigl|\div 4 \\
+	\Leftrightarrow 0.5 + x = 0\ \Bigl|-0.5\\
+	\Leftrightarrow x = -\frac{1}{2} \\
+	x_1 = -\frac{1}{2}
+	$
+	\\
+	hinreichende Bedingung für EST: $f'(x) = 0\ \land\ f''(x) \ne 0$ \\
+	$
+	f''(-\frac{1}{2}) = e^{2x - 7} \times (12 + 4x) \\
+	\Leftrightarrow f''(-\frac{1}{2}) > 0 \\
+	\Rightarrow Tiefpunkt
+	$
+	\\
+	Y-Wert bestimmen: \\
+	$
+	f(\frac{1}{2}) = 2x \times e^{2x-7} \\
+	\Leftrightarrow 2 \times (-\frac{1}{2}) \times e^{2 \times (-\frac{1}{2}) - 7} \\
+	\Leftrightarrow -1 \times e^{-8}
+	$
+	\\
+	Die Funktion $f(x)$ besitzt einen Tiefpunkt $TP(\frac{1}{2}\Bigl|-e^{-8})$
+	\\
+	\textbf{Randverhalten:}
+	\\
+	Das Randverhalten kann nicht bestimmt werden, da die 	Funktion keine Summanden enthält und so der größte 	Exponent von $x$ nicht bestimmt werden kann.
+		\\
+	\textbf{Wendestellen:}
+	\\
+	\textbf{Monotinie:}
+	\\
+	
+\end{document}
