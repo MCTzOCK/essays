@@ -29,6 +29,7 @@
 	$
 	Die Stammfunktion $F(x) = e^{x^2-2}$ ist die korrekte Stammfunktion der Funktion $f(x) = 2x \times e^{x^2-2}$
 	\section{Teilaufgabe b)}
+	\textbf{Nullstellen hinzufügen} \\
 	Intervall $I\Bigl[0;2\Bigl]$ \\
 	$
 	\int_{0}^{2}f(x) dx \Bigl[F(x) = e^{x^2-2}\Bigl]\\
@@ -39,7 +40,7 @@
 	$
 	Die Fläche, die von dem Graphen der Funktion $f$, der x-Achse und der Geraden $x=2$ eingeschlossen wird, beträgt in etwa $e^2 - e^{-2}$.
 	\section{Teilaufgabe c)}
-	Durch die Achsensymmetrie der Funktion $f(x)$ gleicht sich der Anteil der Integrale unterhalb und oberhalb der x-Achse aus, sodass das Intervall von $-a$ bis $a$ immer Null ist.
+	Durch die Punktsymmetrie der Funktion $f(x)$ gleicht sich der Anteil der Integrale unterhalb und oberhalb der x-Achse aus, sodass das Intervall von $-a$ bis $a$ immer Null ist.
 	\chapter{S. 142 Nr. 24}
 	\section{Teilaufgabe a)}
 	Ansatz:
@@ -131,15 +132,24 @@
 	u_2 = 2 + 4x;\ u_2' = 4;\ v_2 = e^{2x - 7}; \\
 	s = e^x;\ t = 2x - 7;\ s' = e^x;\ t' = 2; \\
 	v' = e^{2x - 7} \times 2 \\
-	f''(x) = 4 \times e^{2x - 7} + (2x + 4) \times e^{2x - 7} \times 2 \\
-	f''(x) = e^{2x - 7} \times (4 + (2x + 4) \times 2) \\
-	f''(x) = e^{2x - 7} \times (4 + 4x + 8) \\
-	f''(x) = e^{2x - 7} \times (12 + 4x) \\
-	$
+	f''(x) = 4 \times e^{2x - 7} + (2 + 4x) \times e^{2x - 7} \times 2 \\
+	f''(x) = e^{2x - 7} \times (4 + (2 + 4x) \times 2) \\
+	f''(x) = e^{2x - 7} \times (4 + 4 + 8x) \\
+	f''(x) = e^{2x - 7} \times (8 + 8x) \\
 	\\
+	f'''(x) = u_3' \times v_3 + u_3 \times v_3' \\
+	u_3 = 8 + 8x;\ u_3' = 8;\ v_3 = e^{2x - 7}; \\
+	s_3 = e^x;\ s_3' = e^x;\ t_3 = 2x - 7;\ t_3' = 2;\\
+	v_3' = e^{2x - 7} \times 2 \\
+	f'''(x) = 7 \times e^{2x - 7} + (8 + 8x) \times e^{2x - 7} \times 2 \\
+	f'''(x) = e^{2x - 7} \times (7 + (8 + 8x) \times 2) \\
+	f'''(x) = e^{2x - 7} \times (7 + 16 + 16x) \\
+	f'''(x) = e^{2x - 7} \times (23 + 16x)
+ 	$
+	\\\\
 	\textbf{Verhalten nahe Null:}
 	\\
-	Das Verhalten nahe Null kann nicht bestimmt werden, da die Funktion keine Summanden enthält und so der geringste Exponent von $x$ nicht bestimmt werden kann.
+	Die Funktion $f$ verhält sich nahe $0$ wie die Funktion $g$ mit $g(x) = e^x$.
 	\\
 	\textbf{Extremstellen:}
 	\\
@@ -170,9 +180,12 @@
 	\\
 	\textbf{Randverhalten:}
 	\\
-	Das Randverhalten kann nicht bestimmt werden, da die 	Funktion keine Summanden enthält und so der größte 	Exponent von $x$ nicht bestimmt werden kann.
+	Für $x \to \infty$ verhält sich die Funktion $f$ wie die Funktion $h$ mit $h(x) = e^x$.
+	Für $x \to -\infty$ verhält sich die Funktion $f$ wie die Funktion $h$ mit $h(x) = e^x$.
 		\\
 	\textbf{Wendestellen:}
+	\\
+	notwendige Bedingung für Wendestellen: $f''(x) = 0$
 	\\
 	\textbf{Monotinie:}
 	\\
