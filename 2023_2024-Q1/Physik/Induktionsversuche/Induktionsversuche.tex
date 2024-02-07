@@ -5,6 +5,9 @@
 \usepackage{custompkg}
 \usepackage{charter}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{pgfplots}
 
 \begin{document}
 	\title{Induktionsversuche}
@@ -15,7 +18,7 @@
 	\bsremovechaptertitle
 	\noindent
 	\tableofcontents
-	\chapter{Versuch 1: langes Rohr}
+	\chapter{Versuch: langes Rohr}
 	\paragraph{Beobachtungen:}
 	Bei dem Versuch ist aufgefallen, dass die Spannung Wellenförmig verläuft.
 	Hierbei ist die Fläche unterhalb der $x$-Achse exakt so groß, wie die Fläche überhalb der $x$-Achse.
@@ -30,4 +33,76 @@
 	Der Ausschlag ist bei der dünneren Spule deutlich höher, als bei der breiten Spule.
 	\paragraph{Änderung des Startpunktes:}
 	Desto höher der Startpunkt der Spule liegt, desto dünner sind die Ausschläge, desto niedriger der Startpunkt der Spule liegt, desto breiter sind die Ausschläge.
-\end{document}
+	\chapter{Versuch: Doppelspule}
+	\paragraph{Beobachtung:}
+	Die Spannung schwankt zwischen einer negativen und einer positven Volt-Anzahl.
+	Desto höher die Frequenz ist, desto schneller kleiner werden die Wellen.
+	Die Veränderung der Stromstärke der äußeren Spule hat sich auf die Spannung der inneren Spule ausgewirkt.
+	\paragraph{Variation der Probespule:}
+	Bei der Spule, die die größere Fläche besitzt, ist die Voltanzahl größer.
+	\chapter{Versuch: Waltenhofen-Pendel}
+	\paragraph{Beobachtungen:}
+	Je höher die Spannung ist, desto schneller wird das Pendel ausgebremst.
+	\\[0.6cm]
+	\begin{tabularx}{\textwidth}{|X|X|X|}
+		\hline
+		\textbf{Pendel} & Spannung & \textbf{Zeit bis ausgebremst} \\
+		\hline
+		Kammförmig & 0 V & $18.71s$ \\
+		\hline
+		Kammförmig & 5 V & $11.56s$ \\
+		\hline
+		Kammförmig & 10 V & $7.16s$ \\
+		\hline
+		Kammförmig & 15 V & $4.93s$ \\
+		\hline
+		Kreis & 0 V & $15.82s$ \\
+		\hline
+		Kreis & 5 V & $5.13s$ \\
+		\hline
+		Kreis & 10 V & $1.68s$ \\
+		\hline
+		Kreis & 15 V & $1.35s$ \\
+		\hline
+		Platte & 0 V & $20.42$ \\
+		\hline
+		Platte & 5 V & $3.63s$ \\
+		\hline
+		Platte & 10 V & $1.33s$ \\
+		\hline
+		Platte & 15 V & $0.98s$ \\
+		\hline
+	\end{tabularx}
+	\chapter{Theorie: 2. Aufgabe}
+	Windungen: $200$ \\
+	Fläche: $0.1m^2$ \\
+	Zeit: $2s$ \\
+	B: $1.2\ T$ \\
+	$
+	U_{ind} = -n \times \dot \phi (t) \\
+	U_{ind} = -200 \times A(t) \times \dot B(t) \\
+	U_{ind} = -200 \times 0.1m^2 \times \dot B(t) \\
+	U_{ind} = -20m^2 \times \dot B(t) \\
+	U_{ind} = -20m^2 \times 0.6\ \frac{T}{s} \\
+	U_{ind} = -12\ \frac{m^2 \times T}{s} \\
+	U_{ind} = -12\ \frac{Wb}{s} \\
+	U_{ind} = -12\ \frac{V \times s}{s} \\
+	U_{ind} = -12\ V \\
+	$
+	Die Induktionsspannung nach 2 Sekunden beträgt -12 Volt \\[1cm]
+	Windungen: $200$ \\
+	Fläche: $0.1m^2$ \\
+	Zeit: $4s$ \\
+	B: $1.2T$ \\
+	$
+	U_{ind} = -n \times \dot \phi (t) \\
+	U_{ind} = -200 \times A(t) \times \dot B(t) \\
+	U_{ind} = -200 \times 0.1m^2 \times (-0.3 \frac{T}{s}) \\
+	U_{ind} = -20m^2 \times (-0.3 \frac{T}{s}) \\
+	U_{ind} = 6 \frac{m^2 \times T}{s} \\
+	U_{ind} = 6 \frac{Wb}{s} \\
+	U_{ind} = 6 \frac{V \times s}{s} \\
+	U_{ind} = 6 V \\
+	$
+	Die Induktionsspannung beim Abschalten beträgt nach 4 Sekunden 6 V
+\end{document}bb
