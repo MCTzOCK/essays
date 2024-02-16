@@ -29,7 +29,12 @@
 	$
 	Die Stammfunktion $F(x) = e^{x^2-2}$ ist die korrekte Stammfunktion der Funktion $f(x) = 2x \times e^{x^2-2}$
 	\section{Teilaufgabe b)}
-	\textbf{Nullstellen hinzufügen} \\
+	\textbf{Nullstellen:} \\
+	$f(x) = 0 \\
+	0 = 2x \times e^{x^2-2}\ \ \ \ \ \ \ \ e^{x^2-2} \ne 0 \forall \in \rm I\!R \\
+	0 = 2x\ \ \Bigl|\div 2 \\
+	0 = x
+	$ \\ \\
 	Intervall $I\Bigl[0;2\Bigl]$ \\
 	$
 	\int_{0}^{2}f(x) dx \Bigl[F(x) = e^{x^2-2}\Bigl]\\
@@ -92,15 +97,18 @@
 	Stammfunktion bilden:
 	\\
 	$
-	\int_{e}^{e^2} (\frac{2x - 5}{x^2}) dx \Rightarrow f(x) = 2x - 5 \times \frac{1}{x^2} = 2x - \frac{5}{x^2}\ \Bigl[F(x) = x^2 + \frac{5}{x}\Bigl]
+	\int_{e}^{e^2} (\frac{2x - 5}{x^2}) dx \Rightarrow f(x) = 2x \times \frac{1}{x^2} - 5 \times \frac{1}{x^2} = \frac{2}{x} - \frac{5}{x^2} = -2 + \frac{5}{x}\ \Bigl[F(x) = -2 + \frac{5}{x}\Bigl]
 	$
 	\\
 	Integral berechnen (und vereinfachen):
 	\\
 	$
 	F(e^2) - F(e) \\
-	\Leftrightarrow e^4 + \frac{5}{e^2} - e^2 + \frac{5}{e} \\
-	\xrightarrow[]{CAS}\ \approx 49.72
+	\Leftrightarrow (-2 + \frac{5}{e^2}) - (-2 + \frac{5}{e}) \\
+	\Leftrightarrow -2 + \frac{5}{e^2} + 2 - \frac{5}{e} \\
+	\Leftrightarrow \frac{5}{e^2} - \frac{5}{e} \\
+	\Leftrightarrow \frac{5}{e^2} - \frac{5e}{e^2} \\
+	\xrightarrow[]{CAS}\ \approx 
 	$
 	
 	\chapter{S. 145 Nr. 5g}
@@ -155,7 +163,7 @@
 	\\
 	notwendige Bedingung für EST: $f'(x) = 0$ \\
 	$
-	e^{2x-7} \times (2 + 4x) = 0 \\
+	e^{2x-7} \times (2 + 4x) = 0 \ \ \ \ \ \ \ e^{2x-7} \ne 0 \forall \in \rm I\!R \\
 	\Leftrightarrow 2 + 4x = 0\ \ \Bigl|\div 4 \\
 	\Leftrightarrow 0.5 + x = 0\ \Bigl|-0.5\\
 	\Leftrightarrow x = -\frac{1}{2} \\
@@ -164,7 +172,7 @@
 	\\
 	hinreichende Bedingung für EST: $f'(x) = 0\ \land\ f''(x) \ne 0$ \\
 	$
-	f''(-\frac{1}{2}) = e^{2x - 7} \times (12 + 4x) \\
+	f''(-\frac{1}{2}) = e^{2x - 7} \times (8 + 8x) \\
 	\Leftrightarrow f''(-\frac{1}{2}) > 0 \\
 	\Rightarrow Tiefpunkt
 	$
@@ -187,7 +195,17 @@
 	\\
 	notwendige Bedingung für Wendestellen: $f''(x) = 0$
 	\\
+	$
+	e^{2x - 7} \times (8 + 8x) = 0 \ \ \ \ \ \ \ e^{2x^7} \ne 0 \forall \in \rm I\!R \\
+	8 + 8x = 0\ \Bigl|-8 \\
+	8x = -8\ \Bigl|\div 8 \\
+	x = -1
+	$ \\
+	hinreichende Bedingung für WST: $f''(x) = 0 \land f'''(x) \ne 0$ \\
+	$f'''(-1) = e^{2 \times (-1) - 7} \times (23 + 16 \times (-1)) \\
+	= e^{-9} \times 7 > 0 \to links-rechts\ Kurve$ \\
 	\textbf{Monotinie:}
 	\\
+	Monoton fallend bis $x = -\frac{1}{2}$; danach monoton steigend, weil $TP(\frac{1}{2}\Bigl|-e^{-8})$
 	
 \end{document}
