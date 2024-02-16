@@ -1,0 +1,120 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{charter}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+	\noindent
+	\Large S. 145 Nr. 7
+	\normalsize
+	\\[1cm]
+	Hauptbedingung: $A = a \times b$ \\
+	Nebenbedingung: $
+		a = x;\ b = f(x)
+	$ \\
+	Zielfunktion: $Z(x) = x \times f(x) \\
+	\Leftrightarrow Z(x) = x \times e^{-x}
+	$ \\
+	$
+	u = x;\ v = e^{-x};\ u' = 1;\ v' = -e^{-x} \\
+	Z'(x) = 1 \times e^{-x} + (-e^{-x} \times x) \\
+	\Leftrightarrow Z'(x) = e^{-x} \times (1 -x) \\
+	u_2 = e^{-x};\ u_2' = -e^{-x};\ v_2 = 1-x;\ v_2' = -1\\
+	Z''(x) = -1 \times e^{-x} + (-e^{-x} \times (1-x)) \\
+	\Leftrightarrow -e^{-x} \times (1 - x) \\
+	$
+	notwendige Bedingung für EST: $Z'(x) = 0$ \\
+	$
+	Z'(x) = 0 \\
+	\Leftrightarrow e^{-x} \times (1 -x) = 0\ \ \ \ \ \ e^{-x} \ne 0\ \forall \in \rm I\!R \\
+	\Leftrightarrow 1 - x = 0\ \Bigl| -1 \\
+	\Leftrightarrow -x = -1\ \Bigl|\times (-1) \\
+	\Leftrightarrow x = 1
+	$ \\
+	hinreichende Bedingung für EST: $Z'(x) = 0\ \land\ Z''(x) \ne 0$ \\
+	$
+	Z''(1) = -e^{-1} \times (1 - 1) \\
+	\Leftrightarrow -e^{-1} \times 0 \\
+	= 0
+	$ \\
+	VZW: \\
+	$
+	Z'(0) = e^{-0} \times (1 - 0) \\
+	\Leftrightarrow Z'(0) = 1 \times 1 = 1 \\
+	Z'(2) = e^{-2} \times (1 - 2) \\
+	\Leftrightarrow Z'(2) = e^{-2} \times (-1)
+	$
+	\\
+	Y-Wert: $f(1) = e^{-1}$ \\
+	Punkt P bei $P(1|e^{-1})$ \\
+	Flächeninhalt: $A = 1 \times e^{-1} = e^{-1}$
+	\newpage
+	\noindent
+	\Large S. 145 Nr. 8
+	\normalsize
+	\\[1cm]
+	$f(x) = 10x \times e^{-x^2}$ \\
+	Hauptbedingung: $A = \frac{a \times b}{2}$ \\
+	Nebenbedingung: $a = x;\ b = f(x)$ \\
+	Zielfunktion: $A(x) = \frac{x \times f(x)}{2} \\
+	\Leftrightarrow x \times 10x \times e^{-x^2} \times \frac{1}{2} \\
+	\Leftrightarrow 5x^2 \times e^{-x^2}
+	$ \\
+	Ableitung: \\
+	$
+	u = 5x^2;\ v = e^{-x^2};\ u' = 10x;\\
+	s = e^x;\ t = -x^2;\ s' = e^x; t' = -2x; \\
+	v' = s'(t(x)) \times t'(x) \\
+	v' = e^{-x^2} \times (-2x) \\
+	A'(x) = 5x^2 \times (e^{-x^2} \times (-2x)) + 10x \times e^{-x^2} \\
+	\Leftrightarrow A'(x) = e^{-x^2} \times (10x + 5x^2 \times (-2x))
+	\\
+	\Leftrightarrow A'(x) = e^{-x^2} \times (10x - 10x^3) \\
+	u_2 = e^{-x^2};\ v_2 = 10x - 10x^3;\\
+	s = e^{x};\ t = -x^2;\ s' = e^x;\ t' = -2x; \\
+	u_2' = s'(t(x)) \times t'(x) = e^{-x^2} \times (-2x); \\
+	v_2' = 10 - 30x^2 \\
+	A''(x) = e^{-x^2} \times (-2x) \times (10x - 10x^3) + (10 - 30x^2) \times e^{-x^2} \\
+	\Leftrightarrow A''(x) = e^{-x^2} \times (-20x^2 - 30x^2 -10x^3 + 10) \\
+	\Leftrightarrow A''(x) = e^{-x^2} \times (-50x^2 - 10x^3 + 10)
+	$
+	\\
+	notwendige Bedingung für EST: $A'(x) = 0$ \\
+	$
+	A'(x) = 0 \\
+	e^{-x^2} \times (10x - 10x^3) = 0 \ \ \ \ \ \ e^{-x^2} \ne 0\ \forall \in \rm I\!R \\
+	\Leftrightarrow 10x - 10x^3 = 0\\
+	\Leftrightarrow x \times (10 - 10x^2) = 0
+	$ \\
+	Satz des Nullproduktes: $x_1 = 0$ \\
+	$
+	10 - 10x^2 = 0\ \Bigl|-10 \\
+	\Leftrightarrow -10x^2 = -10\ \Bigl|\div (-10) \\
+	\Leftrightarrow x^2 = 1\ \Bigl|\sqrt{} \\
+	\Leftrightarrow x = \sqrt{1}
+	$ \\
+	$x_2 = 1$ \\
+	hinreichende Bedingung für EST: $A'(x) = 0\ \land A''(x) \ne 0$ \\
+	$
+	A''(0) = e^{-0^2} \times (-50 \times 0^2 - 10 \times 0^3 + 10) \\
+	\Leftrightarrow 1 \times (0 - 0 + 10) \\
+	\Leftrightarrow 10 > 0 \to TP
+	\\
+	A''(1) = e^{-1^2} \times (-50 \times 1^2 - 10 \times 1^3 + 10) \\
+	\Leftrightarrow e^{1} \times (-50 \times 1 -10 \times 1 + 10) \\
+	\Leftrightarrow e^1 \times (-50 - 10 + 10) \\
+	\Leftrightarrow -50e < 0 \to HP
+	$
+	\\
+	TP entfällt im Sachzusammenhang.
+	\\
+	Flächeninhalt:\\
+	$
+	A(-50e) = 5 \times (-50e)^2 \times e^{50e^2} \\
+	A(-50e) = 5 \times 2500e^2 \times e^{50e^2} \\
+	A(-50e) = 12500e^2 \times e^{50e^2}FE
+	$
+	
+\end{document}
