@@ -1,0 +1,51 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{charter}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+	\noindent
+	\LARGE
+	S. 149 Nr. 2
+	\normalsize
+	\paragraph{a)} \mbox{} \\
+	Funktion: $f(x) = 20x \times e^{2-0.05x}$ \\
+	1. Ableitung: $f'(x) = (147.78112197861-7.3890560989307 \times x) \times  (0.95122942450071)^x \\
+	\approx (148.8-7.4x) \times 0.95^x
+	$
+	\\
+	2. Ableitung: $f''(x) = 0.36945280494654\times (x-40)\times (0.95122942450071)^x \\
+	\approx 0.4 \times (x - 40) \times 0.95^x $
+	\\
+	notwendige Bedingung für EST: $f'(x) = 0$ \\
+	$
+	f'(x) = 0 \\
+	\xrightarrow{CAS} x_1 = 0 \\
+	$
+	hinreichende Bedingung für EST: $f'(x) = 0\ \land\ f''(x) \ne 0$
+	\\
+	$
+	f''(x_1) = f''(0) = -14.7781 > 0 \to HP
+	$
+	\\[0.25cm]
+	Der Besucherandrang ist zu Beginn direkt um 16:00 Uhr am größten.
+	\\[0.5cm]
+	
+	\paragraph{b)} \mbox{} \\
+	$
+	\int_{0}^{120}f(x)dx = \int_{0}^{120}20x \times e^{2-0.05x} dx \\
+	\xrightarrow{CAS} \int_{0}^{120} f(x) dx = 58086.8 \approx 58087
+	$ \\
+	Zu Beginn des Spiels um 18:00 Uhr waren in etwa 58.087 Zuschauer im Stadion.
+	\\[0.5cm]
+	
+	\paragraph{c)} \mbox{} \\\\
+	$
+	\frac{Anzahl\ Zuschauer\ (gesamt)}{Minuten\ (gesamt)} = \frac{58.087\ Zuschauer}{120\ Minuten} \approx 484.058 \frac{Zuschauer}{Minute} 
+	$\\\\
+	Pro Minute betreten etwa 484.058 Zuschauer das Stadion.
+	
+\end{document}
