@@ -1,0 +1,52 @@
+%! Author = ben
+%! Date = 18.02.2024
+
+% Preamble
+\documentclass[arbeitsmappe.tex]{subfiles}
+
+% Document
+\begin{document}
+
+    \begin{gblock}{Einleitung}
+        Der Graph der Funktion f mit $f(t) = -\frac{1}{3000}t^3 + \frac{3}{20}t^2$ soll für $0 \leq t \leq 300$ verwendet werden,
+        um näherungsweise die zurückgelegte Strecke in Metern einer S-Bahn zwischen zwei Haltestellen zu beschreiben (t beschreibt die Zeit in Sekunden).
+    \end{gblock}
+
+    \begin{rblock}{Aufgabe}
+        Bestimme die maximale Geschwindigkeit der S-Bahn und beschreibe dein Vorgehen.
+    \end{rblock}
+
+    $
+    f'(t) = \frac{3t}{10} - \frac{t^2}{1000} \\
+    f''(t) = \frac{3}{10} - \frac{t}{500} \\
+    f'''(t) = -\frac{1}{500}
+    $
+    \\
+    notwendige Bedingung für EST: $f''(t) = 0$
+    \\
+    $
+    f''(t) = 0 \\
+    \frac{3}{10} - \frac{t}{500} = 0 \\
+    \xrightarrow{CAS} t_1 = 150
+    $
+    \\
+    hinreichende Bedingung für EST: $f''(t) = 0\ \land VZW$
+    \\
+    $
+    \left.
+    \begin{array}{l}
+        f''(149) = \frac{1}{500} \\
+        f''(151) = -\frac{1}{500}
+    \end{array}
+    \right\} \text{+ / - VZW} \Rightarrow \text{Maximum}
+    $
+    \\
+    $
+    f'(150) = \frac{45}{2} \approx 22.5 \frac{m}{s} \\
+    \frac{km}{h} \to 22.5\frac{m}{s} \times 3.6 = 81\frac{km}{h}
+    $
+    \\
+    Die Höchstgeschwindigkeit der S-Bahn beträgt $81 \frac{km}{h}$. Diese erreicht sie nach 150 Sekunden bzw. nach $2.5$ Minuten.
+
+
+\end{document}

@@ -1,0 +1,83 @@
+%! Author = ben
+%! Date = 18.02.2024
+
+\PassOptionsToPackage{svgnames}{xcolor}
+
+% Preamble
+\documentclass[a4paper,12pt]{report}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{charter}
+\usepackage{subfiles}
+\usepackage{ngerman}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{./custompkg}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\pgfplotsset{compat=newest}
+
+\newenvironment{gblock}[1]{%
+    \tcolorbox[beamer,%
+        noparskip,breakable,
+        colback=LightGreen,colframe=DarkGreen,%
+        colbacklower=LimeGreen!75!LightGreen,%
+        title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{rblock}[1]{%
+    \tcolorbox[beamer,%
+        noparskip,breakable,
+        colback=LightCoral,colframe=DarkRed,%
+        colbacklower=IndianRed!75!LightCoral,%
+        title=#1]}%
+    {\endtcolorbox}
+
+% Document
+\begin{document}
+
+    \bslinespacing{1.5}
+    \bsremovechaptertitle
+    \bsremoveparttitle
+
+    \title{Mathematik Leistungskurs}
+    \date{
+        2023-2025
+        \\
+        Gymnasium Holthausen, Hattingen
+    }
+    \author{Ben Siebert}
+    \maketitle
+
+    \tableofcontents
+
+
+    \part{Analysis}
+
+
+    \chapter{Funktionsuntersuchung}
+
+
+    \section{Wiederholung}
+    \subfile{./analysis/funktionen/wiederholung_7_8_23.tex}
+
+
+    \section{Bedeutung der zweiten Ableitung}
+    \subfile{./analysis/funktionen/bedeutung_der_zweiten_ableitung_15_8_23.tex}
+    \section{Transferaufgabe}
+    \subfile{./analysis/funktionen/transferaufgabe_21_8_23.tex}
+    \newpage
+    \section{Wendepunkte}
+    \subfile{./analysis/funktionen/wendepunkte_22_8_23.tex}
+
+
+\end{document}

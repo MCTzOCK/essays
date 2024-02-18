@@ -1,0 +1,63 @@
+%! Author = ben
+%! Date = 18.02.2024
+
+% Preamble
+\documentclass[arbeitsmappe.tex]{subfiles}
+
+% Document
+\begin{document}
+
+    \paragraph{Aufgabe:} Erstellt in Gruppenarbeit eine Zusammenfassung der Punkte einer Funktionsuntersuchung und der entsprechenden Vorgensweise.
+    Achtet auf die effektive Nutzung der CAS-App.
+    Nutze mindestens folgende Begriffe:
+    \begin{itemize}
+        \item Symmetrie
+        \item Randverhalten
+        \item Verhalten nahe Null,
+        \item notwendige Bedingung für Extrema
+        \item hinreichende Bedingung für Extrema
+        \item Hochpunkt
+        \item Tiefpunkt
+        \item Nullstelle
+        \item Monotonie
+    \end{itemize}
+    Funktion: $f(x) = \frac{1}{4}x^4 + 3x^2 - 2$
+    \\
+
+    \paragraph{Nullstellen} \mbox{} \\
+    \begin{align*}
+        \frac{1}{4}x^4 + 3x^2 - 2 &= 0 \\
+        x_1 &\approx -0.79\\ x_2 &\approx 0.79
+    \end{align*}
+
+    \paragraph{Symmetrie} \mbox{} \\
+    Achsensymmetrisch: $f(x) = f(-x)$
+
+    \paragraph{Randverhalten} \mbox{} \\
+    \begin{align*}
+        \lim_{x \to \infty} f(x) &\to +\infty \\
+        \lim_{x \to -\infty} f(x) &\to -\infty
+    \end{align*}
+
+    \paragraph{Verhalten nahe Null} \mbox{} \\
+    Nahe Null verhält sich der Graph der Funktion $f(x)$ wie der Graph der Funktion $g(x) = 3x^2$, da dies der Summand mit dem kleinsten Exponenten von $x$ ist.
+    \paragraph{Monotonie} \mbox{} \\
+    Von $-\infty$ bis $0$ stark monoton fallend, von $0$ bis $\infty$ stark monoton steigend.
+
+    \paragraph{Notwendige Bedingung für EST: $f'(x) = 0$} \mbox{} \\
+    \begin{align*}
+        f'(x) &= 0 \\
+        \xrightarrow{CAS} x_1 &= 0
+    \end{align*}
+
+    \paragraph{Hinreichende Bedingung für EST: $f''(x)\ \land\ VZW$} \mbox{} \\
+    \begin{align*}
+        f'(-1) &= -7 \\
+        f'(1) &= 7 \\
+    \end{align*}
+    $+/-$ Vorzeichenwechsel $\Rightarrow$ Tiefpunkt bei $x_1 = 0$
+    \paragraph{Tiefpunkt} \mbox{} \\
+    $T(0|f(0)) = T(0|-2)$
+    \paragraph{Hochpunkt} \mbox{} \\
+    Es gibt keinen Hochpunkt, da der Graph der Funktion $f(x)$ nach $+\infty$ strebt.
+\end{document}
