@@ -48,3 +48,5 @@
 \contentsline {paragraph}{b)}{14}{subsection.1.4.3}%
 \contentsline {paragraph}{a)}{14}{subsection.1.4.3}%
 \contentsline {paragraph}{b)}{14}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Extremwertprobleme}{15}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}DIN-A4 Box}{15}{subsection.1.5.1}%
