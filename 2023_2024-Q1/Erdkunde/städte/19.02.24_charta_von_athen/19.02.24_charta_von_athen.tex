@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage{custompkg}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\newenvironment{gblock}[1]{
+    \tcolorbox[beamer,
+        noparskip,breakable,
+        colback=green!50!,
+        colbacklower=green!75!green,
+        title=#1]}
+{\endtcolorbox}
+
+\begin{document}
+	\bsremovechaptertitle
+	\chapter{Chartar von Athen}
+	\begin{gblock}{Leitbild nach Le Corbusiers (funktionale Stadt)}
+	Die Großstadt soll in einzelne Funktionszonen aufgegliedert werden.
+	Das Zentrum soll dem öffentlichen Leben vorbehalten sein (Handel, Verwaltung und Kultur). Die Einwohner werden konzentriert, um mehr Platz für Grünfläche zu schaffen.
+	\end{gblock}
+	\vspace{1cm}
+	\begin{gblock}{Die gegliederte und autogerechte Stadt}
+		Der Fokus wird auf den Bau von günstigen Sozialwohnungen gelegt.
+		Die Stadt wurde in einzelne Wohnungs- und Nutzungsbereiche gegliedert und durch Grünzüge aufgelockert.
+		Großer Wert wurde ebenfalls auf den Verkehr gelegt, sodass die Stadtplanung meist auf eine Verkehrsplanung hinauslief.
+		Sämtliche Planungsmaßnahmen waren in erster Linie für den ungehinderten Verkehrsfluss des Autos.
+		Das Straßennetz sollte ideal für den Individualverkehr ausgelegt sein.
+		Durch den stetig wachsenden Verkehr, kamen die Straßennetze allerdings schnell an ihre Kapazitätsgrenzen, wodurch sich schlussendlich von diesem Konzept abgewandt wurde.
+	\end{gblock}
+	\vspace{1cm}
+	\begin{gblock}{Urbanität durch Dichte}
+		Am Stadtrand entstanden Großwohnsiedlungen, in welchen oft Freizeit- und Versorgungseinrichtungen vorzufinden waren.
+		Durch den Massenwohnungsbau konnte die Wohnungsnot schnell überwunden werden.
+		Die Hochhäuser wurden mit vorgefertigten Betonteilen gebaut, wodurch Kosten gespart werden konnten.
+		Die Bauweise gefiel allerdings vielen Bewohnern nicht wirklich.
+	\end{gblock}
+
+
+
+\end{document}
