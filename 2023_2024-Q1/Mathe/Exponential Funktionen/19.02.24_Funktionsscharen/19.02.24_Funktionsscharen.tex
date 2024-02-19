@@ -1,0 +1,102 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,left=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+	\noindent
+	\Large S. 146 Nr. 11
+	\large
+	\paragraph{a)} \mbox{} \\
+	Der Y-Achsenabschnitt ist immer der Gleiche.
+	\\
+	\textbf{Nullstellen:} \\
+	Der Graph hat für $t \leq 0$ eine Nullstelle. Für $t > 0$ hat er entweder keine oder zwei Nullstellen. Für $t = e$ besitzt der Graph eine Nullstelle.
+	\\
+	\begin{align*}
+		f_t(x) &= 0 \\
+		e^x - tx &= 0
+	\end{align*}
+	\textbf{Extremstellen:} \\
+	Der Graph hat für $t > 0$ immer einen Tiefpunkt. Für $t \leq 0$ besitzt der Graph keine Extremstellen.
+	\begin{align*}
+		f_t'(x) &= e^x - t\\
+		f_t'(x) &= 0 \\
+		e^x - t &= 0 \\
+		x &= ln(t)\ \land\ t > 0
+	\end{align*}
+	Es gibt Extremstellen, wenn $t > 0$ ist.
+	\paragraph{b)} \mbox{} \\
+	notwendige Bedingung für EST: $f_t'(x) = 0$
+	\begin{align*}
+		f_t'(x) &= e^x - t\\
+		f_t'(x) &= 0 \\
+		e^x - t &= 0 \\
+		x &= ln(t)\ \land\ t > 0
+	\end{align*}
+	hinreichende Bedingung für EST: $f_t'(x) = 0\ \land\ f_t''(x) \ne 0$
+	\begin{align*}
+		f_t''(x) &= e^x \\
+		f_t''(ln(t)) &= e^{ln(t)} \\
+		f_t''(ln(t)) &> 0 \Rightarrow TP
+	\end{align*}
+	\textbf{Koordinaten:}
+	\begin{align*}
+		f_t(ln(t)) &= t - t \cdot ln(t)
+	\end{align*}
+	$TP \Bigl(ln(t)\Bigl|t - t \cdot ln(t) \Bigl)$
+	\newpage
+	\noindent
+	\textbf{Ortskurve:}
+	\begin{align*}
+		x &= ln(t) \\
+		t &= e^x
+	\end{align*}
+	$t$ in Y-Koordinate einsetzen.
+	\begin{align*}
+	y &= e^x - e^x \cdot ln(e^x) \\
+	y &= (1-x) \cdot e^x	 \\
+	& \Rightarrow g(x) = (1-x) \cdot e^x
+	\end{align*}
+	\Large S. 146 Nr. 12
+	\\
+	\paragraph{a)}
+	\large
+	\begin{align*}
+		f_k(x) &= (2x + 3k) \cdot e^{(x+1)} \\
+		f_k'(x) &= 5.4365 \cdot (x + 8.5) \cdot e^x \\
+		f_k''(x) &= 5.4365 \cdot (x + 9.5) \cdot e^x \\
+	\end{align*}
+	\textbf{Extremstellen:} \\
+	notwendige Bedingung für EST: $f_k'(x) = 0$
+	\begin{align*}
+		f_k'(x) &= 0 \\
+		x &= \frac{-(3 \cdot k + 2)}{2}
+	\end{align*}
+	hinreichende Bedingung für EST: $f_k'(x) = 0\ \land f_k''(x) \neq 0$
+	\begin{align*}
+		f_k''(\frac{-(3 \cdot k + 2)}{2}) &= 0.001106\ > 0 \\
+		&\Rightarrow TP
+	\end{align*}
+	Y-Koordinate bestimmen: $f_k(\frac{-(3 \cdot k + 2)}{2})$ \\
+	\begin{align*}
+	FALSCH
+		f_k(\frac{-(3 \cdot k + 2)}{2})= -0.001106
+	\end{align*}
+	Tiefpunkt: $	FALSCH TP\Bigl(\frac{-(3 \cdot k + 2)}{2}\Bigl|0.001106\Bigl)$
+	\newpage\noindent
+	\textbf{Wendestellen:}
+	\\
+	notwendige Bedingung für WST: $f_k''(x) = 0$ \\
+	\begin{align*}
+		f_k''(x) &= 0 \\
+		x &= \frac{-(3 \cdot k + 4)}{2} \\
+	\end{align*}
+	hinreichende Bedingung für WDS
+
+
+\end{document}
