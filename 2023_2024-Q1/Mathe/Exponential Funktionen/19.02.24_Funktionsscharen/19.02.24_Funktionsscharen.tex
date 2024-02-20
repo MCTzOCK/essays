@@ -84,10 +84,10 @@
 	\end{align*}
 	Y-Koordinate bestimmen: $f_k(\frac{-(3 \cdot k + 2)}{2})$ \\
 	\begin{align*}
-	FALSCH
-		f_k(\frac{-(3 \cdot k + 2)}{2})= -0.001106
+		f_k(\frac{-(3 \cdot k + 2)}{2})= -2 \cdot e^{\frac{-3 \cdot k}{2}}
 	\end{align*}
-	Tiefpunkt: $	FALSCH TP\Bigl(\frac{-(3 \cdot k + 2)}{2}\Bigl|0.001106\Bigl)$
+	Tiefpunkt: $
+	TP\Bigl(\frac{-(3 \cdot k + 2)}{2}\Bigl| -2 \cdot e^{\frac{-3 \cdot k}{2}}\Bigl)$
 	\newpage\noindent
 	\textbf{Wendestellen:}
 	\\
@@ -96,7 +96,90 @@
 		f_k''(x) &= 0 \\
 		x &= \frac{-(3 \cdot k + 4)}{2} \\
 	\end{align*}
-	hinreichende Bedingung für WDS
-
+	hinreichende Bedingung für WST: $f''_k(x) = 0\ \land\ f'''_k(x) \ne 0$\\
+	\begin{align*}
+		f'''_k(\frac{-(3 \cdot k + 4)}{2}) &= 2 \cdot e^{\frac{-3 \cdot k}{2} - 1}
+	\end{align*}
+	\paragraph{b)}
+	\begin{align*}
+		4 &= f_k(-1) \\
+		\Leftrightarrow 4 &= (2 \cdot (-1) + 3k) \cdot e^{(-1+1)} \\
+		\Leftrightarrow 4 &= (-2 + 3k) \cdot e^0 \\
+		\Leftrightarrow 4 &= -2 + 3k\ \Bigl|+2 \\
+		\Leftrightarrow 6 &= 3k\ \Bigl|\div 3 \\
+		\Leftrightarrow k &= 2
+	\end{align*}
+	
+	\paragraph{c)} \mbox{} \\
+	Bei einer Erhöhung von $k$, wird die Extremstelle nach links verschoben und nähert sich der $x$-Achse an.
+	
+	\paragraph{d)} \mbox{} \\
+	\begin{align*}
+		x &= \frac{-(3 \cdot k + 2)}{2} \\
+		k &= \frac{-2 \cdot (x + 1)}{3} \\
+		y &=-2 \cdot e^{
+			\frac{
+				-3 \cdot \frac{-2 \cdot (x + 1)}{3}
+			}{2}
+		} \\
+		y &= -2 \cdot e^{x + 1} \\
+		g(x) &= -2 \cdot e^{x + 1}
+	\end{align*}
+	\Large S. 154 Nr. 9
+	\\
+	\large
+	\begin{align*}
+		f_k(x) &= x - k \cdot e^x \\
+		f_k'(x) &= 1 - k \cdot e^{x} \\
+		f_k''(x) &= -k \cdot e^{x}
+	\end{align*}
+	\paragraph{a)} \mbox{} \\
+	Für $k \leq 0$ und $x \to \infty$ strebt $f(x)$ ebenfalls $\infty$ an. \\
+	Für $k \leq 0$ und $x \to -\infty$ strebt $f(x)$ ebenfalls $-\infty$ an. \\
+	Für $k > 0$ und $x \to \infty$ strebt $f(x)$ ebenfalls $-\infty$ an. \\
+	Für $k > 0$ und $x \to -\infty$ strebt $f(x)$ ebenfalls $-\infty$ an. \\
+	(Asymptote)
+	\paragraph{b)} \mbox{} \\
+	\begin{align*}
+		f_{k_1}(x) &= f_{k_2}(x) \\
+		x - k_1 \cdot e^x &= x - k_2 \cdot e^x 
+	\end{align*}
+	Hierdurch würde $k_1 = k_2$ gelten, was durch die Aufgabenstellung revidiert wird, da $k_1 \ne k_2$ gilt.
+	
+	\paragraph{c)} \mbox{} \\
+	notwendige Bedingung für EST: $f'_k(x) = 0$ \\
+	\begin{align*}
+		f'_k(x) &= 0 \\
+		\xrightarrow{CAS} x &= ln(\frac{1}{k})\ \land\ k > 0
+	\end{align*}
+	hinreichende Bedingung für EST: $f_k'(x) = 0\ \land f_k''(x) \ne 0$ \\
+	\begin{align*}
+		f_k''(ln(\frac{1}{k})) &= - 1 \\
+		-1 < 0 &\to \text{Hochpunkt}
+	\end{align*}
+	Y-Wert: $f(ln(\frac{1}{k})) = ln(\frac{1}{k}) - 1$ \\[0.5cm]
+	Hochpunkt: $\text{HP}(ln(\frac{1}{k})| ln(\frac{1}{k}) - 1)$ \\
+	Der Graph besitzt für $k > 0$ immer einen Hochpunkt. Für $k < 0$ existieren keine Extremstellen.
+	
+	\paragraph{d)} \mbox{} \\
+	\begin{align*}
+		x &= ln(\frac{1}{k}) \\
+		k &= e^{-x}
+	\end{align*}
+	In Y-Koordinate einsetzen:
+	\begin{align*}
+		y &= x - 1 \\
+		g(x) &= x - 1
+	\end{align*}
+	
+	\paragraph{e)} \mbox{} \\
+	\begin{align*}
+		\xrightarrow{CAS} F_k(x) &= \frac{x^2}{2} - k \cdot e^x
+	\end{align*}
+	\paragraph{f)} \mbox{} \\
+	\begin{align*}
+		\int_{a}^{0} (f_k(x) - g(x)) dx &= [F(x) = ]
+	\end{align*}
+	
 
 \end{document}
