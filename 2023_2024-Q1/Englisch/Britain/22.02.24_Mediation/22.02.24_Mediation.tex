@@ -1,0 +1,41 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage[left=2cm,top=2cm,right=2cm,bottom=2cm]{geometry}
+\usepackage{charter}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\newenvironment{gblock}[1]{
+    \tcolorbox[beamer,
+        noparskip,
+        colback=green!75!,
+        colbacklower=green!75!green,
+        title=#1]}
+{\endtcolorbox}
+
+\newcommand{\friend}[0]{\texttt{Friend}}
+\newcommand{\friendn}[0]{\friend\ }
+\newcommand{\me}[0]{\texttt{Ben Siebert}}
+
+\begin{document}
+	\begin{gblock}{Subject: \texttt{RE: Would the Germans like a king or a Queen?} \\ To: \texttt{my-friend@english-class.co.uk}}
+		Dear \friend, \\
+		I was very happy hearing from you.
+		The question you asked is a very interesting one on which I have read an article not too long ago. \\
+		The Royals fulfill many longings of the Germans.
+		The Germans long for cultural unity and want to feel more connected to each other.
+		Beside that the Germans also love the idea of fairy tales.
+		In fact almost every german fairy tale includes royalty.
+		Germans admire the special rights that the royal family in England has. 
+		The patriotism  also very high appreciated in Germany and they really like celebrations like royal weddings.
+		In my opinion the Germans in general would love the idea of a german queen or king.
+		But I do not think that a monarch with political rights would work out this well, because of how high Germans value the democracy in their land.
+		\\
+		Best Regards, \\
+		\me
+	\end{gblock}
+\end{document}

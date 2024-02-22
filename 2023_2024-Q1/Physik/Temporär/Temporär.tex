@@ -124,25 +124,29 @@
 	\end{table}
 	
 	\newpage
-	
-	
-
-        \begin{tikzpicture}[scale=0.5]
-            \begin{axis}
-                [
-                xlabel={Zeit in Sekunden},
-                ylabel={Ladung},
-                grid,
-                xmin=0,
-                xmax=5,
-                ymin=0,
-                ymax=18
-                ]
-
-                \addplot[domain=0:4, color=red]{(x-4)^2};
-                \addplot[domain=0:4, color=blue]{ln(x+1)*10};
-            \end{axis}
-        \end{tikzpicture}
+	\noindent
+	\textbf{Aufladung:}
+	\begin{itemize}
+		\item relativ schnell
+		\item „im letzten Teil“ deutliche Verlangsamung
+$\to$ viele Teilchen schon gespeichert, auf Grund der Abstoßung wird es schwieriger weitere hinzuzufügen.
+	\end{itemize}
+	\textbf{Plateau:}
+	\begin{itemize}
+		\item angeschlossene Spannungsquelle gibt Maximalspannung vor: $U_0$ (\dq hält die Tür zu\dq ).
+	\end{itemize}
+	\textbf{Entladung:}
+	\begin{itemize}
+		\item langsames Zurückgehen der Spannung, wobei zu Beginn der Rückgang noch stärker ist ($\to$ gegenseitige Abstoßung der gespeicherten Elektronen)
+	\end{itemize}
+	\vspace{1cm}
+	In beiden Fällen (Aufladung, Entladung) ist der Widerstand des Drahtes ($R$) entscheidentt für die \dq Schnelligkeit\dq\ des Graphens.
+	Ebenfalls hat die sogenannte Kapazität Einfluss auf die obigen Effekte; sie ist abhängig von der Anzahl der Ladungen $Q$ und der \dq Pumpe\dq, also der Spannung, $U$: $C = \frac{Q}{U}$.
+	\\
+	Somit erhält man:
+	\begin{itemize}
+		\item \textbf{Entladung:} $U(t) = U_0 \cdot e^{-\frac{1}{R\cdot C} \cdot t} = U_0 \cdot e^{-\frac{t}{R\cdot C}}$
+	\end{itemize}
 	
 	
 \end{document}
