@@ -1,0 +1,212 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{charter}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+
+\newenvironment{gblock}[1]{
+    \tcolorbox[beamer,
+        noparskip,
+        colback=blue!25!,
+        colbacklower=blue!75!blue,
+        title=#1]}
+{\endtcolorbox}
+
+\begin{document}
+	\thispagestyle{empty}
+
+    \titleformat{\chapter}{\normalfont\LARGE}{\thechapter.}{15pt}{\Large}
+    \titlespacing*{\chapter}{0pt}{*0}{10pt}
+    \chapter*{Die String Klasse in Java}
+    Die String Klasse in Java ist eine Klasse, die es ermöglicht, Strings zu erstellen und zu manipulieren.
+    Sie ist eine Klasse, die in Java bereits vordefiniert ist und muss nicht importiert werden.\\
+    \textbf{Beispiel:}
+    \begin{verbatim}
+    String s = "Hallo Welt";
+    \end{verbatim}
+    Man kann Strings auch mit dem \texttt{new} Operator erstellen, dies ist aber nicht zu empfehlen, da es zu Problemen mit dem \texttt{==} Operator kommen kann.\\
+    \textbf{Beispiel:}
+    \begin{verbatim}
+    String s = new String("Hallo Welt");
+    \end{verbatim}
+    Um zwei Strings zusammen zufügen, kann der \texttt{+} Operator verwendet werden.\\
+    \textbf{Beispiel:}
+    \begin{verbatim}
+    String s = "Hallo" + "Welt";
+    \end{verbatim}
+
+
+    \section*{Methoden}
+
+    \begin{tabularx}{\textwidth}{|X|X|}
+        \hline
+        \textbf{Methode}                                     & \textbf{Beschreibung}                                                                                                                     \\
+        \hline
+        \texttt{length()}                                    & Gibt die Länge des Strings zurück.                                                                                                        \\
+        \hline
+        \texttt{charAt(int index)}                           & Gibt das Zeichen an der Stelle \texttt{index} zurück.                                                                                     \\
+        \hline
+        \texttt{substring(int beginIndex, int endIndex)}     & Gibt den Teilstring von \texttt{beginIndex} bis \texttt{endIndex} zurück.                                                                 \\
+        \hline
+        \texttt{substring(int beginIndex)}                   & Gibt den Teilstring von \texttt{beginIndex} bis zum Ende des Strings zurück.                                                              \\
+        \hline
+        \texttt{indexOf(String s)}                           & Gibt den Index des ersten Vorkommens von \texttt{s} zurück.                                                                               \\
+        \hline
+        \texttt{lastIndexOf(String s)}                       & Gibt den Index des letzten Vorkommens von \texttt{s} zurück.                                                                              \\
+        \hline
+        \texttt{startsWith(String s)}                        & Gibt \texttt{true} zurück, wenn der String mit \texttt{s} beginnt.                                                                        \\
+        \hline
+        \texttt{endsWith(String s)}                          & Gibt \texttt{true} zurück, wenn der String mit \texttt{s} endet.                                                                          \\
+        \hline
+        \texttt{contains(String s)}                          & Gibt \texttt{true} zurück, wenn der String \texttt{s} enthält.                                                                            \\
+        \hline
+        \texttt{equals(String s)}                            & Gibt \texttt{true} zurück, wenn der String gleich \texttt{s} ist.                                                                         \\
+        \hline
+        \texttt{equalsIgnoreCase(String s)}                  & Gibt \texttt{true} zurück, wenn der String gleich \texttt{s} ist, ohne auf Groß- und Kleinschreibung zu achten.                           \\
+        \hline
+        \texttt{compareTo(String s)}                         & Gibt einen Wert kleiner als 0 zurück, wenn der String lexikographisch vor \texttt{s} kommt.                                               \\
+        \hline
+        \texttt{compareToIgnoreCase(String s)}               & Gibt einen Wert kleiner als 0 zurück, wenn der String lexikographisch vor \texttt{s} kommt, ohne auf Groß- und Kleinschreibung zu achten. \\
+        \hline
+        \texttt{toUpperCase()}                               & Gibt den String in Großbuchstaben zurück.                                                                                                 \\
+        \hline
+        \texttt{toLowerCase()}                               & Gibt den String in Kleinbuchstaben zurück.                                                                                                \\
+        \hline
+        \texttt{trim()}                                      & Gibt den String ohne Leerzeichen am Anfang und Ende zurück.                                                                               \\
+        \hline
+        \texttt{replace(String oldString, String newString)} & Gibt den String zurück, in dem alle Vorkommen von \texttt{oldString} durch \texttt{newString} ersetzt wurden.                             \\
+        \hline
+        \texttt{split(String regex)}                         & Gibt ein String Array zurück, das den String an den Stellen, an denen \texttt{regex} vorkommt, aufteilt.                                  \\
+        \hline
+        \texttt{startsWith(String prefix)}                   & Gibt \texttt{true} zurück, wenn der String mit \texttt{prefix} beginnt.                                                                   \\
+        \hline
+        \texttt{endsWith(String suffix)}                     & Gibt \texttt{true} zurück, wenn der String mit \texttt{suffix} endet.                                                                     \\
+        \hline
+        \texttt{valueOf(int i)}                              & Gibt den String zurück, der die Zahl \texttt{i} repräsentiert.                                                                            \\
+        \hline
+    \end{tabularx}
+
+	\begin{gblock}{Fachbegriffe Bäume}
+		\begin{itemize}
+			\item \textbf{Wurzel}: Der oberste Knoten (ohne Vorgänger)
+			\item \textbf{Knoten}: In einem Knoten werden die Daten gespeichert (immer die Wurzel eines Teilbaums und können Nachfolger besitzen)
+			\item \textbf{Kanten}: Verbindung zwischen zwei Knoten
+			\item \textbf{Tiefe}: Anzahl der Kanten von der Wurzel bis zum jeweiligen Knoten.
+			\item \textbf{Grad eines Baumes}: Anzahl der maximalen Nachfolger eines Baumes.
+			\item \textbf{Blatt}: Knoten ohne Nachfolger.
+			\item \textbf{Teilbaum}: Jeder Teil eines Baumes ist ebenfalls ein Baum und zwar der sogenannte Teilbaum.
+			\item \textbf{Pfad}: Weg über Kanten des Baumes, die zu einem bestimmten Knoten führen. 
+			\item \textbf{Ebene (Niveau)}: Alle Knoten, deren Pfad zur Wurzel gleichlang sind, befinden sich auf einer Ebene.
+		\end{itemize}
+	\end{gblock}
+	\vspace{1cm}
+	\begin{gblock}{Binäre Bäume (BinaryTrees)}
+		Jeder Knoten darf maximal zwei Nachfolger besitzen.
+	\end{gblock}
+	\vspace{1cm}
+	\begin{gblock}{Binäre Suchbäume (BinarySearchTrees)}
+		Jeder Knoten darf maximal zwei Nachfolger besitzen.
+		Es darf nicht mehrmals den selben Inhalt eines Knotens im Baum geben.
+		Die Inhalte müssen sortiert sein, hierbei befinden sich im linken Teilbaum kleinere Elemente und im rechten Teilbaum ausschließlich größere Elemente.
+	\end{gblock}
+	\vspace{1cm}
+	\begin{gblock}{Entarteter Baum}
+		Alle Knoten des Baumes haben entweder nur Nachfolger nach links oder rechts.
+	\end{gblock}
+	\vspace{1cm}
+	\begin{gblock}{Traversierungsverfahren}
+		\paragraph{Pre-Order:} \mbox{} \\
+		Zunächst wird die Wurzel betrachtet, anschließend der linke Teilbaum und zuletzt der rechte Teilbaum:
+		\begin{verbatim}			
+	    public void traversePreOrder(BinaryTree<Integer> b) {
+        System.out.println(b.getContent());
+        if(!b.getLeftTree().isEmpty()) {
+            traversePreOrder(b.getLeftTree());
+        }
+        if(!b.getRightTree().isEmpty()) {
+            traversePreOrder(b.getRightTree());
+        }
+    }
+		\end{verbatim}
+
+		\paragraph{In-Order:} \mbox{} \\
+		Zunächst wird der linke Teilbaum betrachtet, anschließend die Wurzel und zuletzt der rechte Teilbaum:
+		\begin{verbatim}
+			public void traverseInOrder(BinaryTree<Integer> b) {
+        if(!b.getLeftTree().isEmpty()) {
+            traverseInOrder(b.getLeftTree());
+        }
+        System.out.println(b.getContent());
+        if(!b.getRightTree().isEmpty()) {
+            traverseInOrder(b.getRightTree());
+        }
+    }
+		\end{verbatim}
+		\paragraph{Post-Order:} \mbox{} \\
+		Zunächst wird der linke Teilbaum betrachtet, anschließend der rechte Teilbaum und zuletzt die Wurzel:
+		\begin{verbatim}
+			    public void traversePostOrder(BinaryTree<Integer> b) {
+        if(!b.getLeftTree().isEmpty()) {
+            traversePostOrder(b.getLeftTree());
+        }
+        if(!b.getRightTree().isEmpty()) {
+            traversePostOrder(b.getRightTree());
+        }
+        console.println(b.getContent());
+    }
+		\end{verbatim}
+	\end{gblock}
+	\vspace{1cm}
+	\begin{gblock}{In einen Binären Suchbaum einfügen}
+		\paragraph{Pseudocode:} 
+		\begin{verbatim}
+			Inhalt einfügen (Inhalt neuer Inhalt)
+			falls (neuer Inhalt != null) dann
+			  falls (baum leer) dann
+			    fülle den baum mit neuerInhalt
+			  sonst
+			    falls (neuerInhalt < wurzelInhalt) dann
+			      linkerTeilbaum.einfügen(neuerInhalt)
+			    sonst
+			      falls(neuerInhalt > wurzelinhalt) dann
+			        rechterTeilbaum.einfügen(neuerInhalt)
+		\end{verbatim}
+	\end{gblock}
+	\vspace{1cm}
+	\begin{gblock}{Löschen aus einem Binären Suchbaum}
+		\paragraph{Pseudocode:} 
+		\begin{verbatim}
+		  entferne (Inhalt exInhalt)
+		  falls (exInhalt != null und baum nicht leer) dann
+		    falls (exInhalt == wurzelInhalt) dann
+		      falls (baum hat keine Teilbäume) dann
+		        leere den baum
+		      sonst
+		        falls (rechter Teilbaum ist leer) dann
+		          rücke linken Teilbaum an die Position des zu entfernenden Knotens
+		        sonst
+		          falls (linker Teilbaum ist leer) dann
+		            rücke rechten Teilbaum an die Position des zu entfernenden
+		            Knotens
+		          sonst
+		            setze Maximum des linken Teilbaums an die Position des zu
+		            löschenden Knotens
+		            entferne (Maximum des linken Teilbaums)
+		    sonst
+		      falls (exInhalt < wurazelInhalt) dann
+		        linkerTeilbaum.entferne(exInhalt)
+		      sonst
+		        rechterTeilbaum.entferne(exInhalt)
+		\end{verbatim}
+	\end{gblock}
+
+
+\end{document}
