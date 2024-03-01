@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman} \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+	\noindent
+	\Large
+	\textbf{Übungsaufgaben}
+	\hrule
+	\vspace{0.2cm}
+
+	\paragraph{a)} \mbox{} \\
+	\begin{align*}
+		f(x) &= x \cdot e^x \\
+		\int_{-1}^{1}& f(x) dx \\
+		u = x;&\ v = e^x; \\
+		u' = 1;&\ v' = e^x; \\
+		\int_{-1}^{1} (x \cdot e^x) dx &= \Bigl[x \cdot e^x\Bigl]^{1}_{-1}-\int_{-1}^{1} (1 \cdot e^x)dx \\
+		\Bigl[&x \cdot e^x - e^x\Bigl]^{1}_{-1} \\
+		F(1) &-F(-1) \\
+		&\Leftrightarrow 1 \cdot e^1 - e^1 - (-1 \cdot e^{-1} - e^{-1}) \\
+		&\Leftrightarrow 0 - (-e^{-1} - e^{-1}) \\
+		&\Leftrightarrow 0 + e^{-1} - e^{-1} \\
+		&\Leftrightarrow 0
+	\end{align*}
+	\paragraph{b)} \mbox{} \\
+	\begin{align*}
+		&f(x) = x \cdot ln(x) \\
+		&\int_{1}^{2} f(x)dx \\
+		&u=ln(x);\ v=\frac{x^2}{2}; \\
+		&u'=x^{-1};\ v'=x; \\
+		&\int_{1}^2 (x \cdot ln(x)) dx= \Bigl[ln(x) \cdot \frac{x^2}{2}\Bigl]^{2}_{1} - \int_{1}^{2} (x^{-1} \cdot \frac{x^2}{2}) dx \\
+		&\Bigl[ln(x) \cdot \frac{x^2}{2} - x^{-1} \cdot \frac{x^2}{2}\Bigl]^{2}_1 \\
+		&F(2) - F(1) \\
+		&\Leftrightarrow ln(2) \cdot 2 - 1^{-1} \cdot \frac{1}{2} \\
+		&\Leftrightarrow ln(2) \cdot 2 - 1 \cdot \frac{1}{2}  \\
+		&\Leftrightarrow ln(2) \cdot 2 - \frac{1}{2}  
+	\end{align*}
+	\paragraph{c)} \mbox{} \\
+	\begin{align*}
+		&f(x) = (2x + 1) \cdot e^{2x} \\
+		&\int_{1}^{2} f(x)dx \\
+		&u = 2x + 1;\ u' = 2 \\
+		&v = \frac{1}{2}\cdot e^{2x};\ v' = e^{2x} \\
+		&\int_{1}^{2} (2x \cdot \frac{1}{2} \cdot e^{2x}) dx = \Bigl[x \cdot e^{2x}\Bigl]^{2}_{1} - \int_{1}^{2} (e^{2x}) dx \\
+		&\Bigl[x \cdot e^{2x} - e^{2x}\Bigl]^{2}_1 \\
+		&F()
+	\end{align*}
+\end{document}
