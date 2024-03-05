@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman} \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+	\noindent
+	\Large
+	S. 161 Nr. 1b,c,d
+	\large
+	\paragraph{1b)}
+	\begin{align*}
+		\int_{0}^{2} (5x \cdot e^x) dx \\
+		u = 5x;\ v = e^x; \\
+		u' = 5;\ v' = e^x; \\
+		\int_{0}^{2} (5x \cdot e^x)dx = \Bigl[5x \cdot e^x\Bigl]_{0}^{2} - \int_{0}^{2} (5 \cdot e^x) dx \\
+		\Bigl[5x \cdot e^x - 5 \cdot e^x\Bigl]_{0}^{2} \\
+		(5 \cdot 2 \cdot e^2 - 5 \cdot e^2) -
+		(5 \cdot 0 \cdot e^0 - 5 \cdot e^0) \\
+		(10e^2 - 5e^2) + 5 \\
+		5e^2 + 5
+	\end{align*}
+	\paragraph{1c)}
+	\begin{align*}
+		\int_{0}^{1} (x \cdot e^{2x}) dx \\
+		u = x;\ v = \frac{1}{2}e^{2x} \\
+		u' = 1;\ v' = e^{2x} \\
+		\int_{0}^{1} (x \cdot e^{2x})dx = \Bigl[x \cdot \frac{1}{2}e^{2x}\Bigl]_{0}^{1} - \int_{0}^{1} (1 \cdot \frac{1}{2}e^{2x}) \\
+		\Bigl[x \cdot \frac{1}{2}e^{2x} - \frac{1}{4}e^{2x}\Bigl]_{0}^{1} \\
+		(x \cdot \frac{1}{2}e^{2x} - \frac{1}{4}e^{2x}) - (x \cdot \frac{1}{2}e^{2x} - \frac{1}{4}e^{2x}) \\
+		(\frac{1}{2}e^{2} - \frac{1}{4}e^{2}) - (0 \cdot \frac{1}{2}e^{0} - \frac{1}{4}e^{0}) \\
+		\frac{1}{4}e^{2} + \frac{1}{4}
+	\end{align*}
+	\paragraph{1d)}
+	\begin{align*}
+		\int_{0}^{0.5}(4x \cdot e^{2x + 2}) dx \\
+		u = 4x;\ v' = e^{2x + 2}; \\
+		u' = 4;\ v = \frac{1}{2}e^{2x+2} \\
+		\int_{0}^{0.5} (4x \cdot e^{2x+2})dx = \Bigl[4x \cdot \frac{1}{2}e^{2x+2}\Bigl]_{0}^{0.5} - \int_{0.5}^{0} (4 \cdot \frac{1}{2}e^{2x +2}) \\
+		\Bigl[4x \cdot \frac{1}{2}e^{2x+2} - e^{2x+2}\Bigl] \\
+		(2 \cdot \frac{1}{2}e^{1+2} - e^{1+2}) - (0 \cdot \frac{1}{2}e^{0+2} - e^{0+2}) \\	
+		(e^{3} - e^{3}) + (e^{2}) \\
+		e^2
+	\end{align*}
+\end{document}
