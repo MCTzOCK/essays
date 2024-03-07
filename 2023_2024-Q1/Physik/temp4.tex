@@ -1,0 +1,52 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{inputenc}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+	\noindent
+	Die Spannung $U_C(t)$ und $U_L(t)$ sind in der Summe stets Null:
+	\begin{align*}
+		U_C(t) + U_L(t) = 0
+	\end{align*}
+	Siehe (1.9.1) und (1.9.2):
+	\begin{align*}
+		\frac{1}{C} \cdot Q(t) - L\cdot \dot I(t) &= 0 \\
+		\frac{1}{C} \cdot Q(t) &= -L\cdot \dot I(t) \\
+		-\frac{1}{LC} \cdot Q(t) &= \dot I(t)
+	\end{align*}
+	Mit der Tatsache, dass fließende Ladung den Strom bilden, ergibt sich mit $I(t) = \dot Q(t)$ und daraus $Q(t) = \int I(t) dt$:
+	\begin{align*}
+		-\frac{1}{LC} \cdot \int I(t) dt &= \dot I(t)
+	\end{align*}
+	Diese Gleichheit kann nur erfüllt werden, wenn die Stromstärkenfunktion $I(t)$ eine Sinusfunktion ist:
+	\begin{align*}
+		I(t) &= I_{max} \cdot \sin(\frac{2\pi}{T}\cdot t) \\
+		\Rightarrow \int I(t) dt &= -I_{max} \cdot \cos(\frac{2\pi}{T}\cdot t) \\
+		\Rightarrow \int I(t) dt &= -\frac{I_{max} \cdot T}{2\pi} \cdot \cos(\frac{2\pi}{T}\cdot t) \\
+		\dot I(t) &= \frac{2\pi}{T} \cdot I_{max} \cdot \cos(\frac{2\pi}{T}\cdot t)
+	\end{align*}
+	Einsetzen:
+	\begin{align*}
+		-\frac{1}{LC} \cdot \Bigl(-\frac{I_{max}\cdot T}{2\pi} \cdot \cos(\frac{2\pi}{T}\cdot t)\Bigl) &= \frac{2\pi}{T}\cdot I_{max} \cdot \cos(\frac{2\pi}{T}\cdot t) \\
+		\Leftrightarrow \frac{1}{LC} \cdot \frac{I_{max}\cdot T}{2\pi} \cdot \cos(\frac{2\pi}{T}\cdot t) &= \frac{2\pi}{T} \cdot I_{max} \cdot \cos(\frac{2\pi}{T}\cdot t) \\
+		\Leftrightarrow \frac{1}{LC} \cdot \frac{T}{2\pi} &= \frac{2\pi}{T}\ \Bigl|\cdot T \\
+		\Leftrightarrow \frac{1}{LC} \cdot \frac{T^2}{2\pi} &= 2\pi\\
+		\Leftrightarrow T^2 &= 4\pi^2 \cdot LC\\
+		\Leftrightarrow T &= 2\pi \cdot \sqrt{LC}\\
+		&\to \text{Schwingungsformel von Thomson} \\
+		\Bigl[T\Bigl] &= \sqrt{1H \cdot 1F} \\
+		&= \sqrt{1\frac{Vs}{A} \cdot \frac{As}{V}} \\
+		&= \sqrt{s^2} \\
+		&\Rightarrow s
+	\end{align*}
+	In unserem Experiment hatten wir $C=\mu F$ und $L = 0,3 H$: \\
+	\begin{align*}
+		T &= 2\pi \cdot \sqrt{0,3H \cdot 1 \cdot 10^{-6}F} \\
+		&= 2\pi \cdot \sqrt{3 \cdot 10^{-7} \cdot s^2} \\
+		&\approx 0,003s
+	\end{align*}
+\end{document}
