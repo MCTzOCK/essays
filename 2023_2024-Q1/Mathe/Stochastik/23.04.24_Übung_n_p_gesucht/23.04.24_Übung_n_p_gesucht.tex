@@ -1,0 +1,110 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.}
+
+\begin{document}
+	\tableofcontents
+	\newpage
+	\section{S. 292 Nr. 5a)}
+	\begin{align*}
+		P(X = 0) &\leq 0.05 \\
+		p &= 0.25 \\
+		P(X = 0) &= (1-p)^n \cdot p^0 \\
+		P(X = 0) &= 0.75^n \cdot 0.25^0 \\
+		&= 0.75^n \leq 0.05 \\
+		\xrightarrow{CAS} n&= 11
+	\end{align*}
+	\section{S. 292 Nr. 5b)}
+	\begin{align*}
+		P(X \leq 1) &\leq 0.1 \\
+		p &= 0.25 \\
+		P(X \leq 1) &= (1-p)^n \cdot p^1 \\
+		P(X \leq 1) &= 0.75^n \cdot 0.25^1 \\
+		&= 0.25^1 \cdot 0.75^n \leq 0.1 \\
+		\xrightarrow{CAS} n&= 15
+	\end{align*}
+	\section{S. 292 Nr. 5c)}
+	\begin{align*}
+		P(X = n) &\leq 0.01 \\
+		p &= 0.25 \\
+		P(X = n) &= (1-p)^n \cdot p^1 \\
+		P(X = n) &= 0.75^n \cdot 0.25^n \\
+		&= 0.25^n \cdot 0.75^n \leq 0.01 \\
+		&= (0.75 \cdot 0.25)^n \leq 0.01 \\
+		\xrightarrow{CAS} n&= 6\ \lor\ 7
+	\end{align*}
+	\section{S. 292 Nr. 5d)}
+	\begin{align*}
+		P(X \leq 2) &\leq 0.025 \\
+		p &= 0.25 \\
+		P(X \leq 2) &= (1-p)^n \cdot p^2 \\
+		P(X \leq 2) &= 0.75^n \cdot 0.25^2 \\
+		\xrightarrow{CAS} n&= 27
+	\end{align*}
+	\section{S. 293 Nr. 7a)}
+	\begin{align*}
+		p &= \frac{1}{6} \\
+		P(X \geq 1) &\geq 0.99 \\
+		P(X = 0) &\leq 0.01 \\
+		P(X = 0) &= (\frac{1}{6})^0 \cdot (\frac{5}{6})^n \\
+		(\frac{5}{6})^n &\leq 0.01 \\
+		\xrightarrow{CAS} n &= 26
+	\end{align*}
+	\section{S. 293 Nr. 7b)}
+	\begin{align*}
+		p &= \frac{3}{6} \\
+		P(X \geq 1) &\geq 0.99 \\
+		P(X = 0) &\leq 0.01 \\
+		P(X = 0) &= (\frac{3}{6})^0 \cdot (\frac{3}{6})^n \\
+		(\frac{3}{6})^n &\leq 0.01 \\
+		\xrightarrow{CAS} n &= 7
+	\end{align*}
+	\section{S. 293 Nr. 7c)}
+	\begin{align*}
+		p &= \frac{3}{6} \\
+		P(X \geq 2) &\geq 0.99 \\
+		P(X \leq 1) &\leq 0.01 \\
+		P(X \leq 1) &= (\frac{3}{6})^1 \cdot (\frac{3}{6})^n \\
+		(\frac{3}{6})^n &\leq 0.01 \\
+		\xrightarrow{CAS} n &= 11
+	\end{align*}
+	\section{S. 293 Nr. 7d)}
+	\begin{align*}
+		p &= \frac{5}{6} \\
+		P(X \geq 3) &\geq 0.99 \\
+		P(X \leq 2) &\leq 0.01 \\
+		P(X \leq 2) &= (\frac{5}{6})^2 \cdot (\frac{1}{6})^n \\
+		(\frac{1}{6})^n &\leq 0.01 \\
+		\xrightarrow{CAS} n &= 6
+	\end{align*}
+	\section{S. 293 Nr. 9a)}
+	\begin{align*}
+		P(X \leq 2) &= 54.053\ \%
+	\end{align*}
+	\section{S. 293 Nr. 9b)}
+	Wie groß ist die Wahrscheinlichkeit, dass von 50 befragten Fahrgästen genau 2 Fahrgäste unzufrieden sind?
+	\section{S. 293 Nr. 9c)}
+	\begin{align*}
+		p &= 0.05 \\
+		P(X \geq 1) &\geq 0.9 \\
+		P(X = 0) &\leq 0.1 \\
+		P(X = 0) &= 0.05^{n} \cdot 0.9^0 \\
+		0.05^n &\leq 0.1 \\
+		\xrightarrow{CAS} &\ n = 77
+	\end{align*}
+	\section{S. 293 Nr. 9d)}
+	\begin{align*}
+		p &= 0.05 \\
+		P(X \geq 2) &\geq 0.9 \\
+		P(X \leq 1) &\leq 0.1 \\
+		\xrightarrow{CAS} &\ n = 105
+	\end{align*}
+	\section{S. 293 Nr. 9e)}
+	
+\end{document}
