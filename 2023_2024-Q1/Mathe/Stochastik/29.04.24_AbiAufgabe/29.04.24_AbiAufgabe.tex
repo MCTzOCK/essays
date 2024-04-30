@@ -5,12 +5,41 @@
 \usepackage{ngerman}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{amsmath}
+\usepackage{tabularx}
 
 \begin{document}
 	\noindent
 	\Large
 	Abituraufgabe Stochastik 2021
-	\\[0.5cm]
 	\large
-	\paragraph{a2)}
+	\paragraph{a2)} \mbox{} \\
+	\begin{tabularx}{0.74\textwidth}{|X|X|X|X|}
+		\hline
+		& $B^+$ & $B^-$ & \\
+		\hline
+		$K^+$ & $0.97 \cdot 0.985 \approx 0.95$& $0.97 \cdot 0.015 \approx 0.02$& 0,97 \\
+		\hline
+		$K^-$ & $0.03\cdot 0.95 \approx 0.029$ &$0.03\cdot 0.05 \approx 0.001$& 0,03 \\
+		\hline
+		&$0.979$&$0.021$& 1 \\
+		\hline
+	\end{tabularx}
+	\begin{align*}
+		P_{B^-} (K-) &= \frac{P(K^-\cap B^-)}{P(B^-)} \\
+	\end{align*}
+	\paragraph{b)}	
+	\begin{align*}
+		1)&\ B_{500;0.049} (15) = 0.024 \approx 2,4\% \\
+		2)&\ 1-F_{n;0.955}(199) \geq 0.95 \\
+		&\ \xrightarrow{CAS} n = 215
+	\end{align*}
+	\paragraph{c)}
+	\begin{align*}
+		(1)&\ \mu = n \cdot p \\
+		&\ \Rightarrow 5000 = n \cdot 0.955 \\
+		&\ \Leftrightarrow n = 5235,6 \approx 5236 \\
+		(2)&\ P(X \geq 5000) \\
+		&\ \Leftrightarrow 1-F_{5236;0.955}(5000) \\
+		&\ \xrightarrow{CAS} P\approx 0.5274 = 52.74\ \%
+	\end{align*}
 \end{document}
