@@ -30,6 +30,7 @@
 \usepackage{bookman}
 \usepackage{hyphenat}
 \usepackage[]{ragged2e}
+\usepackage[hang,flushmargin,stable]{footmisc}
 
 \titleformat{\chapter}{\normalfont\LARGE}{\thechapter.}{15pt}{\Large}
 \titlespacing*{\chapter}{0pt}{*0}{10pt}
@@ -44,7 +45,7 @@
     \renewcommand{\baselinestretch}{1.50}\normalsize
 
     % Custom Commands
-    \newcommand{\bscite}[1]{\citeauthor{#1}: \citetitle{#1} (Stand: \citedate{#1}) \citeurl{#1}}
+    \newcommand{\bscite}[1]{\citeauthor{#1}: \citetitle{#1} \citeurl{#1} (Stand: \citedate{#1})}
 
     % Show subsubsection in toc
     \setcounter{tocdepth}{3}
@@ -75,7 +76,7 @@
 
 
     \chapter{Literaturverzeichnis}
-    \printbibliography[heading=none]
+    \printbibliography[heading=none, type=online]
 
     % Anhang
     \subfile{./attachment.tex}
