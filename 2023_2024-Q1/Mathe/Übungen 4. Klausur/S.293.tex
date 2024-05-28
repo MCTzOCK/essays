@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\section{S. 293 Nr. 10}
+	\paragraph{a)}
+	\begin{align*}
+		P(X \geq 50) &= 0.5397 \approx 53.97\ \% \\
+		P(45 \leq X \leq 55) &= 72.87 \approx 72.87\ \%
+	\end{align*}
+	\paragraph{b)} \mbox{} \\
+	Wahrscheinlichkeit \textbf{keinen} Jungen zu bekommen beträgt: 
+	\begin{align*}
+		1-p &= 0.5 \\
+		-p &= -0.5 \\
+		p &= 0.5
+	\end{align*}
+	Wahrscheinlichkeit, dass alle Kinder weiblich sind:
+	\begin{align*}
+		P(X = 100) &= 0.5^{n}
+	\end{align*}
+	Wahrscheinlichkeit für mindestens einen Jungen:
+	\begin{align*}
+		p &= 1-0.5^{n}
+	\end{align*}
+	Daraus folgt:
+	\begin{align*}
+		1-0.5^{n} &\geq 0.99 \\
+		0.5^{n} &\geq 0.01
+	\end{align*}
+	
+	\section{S. 293 Nr. 11}
+	\begin{align*}
+		P(X > 1) &\leq 0.1 \\
+		P(X \leq 1) &\geq 0.99 
+	\end{align*}
+\end{document}

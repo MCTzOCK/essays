@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\section{S. 302 Nr. 8}
+	\paragraph{a) 5\%-Signifikanz}
+	\begin{align*}
+		H_0 &: p=0.3 = 30\ \% \\
+		\alpha &= 0.05 = 5\ \% \\
+		n &= 100 \\
+		\mu &= n \cdot p = 100 \cdot 0.3 = 30 \\
+		\sigma &= \sqrt{n\cdot p\cdot (1-p)} \\
+		&= \sqrt{30 \cdot 0.7} \\
+		&= \sqrt{21} \\
+		&\approx 4.51 \\
+		\text{Sigma-Bereich}&: 1.96\sigma \\
+		\text{Links}&: \mu - 1.96\sigma = 30 - 1.96\cdot 4.51 \approx 21.1604 \\
+		\text{Rechts}&: \mu + 1.96\sigma = 30 + 1.96\cdot 4.51 \approx 38.8396 \\
+		P(X \leq 21)&= 2.88\ \% \\
+		P(X > 39) &= 2.09\ \% \\
+		\text{Annahmebereich}&: A[21;39]
+	\end{align*}
+	\paragraph{a) 1\%-Signifikanz}
+	\begin{align*}
+		H_0 &: p=0.3 = 30\ \% \\
+		\alpha &= 0.01 = 1\ \% \\
+		n &= 100 \\
+		\mu &= n \cdot p = 100 \cdot 0.3 = 30 \\
+		\sigma &= \sqrt{n\cdot p\cdot (1-p)} \\
+		&= \sqrt{30 \cdot 0.7} \\
+		&= \sqrt{21} \\
+		&\approx 4.51 \\
+		\text{Sigma-Bereich}&: 1.96\sigma \\
+		\text{Links}&: \mu - 1.96\sigma = 30 - 1.96\cdot 4.51 \approx 21.1604 \\
+		\text{Rechts}&: \mu + 1.96\sigma = 30 + 1.96\cdot 4.51 \approx 38.8396 \\
+		P(X \leq 21)&= 2.88\ \% \\
+		P(X > 39) &= 2.09\ \% \\
+		\text{Annahmebereich}&: A[21;39]
+	\end{align*}
+	\section{S. 302 Nr. 9}
+	\paragraph{a)}
+	\begin{align*}
+		H_0 &: p= 20 \ \% \\
+		\alpha &= 0.05 = 5\ \% \\
+		n &= 100 \\
+		\mu &= n \cdot p = 100 \cdot 0.2 = 20 \\
+		\sigma &= \sqrt{n\cdot p\cdot (1-p)} \\
+		&= \sqrt{20 \cdot 0.8} \\
+		&= \sqrt{16} \\
+		&\approx 4 \\
+		\text{Sigma-Bereich}&: 1.96\sigma \\
+		\text{Links}&: \mu - 1.96\sigma = 20 - 1.96\cdot 4 \approx 12.16 \\
+		\text{Rechts}&: \mu + 1.96\sigma = 20 + 1.96\cdot 4 \approx 27.84 \\
+		P(X \leq 11)&= 1.25\ \% \\
+		P(X > 29) &= 2\ \% \\
+		\text{Annahmebereich}&: A[12;30]
+	\end{align*}
+\end{document}

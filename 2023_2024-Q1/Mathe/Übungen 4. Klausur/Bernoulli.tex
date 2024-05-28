@@ -1,0 +1,56 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\section{S. 284 Nr. 8}
+	\paragraph{a)}
+	\begin{align*}
+		P(X=2) &= \binom{6}{2} \cdot 2 \cdot (1-0.75)^{6-2} \\
+		P(X=2) &= \binom{6}{2} \cdot 2 \cdot (0.25)^4 \\
+		P(X=2) &= 0.032958984375 \approx 32.9\ \%
+	\end{align*}
+	\paragraph{b)}
+	\begin{align*}
+		P(Y=2) &= \binom{6}{2} \cdot 2 \cdot (1-0.25)^{6-2} \\
+		P(Y=2) &= \binom{6}{2} \cdot 2 \cdot (0.75)^4 \\
+		P(Y=2) &= 29.66\ \%
+	\end{align*}
+	\paragraph{c)}
+	\begin{align*}
+		P(X < 3) &= 3.7\ \%
+	\end{align*}
+	\paragraph{d)}
+	\begin{align*}
+		P(Y > 2) &= 46.6\ \%
+	\end{align*}
+	\section{S. 284 Nr. 9}
+	\paragraph{a)}
+	\begin{align*}
+		P(X > 8) &= 67.7\ \%
+	\end{align*}
+	\paragraph{b)}
+	\begin{align*}
+		P(X = 5) &= 31.14\ \% \\
+		P(X = 6) &= 31.14\ \% \\
+		31.14\ \% + 31.14\ \% &= 62.28\ \%
+	\end{align*}
+	\section{S. 289 Nr. 7}
+	\paragraph{a)}
+	\begin{align*}
+		P(X=4) &= 18.7\ \% \\
+		P(X \leq 4) &= 83.57\ \%
+	\end{align*}
+	\paragraph{b)}
+	Man kann so $P(X\geq 3)$ auch so berechnen, da $1-P(X \leq 2)$ die Gegenwahrscheinlichkeit ist.
+	\paragraph{c)}
+	\begin{align*}
+		P(1 \leq X \leq 5) &= 90.37\ \%
+	\end{align*}
+\end{document}

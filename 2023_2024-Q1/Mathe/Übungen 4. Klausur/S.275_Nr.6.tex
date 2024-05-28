@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\section{S. 275 Nr. 6}
+	\begin{align*}
+		\text{Ergebnisse}\ E &= \{3;1;5;3;4;6;2;6;1;2\} \\
+		n &= 10 \\
+		\bar{x} &= \frac{1}{n}(x_1 + x_2 + x_3 + ... + x_n)\\
+		&= \frac{1}{10}(3+1+5+3+4+6+2+6+1+2) \\
+		&\approx 3.3 \\
+		\sigma &= \sqrt{\frac{1}{n}((x_1 - \bar{x})^2 + ... (x_n - \bar{x})^2)} \\
+		&= \sqrt{0.1 (
+		(3 - 3.3)^2
+		+ (1-3.3)^2
+		+ (5-3.3)^2
+		+ ...
+		+ (2-3.3)^2
+		)} \\
+		&\approx \frac{\sqrt{321}}{10} \approx 1.79165
+	\end{align*}
+	\section{S. 275 Nr. 7}
+	\paragraph{links:}
+	\begin{align*}
+		\bar{x} &= m_1 \cdot h_1 + ... m_n \cdot h_n \\
+		\bar{x} &= 0 \cdot 0.49 + 2 \cdot 0.01 + 4 \cdot 0.01 + 6 \cdot 0.49 \approx 3 \\
+		s &= \sqrt{(m_1 -\bar{x})^2\cdot h_1 + ... + (m_n - \bar{x})^2 \cdot h_n} \\
+		&= \sqrt{(0-3)^2 \cdot 0.49 + (2-3)^2 \cdot 0.01 + (4-3)^2 \cdot 0.01 + (6 - 3)^2 \cdot 0.49} \\
+		&= \sqrt{9 \cdot 0.49 + 1 \cdot 0.01 + 1 \cdot 0.01 + 9 \cdot 0.49} \\
+		&= \sqrt{4.41 + 0.01 + 0.01 + 4.41} \\\
+		&= 2.9732137495
+	\end{align*}
+	\paragraph{rechts:}
+	\begin{align*}
+		\bar{x} &= 0 \cdot 0.01 + 2 \cdot 0.49 + 4 \cdot 0.49 + 6 \cdot 0.01 \\
+		\bar{x} &= 0.98 + 1.96 + 0.06 \\
+		\bar{x} &= 3 \\
+		s &= \sqrt{(0 - 3)^2 \cdot 0.01 + (2-3)^2 \cdot 0.49 + (4-3)^2 \cdot 0.49 + (6-3)^2 \cdot 0.01} \\
+		&= \sqrt{0.09 + 0.49 + 0.49 + 0.09} \\
+		&= \sqrt{1.16} \\
+		&= 1.07703296143
+	\end{align*}
+\end{document}

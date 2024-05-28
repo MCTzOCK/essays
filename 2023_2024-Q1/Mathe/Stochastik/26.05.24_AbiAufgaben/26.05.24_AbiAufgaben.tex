@@ -1,0 +1,33 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\section{Teilaufgabe d)}
+	\paragraph{(1)}
+	\begin{align*}
+		n &= 200 \\
+		\alpha &= 5\ \% = 0.05 \\
+		H_0 &: p=0.08 \\
+		H_1 &: p<0.08 \\
+		P(X \leq k) &\leq 0.05 \\
+		\xrightarrow{CAS} & k=9 \\
+		&\bar{A}[0;9]
+	\end{align*}
+	Wenn 9 oder weniger Schrauben fehlerhaft sind, hat \dq Wind24\dq\ nicht recht.
+	\paragraph{(2)}
+	Bei 10-200 fehlerhaften Schrauben hat \dq Wind24\dq\ rect.
+	\begin{align*}
+		n &= 200 \\
+		p &= 0.045 \\
+		P(X \geq 10) &= 0.4125 \\
+		&= 41.25\ \%
+	\end{align*}
+	Mit einer Wahrscheinlichkeit von 41,25\ \% weist die Firma die Vorwürfe fehlerhafter Weise nicht zurück.
+\end{document}
