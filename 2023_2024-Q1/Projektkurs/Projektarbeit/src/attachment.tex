@@ -23,8 +23,8 @@
     Funktionen zu beschreiben, das heißt das Grenzwertverhalten der Funktion zu klassifizieren\footnote{\bscite{asymptomic-analysis}}.
     Die Big-O-Notation wird verwendet, um die Laufzeit eines Algorithmus in Abhängigkeit von der Anzahl der zu
     sortierenden Elemente zu beschreiben. Dabei wird die Anzahl der zu sortierenden Elemente mit $n$ bezeichnet.
-    Die Laufzeit wird in Abhängigkeit von $n$ angegeben. Die Laufzeit wird mit $O(n)$ angegeben.
-    \newpage
+    Die Laufzeit wird in Abhängigkeit von $n$ angegeben, also $O(n)$.
+    \\\\\\
     Dabei ist $O(n)$ die obere Schranke der Laufzeit.\footnote{\bscite{big-o-notation}}
 
     \paragraph{Rekursion}
@@ -90,6 +90,39 @@
             }
             return sorted;
         }
+    \end{lstlisting}
+
+    \paragraph{Quicksort} \mbox{}\\
+    \begin{lstlisting}
+        public static void quickSort(int a[], int b, int e) {
+            if (begin < end) {
+                int pI = partition(a, begin, end);
+                quickSort(a, b, pI - 1);
+                quickSort(a, pI + 1, e);
+            }
+        }
+
+        public static int partition(int u[], int b, int e) {
+            int pivot = u[e];
+            int i = (b-1);
+
+            for (int j = b; j < e; j++) {
+                if (u[j] <= pivot) {
+                    i++;
+                    int st = u[i];
+                    u[i] = u[j];
+                    u[j] = st;
+                }
+            }
+
+            int st = u[i+1];
+            u[i+1] = u[end];
+            u[end] = st;
+
+            return i+1;
+        }
+
+
     \end{lstlisting}
 
 \end{document}

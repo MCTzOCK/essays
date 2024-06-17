@@ -31,10 +31,12 @@
         \label{tab:runtimeanalysis}
     \end{table}
 
-    \paragraph{Visualisierung} Die \dq Big-O-Notation\dq\ (siehe Anhang) kann auch grafisch dargestellt werden.
-    Hierbei wird die Anzahl der zu sortierenden Elemente auf der $x$-Achse und die Anzahl der Vergleiche auf der $y$-Achse aufgetragen:
-
-
+    \paragraph{Visualisierung:} Die \dq Big-O-Notation\dq\ (siehe Anhang) kann auch grafisch dargestellt werden.
+    Hierbei wird die Anzahl der zu sortierenden Elemente auf der $x$-Achse und die Anzahl der Vergleiche auf der $y$-Achse aufgetragen.
+    Hierdurch lassen sich die Laufzeit und die damit einhergehende Effizienz der Algorithmen anschaulich vergleichen.
+    Die Grafiken zeigen alle in der obigen Tabelle (siehe Tabelle \ref{tab:runtimeanalysis}) aufgeführten Laufzeiten.
+    So lässt sich direkt erkennen, dass der QuickSort-Algorithmus im Durchschnitt eine deutlich geringere Laufzeit hat,
+    als die anderen drei Algorithmen, da er insgesamt weniger Vergleiche benötigt:
     \begin{multicols}{3}
 
         \begin{tikzpicture}[scale=0.5]
@@ -90,9 +92,11 @@
         \end{tikzpicture}
     \end{multicols}
 
-    \paragraph{Auswertung}
-    Man kann erkennen, dass sowohl der BubbleSort Algorithmus als auch der SelectionSort-Algorithmus
-    und der InsertionSort-Algorithmus im Durchschnitt eine quadratische Laufzeit haben, was bei allen
+    \paragraph{Auswertung:}
+    Man kann erkennen, dass sowohl der BubbleSort-\\
+    Algorithmus als auch der SelectionSort-Algorithmus
+    und der \\
+    InsertionSort-Algorithmus im Durchschnitt eine quadratische Laufzeit haben, was bei allen
     drei Algorithmen dem schlechtesten Fall entspricht.
     Vergleicht man nun diese Algorithmen mit dem QuickSort-Algorithmus, so fällt auf, dass dieser
     im Durchschnitt eine deutlich geringere Laufzeit hat und somit effizienter arbeitet.
