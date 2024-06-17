@@ -1,0 +1,51 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\section{Aufgabe 1}
+	\paragraph{a)}
+	\begin{align*}
+		I&\Bigl[3;11\Bigl] \\
+		f &= 11-3 \\
+		\text{Kehrwert:} f &= \frac{1}{8}
+	\end{align*}
+	\paragraph{b)}
+	\begin{align*}
+		\mu &= \int_{3}^{11} (x \cdot f(x)) dx \\
+		\mu &= 7 \\
+		\sigma &= \sqrt{V(X)} \\
+		V(X) &= \int_3^{11}((\mu \cdot x)^2 \cdot f(x)) dx \\
+		\sigma &= \sqrt{\int_3^{11}((x - \mu)^2 \cdot f(x)) dx} \\
+		\sigma &\approx 2.3094 
+	\end{align*}
+	\section{Aufgabe 2}
+	\begin{align*}
+		I&\Bigl[2;10\Bigl] \\
+		f(x) &= mx+c \\
+		\mu &= 8 \\
+		f(x) &= 0.046875 \cdot x −0.15625
+	\end{align*}
+	\begin{verbatim}
+	CAS: solve(system(1=∫(m*x+c,x,2,10),8=∫(x*(m*x+c),x,2,10)),{m,c})
+
+	\end{verbatim}
+	\section{Aufgabe 3}
+	\paragraph{a)}
+	\begin{align*}
+		1 &= \int_{0}^{\pi} (a\cdot sin(x)) dx \\
+		a &= \frac{1}{2}
+	\end{align*}
+	\paragraph{b)}
+	\begin{align*}
+		\sigma &= \sqrt{\int_{0}^{\pi} (x-\mu)^2 \cdot f(x) dx} \\
+		\sigma &= \sqrt{\int_{0}^{\pi} (x-\frac{\pi}{2})^2 \cdot (\frac{1}{2} \cdot sin(x)) dx} \\
+		\sigma &= 0.6836673900899
+	\end{align*}
+\end{document}

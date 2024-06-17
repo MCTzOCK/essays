@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
 
 \renewcommand\thesection{\arabic{section}.} 
 
@@ -14,13 +15,42 @@
 	\section{Erzwungene Schwingung und elektrische Resonanz}
 	Das \dq Weiterlaufenlassen\dq\ eines mechanischen Schwingkreises erhalten wir, wenn wir von außen dem Schwingkreis passenden \dq Anschwung\dq\ geben.
 	Das bedeutet, dass die äußere Anregungsfrequenz mit der Eigenfrequenz identisch ist.
-	Dies übertragen wir jetzt auf den elektrischen Fall:\\
-	\includegraphics[width=\textwidth]{Image.jpeg.png} \\
+	Dies übertragen wir jetzt auf den elektrischen Fall:\\\\
+	\begin{tikzpicture}
+		\draw (2,2)-- (2,0) -- (6,0) -- (6,1);
+		\draw (6,2)--(6,2.5);
+		\draw (5.5,2.5) -- (6.5,2.5);
+		\draw (5.4,2.8) -- (6.6,2.8);
+		\draw (6,2.8) -- (6,3.5) -- (2,3.5) -- (2,2.75);
+		\filldraw (2,2) circle (3pt);
+		\filldraw (2,2.75) circle (3pt);
+		\node[draw] at (3,2.5) {$\sim$};
+		\node[draw] at (-1,2.5) {$U$ (\dq Anschieber\dq)}; 
+		\draw[->] (-1,0.35)--(-1,2);
+		\node[draw,align=left] at (-1,-0.5) {Spannungsquelle \\mit veränderlicher \\
+		Frequenz $f$ };
+		\draw[decoration={aspect=0.3,segment length=1.5mm, amplitude=2mm,coil},decorate] (6,1) -- (6,2);
+		\draw[->, thick] (7,2.5) -- (8,2.5);
+		\node[draw,align=left] at (11.25,2.5) {Schwingkreis \\ (Kondensator ($C$ und Spule $L$)};
+	\end{tikzpicture} \\\\
 	Das Ampermeter zeigt uns nun, wie stark der Schwingungsausschlag ist, wenn wir unterschiedliche Anregungsfrequenzen einstellen.\\
 	Betrachten wir nun die Stromstärke $I$ gegen die Anregungsfrequenz, so sehen wir, dass bei einer kleinen Anregungsfrequenz die Stromstärke gering ist.
 	Erhöhen wir sukzessive die Frequenz, wird die Stromstärke auch höher, bis wir eine maximale Stärke erreicht haben - dies ist der Fall bei der Eigenfrequenz des Schwingkreises.
-	Anschließend fällt die Stromstärke wieder, wenn wir die Frequenz noch weiter erhöhen: \\
-	\includegraphics[width=0.75\textwidth]{IMG_1930.jpg}\\
+	Anschließend fällt die Stromstärke wieder, wenn wir die Frequenz noch weiter erhöhen: \\\\
+	\begin{tikzpicture}
+		\draw[->, thick] (0,0) -- (6,0);
+		\draw[->, thick] (0,0) -- (0,5);
+		\node[draw, align=left] at (0,5.5) {Stromstärke $\frac{I}{A}$};
+		\node[draw, align=left] at (7.5,0) {Frequenz $\frac{f}{Hz}$};
+		\begin{scope}
+		\draw[thick,blue,smooth] (0,0) plot[domain=0:6] ({\x}, {3*exp(-0.5*(\x-2.5)^2)});
+		\draw[thick,red,smooth] (0,0) plot[domain=0:6] ({\x}, {4*exp(-0.5*(\x-4)^2)});
+		\draw[->,thick] (5,2.5) -- (7,3);
+		\node[draw,align=left] at (10.5,3) {Resonanzfrequenz eines \\ geänderten Schwingkreises \\ (z.B. Eisenkern in Spule ändern)};
+		\draw[thick,dashed,green] (4,0) -- (4,4);
+		\draw[thick,dashed,green] (2.5,0) -- (2.5,3);
+		\end{scope}
+	\end{tikzpicture}\\
 	Hier ist nun die Thomsonsche Schwingungsformel wichtig:\\
 	\begin{align*}
 		\frac{1}{f_{eigen}} = T_{Eigen} = 2\pi \cdot \sqrt{LC} = T_{Resonanz} = \frac{1}{f_{Resonanz}}

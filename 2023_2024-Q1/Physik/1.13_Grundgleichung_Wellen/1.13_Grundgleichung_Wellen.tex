@@ -14,7 +14,13 @@
 \begin{document}
 	\setcounter{section}{12}
 	\section{Grundgleichung für Wellenüberlagerungen}
-	Wir haben \dq gesehen\dq, dass es Stellen im Raum gibt, an denen sich Wellen (bei der Aussendung identischer Wellen kit der Wellenlänge $\lambda$ von zwei Sendern) überlagern und hierbei auslöschen bzw. verstärken können. Betrachten wir dazu folgende Skizze:\\
+	Wir haben \dq gesehen\dq, dass es Stellen im Raum gibt, an denen sich Wellen (bei der Aussendung identischer Wellen kit der Wellenlänge $\lambda$ von zwei Sendern) überlagern und hierbei auslöschen bzw. verstärken können. Betrachten wir dazu folgende Skizze:\\\\
+	\begin{tikzpicture}
+		\draw[thick] (0,0) -- (9,0);
+		\draw[thick,black,smooth] (0,0) plot[domain=0:9] ({\x}, {sin(2.5*\x r)});
+		\draw[thick,blue,smooth] (0,0) plot[domain=1.3:7] ({\x}, {cos(3.5*\x r)});
+		\node[draw] at (0,-1) {Sender 1};
+	\end{tikzpicture}\\\\
 	\includegraphics[width=\textwidth]{JPEG-Bild-443E-8313-20-0.JPEG}
 	Eine Auslöschung (\dq Destruktive Interferenz\dq) erhalten wir, wenn wir die beiden Sender um eine halbe Wellenlänge (+ Vielfaches einer Wellenlänge) von uns entfernt stehen:
 	\begin{align*}
