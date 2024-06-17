@@ -1,0 +1,6 @@
+\contentsline {chapter}{\numberline {1}Elektrizitätslehre}{2}{}%
+\contentsline {section}{\numberline {1.1}Spezielle Betrachtung zur Elektronenablenkröhre}{2}{}%
+\contentsline {subsection}{\numberline {1.1.1}Teil 1: Betrachtung der Stärke des Feldes}{3}{}%
+\contentsline {paragraph}{a)}{3}{}%
+\contentsline {paragraph}{b)}{3}{}%
+\contentsline {subsection}{\numberline {1.1.2}Analogie}{4}{}%
