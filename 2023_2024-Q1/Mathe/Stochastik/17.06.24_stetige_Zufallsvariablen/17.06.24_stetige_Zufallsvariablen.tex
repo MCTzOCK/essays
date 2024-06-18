@@ -30,12 +30,8 @@
 		I&\Bigl[2;10\Bigl] \\
 		f(x) &= mx+c \\
 		\mu &= 8 \\
-		f(x) &= 0.046875 \cdot x −0.15625
+		f(x) &= 0.046875 \cdot x - 0.15625
 	\end{align*}
-	\begin{verbatim}
-	CAS: solve(system(1=∫(m*x+c,x,2,10),8=∫(x*(m*x+c),x,2,10)),{m,c})
-
-	\end{verbatim}
 	\section{Aufgabe 3}
 	\paragraph{a)}
 	\begin{align*}
@@ -47,5 +43,12 @@
 		\sigma &= \sqrt{\int_{0}^{\pi} (x-\mu)^2 \cdot f(x) dx} \\
 		\sigma &= \sqrt{\int_{0}^{\pi} (x-\frac{\pi}{2})^2 \cdot (\frac{1}{2} \cdot sin(x)) dx} \\
 		\sigma &= 0.6836673900899
+	\end{align*}
+	\paragraph{c)}
+	\begin{align*}
+		P(\mu -\sigma \leq &X \leq \mu + \sigma) \\
+		P(\frac{\pi}{2} - 0.68366 \leq &X \leq \frac{\pi}{2} + 0.68366) \\
+		P(1.5707963268 - 0.68366 \leq &X \leq 1.5707963268  + 0.68366) \\
+		P(0.8871363268 \leq &X \leq 2.2544563268) = \int_{0.89}^{2.25} \frac{1}{2}sin(x) dx \approx 62.87\ \%
 	\end{align*}
 \end{document}
