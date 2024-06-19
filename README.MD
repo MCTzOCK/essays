@@ -1,5 +1,5 @@
 # Essays
-All schoon related stuff. Most content is written in LaTeX.
+All my school related stuff. Most content is written in LaTeX.
 Most of the subjects will be summarized at the end for better reference.
 ## License
 Copyright (c) 2024 Ben Siebert. All rights reserved.
