@@ -4,3 +4,16 @@
 \contentsline {paragraph}{a)}{3}{}%
 \contentsline {paragraph}{b)}{3}{}%
 \contentsline {subsection}{\numberline {1.1.2}Analogie}{4}{}%
+\contentsline {section}{\numberline {1.2}Elektronenkanone}{5}{}%
+\contentsline {section}{\numberline {1.3}Übungsaufgaben}{5}{}%
+\contentsline {paragraph}{Aufgabe 1)}{5}{}%
+\contentsline {paragraph}{a)}{5}{}%
+\contentsline {paragraph}{Lösung a)}{5}{}%
+\contentsline {paragraph}{b)}{6}{}%
+\contentsline {paragraph}{Lösung b)}{6}{}%
+\contentsline {paragraph}{c)}{6}{}%
+\contentsline {paragraph}{Lösung c)}{6}{}%
+\contentsline {paragraph}{d)}{6}{}%
+\contentsline {paragraph}{Lösung d)}{6}{}%
+\contentsline {paragraph}{Aufgabe 2)}{6}{}%
+\contentsline {paragraph}{Lösung Aufgabe 2)}{7}{}%
