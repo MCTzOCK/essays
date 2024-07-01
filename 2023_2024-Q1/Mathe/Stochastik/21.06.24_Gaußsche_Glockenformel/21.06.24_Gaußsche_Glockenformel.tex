@@ -1,0 +1,38 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\section{Gauß'sche Glockenformel A1}
+	\paragraph{a)}
+	Achsensymmetrisch, wenn $\mu=0$: $f(-x) = f(x)$
+	\paragraph{b)}
+	Extremstelle (Hochpunkt) bei $x=\mu$. $y$ ist größer, wenn $\sigma$ kleiner wird. $y$ ist kleiner, wenn $\sigma$ größer wird.
+	\paragraph{c)}	
+	Die Wendestelle ist bei $x = \pm\ \sigma$ und um $\mu$ verschoben, also bei $\mu \pm \sigma$
+	\section{Gauß'sche Glockenformel A2}
+	\paragraph{a)}
+	\begin{align*}
+		\varphi_{\mu,\sigma} (X) &= \frac{1}{\sigma\sqrt{2\pi}} \cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}} \\
+		\mu &= 0 \\
+		\sigma &= 1 \\
+		\varphi_{\mu,\sigma} (X) &= \frac{1}{\sqrt{2\pi}} \cdot e^{-\frac{(x)^2}{2}} \\
+	\end{align*}
+	\paragraph{b)}
+	\begin{itemize}
+		\item Die Funktion kann durch eine Veränderung von $\mu$ verschoben wird.
+		\item Die Funktion kann durch eine Veränderung von $\sigma$ gestreckt bzw. gestaucht werden.
+	\end{itemize}
+	\paragraph{c)}
+	\begin{align*}
+		\varphi(x) &\geq 0 \\
+		\int_a^b \varphi(x) dx &= 1 \\
+	\end{align*}
+	Wenn $\sigma > 0 \to \sigma \cdot x \geq 0\ \land\ (x-\mu)^2 \geq 0$ ist die Funktion eine Wahrscheinlichkeitsdichte.
+\end{document}
