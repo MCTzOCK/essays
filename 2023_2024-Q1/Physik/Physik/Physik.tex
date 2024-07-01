@@ -12,6 +12,7 @@
 \usepackage{ngerman}
 \usepackage{subfiles}
 \usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{shapes}
 
 \pgfplotsset{compat=1.18}
 
@@ -188,4 +189,83 @@
 	\end{tikzpicture}
 	\\\\
 	Damit ist, weil die Kraft $F_E$ stets konstant und unabhängig vom Ort ist, nachgewiesen, dass - in vollständiger Analogie zum waagerechten Wurf im Schwerefeld der Erde - die Bahn des Elektrons parabelförmig sein muss.
+	\section{Elektronenkanone}
+	\begin{tikzpicture}
+	    \draw[thick] (2,4) -- (2,-4) -- (4.5,-4) -- (4.5,-2) -- (4.5,-4) -- (5.5,-4) -- (5.5,-3) -- (5.5,-5);
+	    \draw[thick] (6.5,-5.5) -- (6.5,-2.5) -- (6.5,-4) -- (9,-4) -- (9,-0.5);
+	    \draw[black] (9,0) circle (14pt);
+	    \draw[thick] (9,0.5) -- (9,4);
+	    \node[cylinder, shape border rotate=180, draw,minimum height=5.5cm, minimum width=4cm] at (5.5,0) {};
+	    \node[draw,align=left,red] at (1,2) {\textbf{--}};
+	    \node[draw,align=left,red] at (10,2) {\textbf{+}};
+	    \draw[->,thick,blue] (4,0) -- (7,0);
+	    \draw[thick,blue] (1,1) -- (3.2,1);
+	    \draw[thick,blue] (1,-1) -- (3.2,-1);
+		\draw[decoration={aspect=0.3,segment length=1mm,amplitude=2mm,coil},decorate,orange] (3.2,1) -- (3.2,-1);
+		\filldraw[blue] (3.6,0.4) circle (2pt);
+		\filldraw[blue] (3.6,0.2) circle (2pt);
+		\filldraw[blue] (3.6,0) circle (2pt);
+		\filldraw[blue] (3.6,-0.2) circle (2pt);
+		\filldraw[blue] (3.6,-0.4) circle (2pt);
+	\end{tikzpicture}
+	\section{Übungsaufgaben}
+	\paragraph{Aufgabe 1)} Ein Teilchen fliegt durch das folgende elektrische Feld der Stärke $E=10\frac{kV}{m}$:\\\\
+	\begin{tikzpicture}
+	    \draw[thick] (0,0) -- (1,0) -- (1,3) -- (1,-3);
+	    \draw[thick,<-]	(1.25,-3) -- (2.25,-3);
+  	    \draw[thick,<-]	(1.25,-2.5) -- (2.25,-2.5);
+  	    \draw[thick,<-]	(1.25,-2) -- (2.25,-2);
+  	    \draw[thick,<-]	(1.25,-1.5) -- (2.25,-1.5);
+  	    \draw[thick,<-]	(1.25,-1) -- (2.25,-1);
+  	    \draw[thick,<-]	(1.25,-0.5) -- (2.25,-0.5);
+  	    \draw[thick,<-]	(1.25,0) -- (2.25,0);
+  	    \draw[thick,<-]	(1.25,0.5) -- (2.25,0.5);
+  	    \draw[thick,<-]	(1.25,1) -- (2.25,1);
+  	    \draw[thick,<-]	(1.25,1.5) -- (2.25,1.5);
+  	    \draw[thick,<-]	(1.25,2) -- (2.25,2);
+  	    \draw[thick,<-]	(1.25,2.5) -- (2.25,2.5);
+  	    \draw[thick,<-]	(1.25,3) -- (2.25,3);
+  	    \draw[thick] (2.5,3) -- (2.5,-3) -- (2.5,0) -- (3.5,0);
+  	    \node[draw,red] at (0,3) {\textbf{--}};
+  	    \node[draw,red] at (3.5,3) {\textbf{+}};
+  	    \draw[<->,thick] (1,-3.5) -- (2.5,-3.5);
+  	    \node[draw,align=left] at (1.75,-4) {$10cm$};
+  	    \draw[red] plot [smooth] coordinates {(2.5,3) (2,2) (1.2,-3)};
+	\end{tikzpicture}\\\\
+	\paragraph{a)} Erkläre, was Du über die Ladung des Teilchen weißt.
+	\paragraph{Lösung a)} Die Ladung des Teilchens muss negativ sein, da es sich laut der Skizze zum Plus-Pol bewegt.
+	\paragraph{b)} Nimm an, das Teilchen trägt die Ladung $1\cdot 10^{-10}C$. Berechne die Kraft, die auf das Teilchen wirkt, wenn die Spannung $U=2kV$ angelegt wird.
+	\paragraph{Lösung b)}
+	\begin{align*}
+	    U &= 2kV \\
+	    E &= \frac{U}{d} = \frac{2000}{0.1} = 20000 \\
+	    Q &= 1 \cdot 10^{-10}C \\
+	    F_E &= E \cdot Q = 20000 \frac{kV}{m} \cdot (1\cdot 10^{-10}C) \\
+	    F_E &= \frac{1}{500000} = 2 \cdot 10^{-6} N
+	\end{align*}
+	\paragraph{c)} Das Teilchen wiegt $0.1g$. Bestimme die Beschleunigung, die das Teilchen erfährt.
+	\paragraph{Lösung c)}
+	\begin{align*}
+	    F &= m \cdot a \\
+	    a &= \frac{F}{m} \\
+	    m &= 0.1g \\
+	    a &= \frac{1}{500000} \div 0.0001 kg \\
+	    a &= 0.02 \frac{m}{s^2}
+	\end{align*}
+	\paragraph{d)} Welche Geschwindigkeit besitzt das Teilchen, wenn eine vorgeschaltete Elektronenkanone es mit $U_B = 5kV$ beschleunigt hat.
+	\paragraph{Lösung d)}
+	\begin{align*}
+	    v &= \sqrt{\frac{2\cdot Q\cdot U}{m}} \\
+	    v &= \sqrt{\frac{2\cdot (1\cdot 10^{-10}C)\cdot 5000V}{0.0001 kg}} \\
+	    v &= 0.1\frac{m}{s}
+	\end{align*}
+	\paragraph{Aufgabe 2)} Ein \dq größeres elektrisches Teilchen wird in das folgende homogene E-Feld eingebracht. Diskutieren, was mit dem \textbf{nicht} beschleunigten Teilchen passieren könnte. 
+	\\\\
+	\begin{tikzpicture}
+	    \draw[thick] (0,0) -- (1,0) -- (1,0.5) -- (1,0) -- (2,0);
+        \draw[thick] (0,-1) -- (1,-1) -- (1,-1.5) -- (1,-1) -- (2,-1);
+        \filldraw[blue] (1,-0.5) circle (3pt);
+	\end{tikzpicture}
+	\\\\
+	\paragraph{Lösung Aufgabe 2)} Das Teilchen bewegt sich in Richtung der Platte mit der umgekehrten Ladung, falls vorhanden. Sollte es keine Platte mit umgekehrter Ladung geben, bewegt sich das Teilchen nicht.
 \end{document}

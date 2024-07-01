@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.23)  17 JUN 2024 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.23)  20 JUN 2024 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -548,7 +548,75 @@ Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 (C:\Users\bensi\AppData\Roaming\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
 ))
-LaTeX Font Info:    Trying to load font information for T1+bch on input line 24
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geom
+etric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc
+.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symb
+ols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arro
+ws.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.callouts.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.call
+outs.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.mult
+ipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box67
+\pgfnodeparttwobox=\box68
+\pgfnodepartthreebox=\box69
+\pgfnodepartfourbox=\box70
+\pgfnodeparttwentybox=\box71
+\pgfnodepartnineteenbox=\box72
+\pgfnodeparteighteenbox=\box73
+\pgfnodepartseventeenbox=\box74
+\pgfnodepartsixteenbox=\box75
+\pgfnodepartfifteenbox=\box76
+\pgfnodepartfourteenbox=\box77
+\pgfnodepartthirteenbox=\box78
+\pgfnodeparttwelvebox=\box79
+\pgfnodepartelevenbox=\box80
+\pgfnodeparttenbox=\box81
+\pgfnodepartninebox=\box82
+\pgfnodeparteightbox=\box83
+\pgfnodepartsevenbox=\box84
+\pgfnodepartsixbox=\box85
+\pgfnodepartfivebox=\box86
+)))
+LaTeX Font Info:    Trying to load font information for T1+bch on input line 25
 .
 
 (C:\Users\bensi\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1bch.fd
@@ -557,25 +625,25 @@ File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-10-10 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count304
-\l__pdf_internal_box=\box67
+\l__pdf_internal_box=\box87
 )
 (S:\essays\2023_2024-Q1\Physik\Physik\build\Physik.aux)
 \openout1 = `Physik.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -615,7 +683,7 @@ LaTeX Font Info:    ... okay on input line 24.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count305
 \scratchdimen=\dimen288
-\scratchbox=\box68
+\scratchbox=\box88
 \nofMPsegments=\count306
 \nofMParguments=\count307
 \everyMPshowfont=\toks47
@@ -648,74 +716,105 @@ les/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 ]
 Kapitel 1.
 
-Overfull \hbox (29.05252pt too wide) in paragraph at lines 75--78
+Overfull \hbox (29.05252pt too wide) in paragraph at lines 76--79
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--78
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--123
+Underfull \hbox (badness 10000) in paragraph at lines 88--124
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 126--162
+Underfull \hbox (badness 10000) in paragraph at lines 127--163
 
  []
 
 [3]
 
-LaTeX Warning: Command \" invalid in math mode on input line 170.
+LaTeX Warning: Command \" invalid in math mode on input line 171.
 
 Missing character: There is no ä in font cmr8!
 
-LaTeX Warning: Command \" invalid in math mode on input line 170.
+LaTeX Warning: Command \" invalid in math mode on input line 171.
 
 Missing character: There is no ä in font cmr8!
 
-LaTeX Warning: Command \" invalid in math mode on input line 170.
+LaTeX Warning: Command \" invalid in math mode on input line 171.
 
 Missing character: There is no ä in font cmr8!
 
-LaTeX Warning: Command \" invalid in math mode on input line 170.
+LaTeX Warning: Command \" invalid in math mode on input line 171.
 
 Missing character: There is no ä in font cmr8!
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--191
+Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
-[4] (S:\essays\2023_2024-Q1\Physik\Physik\build\Physik.aux)
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 212--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--235
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 262--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--270
+
+ []
+
+[6] [7] (S:\essays\2023_2024-Q1\Physik\Physik\build\Physik.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-10>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 24233 strings out of 474823
- 624838 string characters out of 5760770
+ 26111 strings out of 474823
+ 679901 string characters out of 5760770
  1941043 words of memory out of 5000000
- 45797 multiletter control sequences out of 15000+600000
+ 47635 multiletter control sequences out of 15000+600000
  591241 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,18n,103p,725b,1973s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bensi/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pf
 b><C:/Users/bensi/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pf
-b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb>
-Output written on S:\essays\2023_2024-Q1\Physik\Physik\build\Physik.pdf (5 page
-s, 99478 bytes).
+b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on S:\essays\2023_2024-Q1\Physik\Physik\build\Physik.pdf (8 page
+s, 126081 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
