@@ -5,6 +5,7 @@
 \usepackage{ngerman}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 
 \renewcommand\thesection{\arabic{section}.} 
 
@@ -26,7 +27,7 @@
 	\end{align*}
 	\paragraph{b)}
 	\begin{itemize}
-		\item Die Funktion kann durch eine Veränderung von $\mu$ verschoben wird.
+		\item Die Funktion kann durch eine Veränderung von $\mu$ verschoben werden.
 		\item Die Funktion kann durch eine Veränderung von $\sigma$ gestreckt bzw. gestaucht werden.
 	\end{itemize}
 	\paragraph{c)}
@@ -34,5 +35,11 @@
 		\varphi(x) &\geq 0 \\
 		\int_a^b \varphi(x) dx &= 1 \\
 	\end{align*}
-	Wenn $\sigma > 0 \to \sigma \cdot x \geq 0\ \land\ (x-\mu)^2 \geq 0$ ist die Funktion eine Wahrscheinlichkeitsdichte.
+	Wenn $\sigma > 0 \to \sigma \cdot x \geq 0\ \land\ (x-\mu)^2 \geq 0$ ist die Funktion eine Wahrscheinlichkeitsdichte. \\
+	\begin{align*}
+		\varphi(X) &\geq 0 \\
+		\text{wenn}\ \sigma > 0 &\to \sigma \cdot \sqrt{2\pi} > 0 \to \sigma > 0 \\
+		(x-\mu)^2 \geq 0 &\to \mu \in \mathbb{R} \\
+		\frac{1}{\sigma\sqrt{2\pi}} \cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}} &\geq 0
+	\end{align*}
 \end{document}
