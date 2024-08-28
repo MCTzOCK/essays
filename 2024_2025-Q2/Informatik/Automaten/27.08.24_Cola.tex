@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter} 
+\usepackage{ngerman} 
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+	\section{Cola Automat - Formal}
+	\begin{align*}
+		A &= (Q,s,\Sigma, \Omega, \delta, \lambda) \\
+		Q &= \Bigl\{u, g, ue\Bigl\} \\
+		s &= u \\
+		\Sigma &= \Bigl\{E, GK, RK\Bigl\} \text{Euro, Ausgabe, Rückgabe}\\
+		\Omega &= \Bigl\{G, M, N\Bigl\} \text{Geld, Münze, Nichts} \\
+		\delta &: Q \times \Sigma \to Q \\
+		\delta(u,E) &= g \\
+		\delta(u,GK) &= u\\
+		\delta(u,RK) &= u\\
+		\delta(g,E) &= ue\\
+		\delta(g,GK) &= u\\
+		\delta(g,RK) &= u \\
+		\delta(ue,E) &= ue\\
+		\delta(ue,GK) &= g / ue\\
+		\delta(ue,RK) &= g\\
+		\lambda &: Q \times \Sigma \to \Omega \\
+		\lambda(u,E) &= N \\
+		\lambda(u,GK) &= N \\
+		\lambda(u,RK) &= N \\
+		\lambda(g,E) &= N \\
+		\lambda(g,GK) &= G \\
+		\lambda(g,RK) &= N \\
+		\lambda(ue,E) &= N \\
+		\lambda(ue,GK) &= G \\
+		\lambda(ue,RK) &= M
+	\end{align*}
+\end{document}

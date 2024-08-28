@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{tikz}
+\usepackage{tabularx}
 
 \begin{document}
 	\section{Darstellungen von Automaten (23.08.24)}
@@ -30,7 +31,7 @@
 		&\ \ \ \ \ \ \ \ \delta(g,M) = N\\
 		&\ \ \ \ \ \ \ \ \delta(g,H) = K\\
 	\end{align*}
-	\subsection{}
+	\subsection{Graph}
 	\begin{tikzpicture}
 		\draw[->] (0,0) -- (2,0);
 		\node at (3,0) [circle,draw]{u};
@@ -40,4 +41,13 @@
 		\draw[->] (5,0.25) -- (4,0.25);
 		\node[draw] at (4.5,1) {M/N};
 	\end{tikzpicture}
+	\subsection{Übergangstabelle}
+	\begin{tabularx}{\textwidth}{|X|X|X|}
+		\hline
+		$\frac{\delta}{\lambda}$ & M & H\\
+		\hline
+		$u$ & $\frac{}{}$ & \\
+		
+		\hline 
+	\end{tabularx}
 \end{document}

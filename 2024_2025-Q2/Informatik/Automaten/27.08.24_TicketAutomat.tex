@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paperx]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter} 
+\usepackage{ngerman} 
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+	\section{Ticketautomat - Formal}
+	\begin{align*}
+		A &= (Q,s,\Sigma, \Omega, \delta, \lambda) \\
+		Q &= \Bigl\{u, g1, g2, g3, g4, g5, g6\Bigl\} \\
+		s &= u \\
+		\Sigma &= \Bigl\{E1, E2, Pa, Pb, Ab\Bigl\} \\
+		\Omega &= \Bigl\{TA, TB, N, M\Bigl\} \\
+	\end{align*}
+	\begin{align*}
+		\delta : Q \times \Sigma &\to Q \\
+		\delta(u,E1) &= g1 \\
+		\delta(u,E2) &= g2 \\
+		\delta(u,Pa) &= u \\
+		\delta(u,Pb) &= u \\
+		\delta(u,Ab) &= u \\
+		\delta(g1,E1) &= g2 \\
+		\delta(g1,E2) &= g3 \\
+		\delta(g1,Pa) &= g1 \\
+		\delta(g1,Pb) &= g1 \\
+		\delta(g1,Ab) &= u \\
+		\delta(g2,E1) &= g3 \\
+		\delta(g2,E2) &= g4 \\
+		\delta(g2,Pa) &= g2 \\
+		\delta(g2,Pb) &= g2 \\
+		\delta(g2,Ab) &= u \\
+		\delta(g3,E1) &= g4 \\
+		\delta(g3,E2) &= g5 \\
+		\delta(g3,Pa) &= u \\
+		\delta(g3,Pb) &= g3 \\
+		\delta(g3,Ab) &= u \\
+		\delta(g4,E1) &= g5 \\
+		\delta(g4,E2) &= g6 \\
+		\delta(g4,Pa) &= g1 \\
+		\delta(g4,Pb) &= g4 \\
+		\delta(g4,Ab) &= u \\
+		\delta(g5,E1) &= g6 \\
+		\delta(g5,E2) &= g5 \\
+		\delta(g5,Pa) &= g2 \\
+		\delta(g5,Pb) &= u \\
+		\delta(g5,Ab) &= u \\
+		\delta(g6,E1) &= g6 \\
+		\delta(g6,E2) &= g6 \\
+		\delta(g6,Pa) &= g3 \\
+		\delta(g6,Pb) &= g1 \\
+		\delta(g6,Ab) &= u \\
+	\end{align*}
+	\begin{align*}
+		\lambda : Q \times \Sigma &\to \Omega \\
+		\lambda(u,E1) &= N \\
+		\lambda(u,E2) &= N \\
+		\lambda(u,Pa) &= N \\
+		\lambda(u,Pb) &= N \\
+		\lambda(u,Ab) &= N \\
+		\lambda(g1, E1) &= N \\
+		\lambda(g1, E2) &= N \\
+		\lambda(g1, Pa) &= N \\
+		\lambda(g1, Pb) &= N \\
+		\lambda(g1, Ab) &= M \\
+		\lambda(g2, E1) &= N \\
+		\lambda(g2, E2) &= N \\
+		\lambda(g2, Pa) &= N \\
+		\lambda(g2, Pb) &= N \\
+		\lambda(g2, Ab) &= M \\
+		\lambda(g3, E1) &= N \\
+		\lambda(g3, E2) &= N \\
+		\lambda(g3, Pa) &= Ta \\
+		\lambda(g3, Pb) &= N \\
+		\lambda(g3, Ab) &= M \\
+		\lambda(g4, E1) &= N \\
+		\lambda(g4, E2) &= N \\
+		\lambda(g4, Pa) &= Ta \\
+		\lambda(g4, Pb) &= N \\
+		\lambda(g4, Ab) &= M \\
+		\lambda(g5, E1) &= N \\
+		\lambda(g5, E2) &= M \\
+		\lambda(g5, Pa) &= Ta \\
+		\lambda(g5, Pb) &= Tb \\
+		\lambda(g5, Ab) &= M \\
+		\lambda(g6, E1) &= M \\
+		\lambda(g6, E2) &= M \\
+		\lambda(g6, Pa) &= Ta \\
+		\lambda(g6, Pb) &= Tb \\
+		\lambda(g6, Ab) &= M
+	\end{align*}
+\end{document}
