@@ -1,0 +1,104 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\renewcommand\thesection{\arabic{section}.} 
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+
+\begin{document}
+	\section{S. 177 Nr. 6b}
+	\begin{align*}
+		4 \cdot \binom{1}{1} - 2 \cdot \binom{1}{3}& \\
+		\binom{4}{4} - \binom{2}{6} &= \binom{2}{-2} &
+	\end{align*}
+	\section{S. 177 Nr. 6e}
+	\begin{align*}
+		-\binom{4}{5} + 4 \cdot \binom{1}{2} \\
+		-\binom{4}{5} + \binom{4}{8} &= \binom{0}{3}
+	\end{align*}
+	
+	\section{S. 178 Nr. 13}
+	\subsection{13a)}
+	\begin{align*}
+		A(2|3|7), B(4|5|5), C(6|7|3) \\
+		\overrightarrow{AB}\ \ \ \text{soll kollinar sein mit}\ \ \ \overrightarrow{BC} \\
+		\overrightarrow{AB} &= \begin{pmatrix}
+ 	b_1 - a_1 \\
+ 	b_2 - a_2 \\
+ 	b_3 - a_3
+ \end{pmatrix}
+ \\
+ &= \begin{pmatrix}
+ 	4 - 2 \\
+ 	5 - 3 \\
+ 	5 - 7
+ \end{pmatrix} = \begin{pmatrix}
+ 	2 \\
+ 	2 \\
+ 	-2
+ \end{pmatrix} \\
+ 	\overrightarrow{BC} &= \begin{pmatrix}
+ 	6 - 4 \\
+ 	7 - 5 \\
+ 	3 - 5
+ \end{pmatrix} = \begin{pmatrix}
+ 	2 \\
+ 	2 \\
+ 	-2
+ \end{pmatrix}
+	\end{align*}
+	Die Vektoren sind kollinear zueinander.
+	\subsection{13c)}
+	\begin{align*}
+		A(-\frac{1}{2}|0|\frac{1}{2}), B(-\frac{1}{4}|5|\frac{1}{3}), C(\frac{1}{2}|14|-\frac{5}{3}) \\
+		\overrightarrow{AB} &= \begin{pmatrix}
+			-\frac{1}{4} + \frac{1}{2} \\
+			5 - 0 \\
+			\frac{1}{3} - \frac{1}{2}
+		\end{pmatrix} \\
+		&= \begin{pmatrix}
+			\frac{1}{4} \\
+			5 \\
+			-\frac{1}{6}
+		\end{pmatrix}
+		\\
+		\overrightarrow{BC}&=\begin{pmatrix}
+			\frac{1}{2} + \frac{1}{4} \\
+			14 - 5 \\
+			-\frac{5}{3} + \frac{1}{2}
+		\end{pmatrix} \\
+		&=\begin{pmatrix}
+			0.75 \\
+			9 \\
+			\frac{-7}{6}
+		\end{pmatrix}
+	\end{align*}
+	Die Vektoren sind nicht kollinear zu einander.
+	
+	\section{S. 179 Nr. 16}
+	\subsection{16a)}
+	\begin{align*}
+		I\ \ r\cdot 1 + s \cdot 4 &= 10 \\
+		II\ \ r \cdot 2 + s \cdot 9 &= 22 \\
+		I\cdot 2\ \ 2r + 8s &= 20 \\
+		II-2I\ \ s &= 2 \\
+		r + 4\cdot 2 &= 10 \\
+		r + 8 &= 10 \\
+		r &= 2
+	\end{align*}
+	\subsection{16c)}
+	\begin{align*}
+		I.\ \ 0.5r + 3s &= -1 \\
+		II.\ \ 1.5r - 02s &= -3 \\
+		I.\ \ 0.5r + 3s &= -1 \\
+		II.\ \ -9.2s &= 0 \\
+		I.\ \ 0.5r &= -1 \\
+		\Rightarrow r&=-2 \\
+		II.\ \ s &= 0 \\
+		\Rightarrow s &=0
+	\end{align*}
+\end{document}
