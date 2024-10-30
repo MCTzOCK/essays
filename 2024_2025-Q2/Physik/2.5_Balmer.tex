@@ -1,0 +1,43 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{tabularx}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\section*{2.5 Die Balmer Serie und ihre Folgen}
+	Durch spektroskopische Experimente konnte Balmer die Spektrallinien des Wasserstoffs gut ermitteln:\\
+	\begin{tabularx}{0.4\textwidth}{XXX}
+		\\
+		Rot & - & $656.3$ nm \\
+		Türkis & - & $486.1$ nm \\
+		Blau & - & $434.0$ nm \\
+		Violett & - & $410.1$ nm \\
+	\end{tabularx}
+	\\[0.5cm]
+	Die Wellenlängen setzen sich zusammen durch:
+	\begin{align*}
+		\lambda &= \frac{4}{R_H} \cdot \Bigl(\frac{n^2}{n^2-4}\Bigl) \\
+		\text{mit}\ R_H &= 1.097 \cdot 10^{7}m^{-1} \\
+		\text{mit}\ n &=\Bigl\{3,4,5,6\Bigl\} \\
+		\Bigl(\frac{4}{R_H} &\approx 364.6nm \Bigl)
+	\end{align*}
+	Weitere Untersuchungen zeigten beim Wasserstoff weitere, nicht sichtbare Linien:
+	\\
+	\begin{tabularx}{\textwidth}{XX}
+		\\
+		Lyman-Serie: & $\lambda = \frac{1}{R_H} \cdot \Bigl(\frac{n^2}{n^2-1}\Bigl) \ \text{mit}\  n=\{2,3,4,5,...\}$ \\
+		Paschen-Serie: & $\lambda = \frac{9}{R_H} \cdot \Bigl(\frac{n^2}{n^2-9}\Bigl)$ mit $n =\{4,5,6,7,...\}$\\
+		Brackett-Serie: & $\lambda = \frac{16}{R_H} \cdot \Bigl(\frac{n^2}{n^2-16}\Bigl)$ mit $n =\{5,6,7,8,...\}$\\
+		\\
+		Allgemeine Serie für Spektrallinien des Wasserstoff-Atoms: & $\lambda = R^* \cdot \Bigl(\frac{n^2}{n^2-m^2}\Bigl)$ mit $m = \{1,2,3,4,...\}$ und $n =\{m+1,m+2,m3,...\}$ \\
+	\end{tabularx}
+	\\[0.5cm]
+	\underline{\textbf{Schlussfolgerung}}: Jeder Stoff hat eine signifikante Spektralfarbengabe (Spektrum), es unterscheidet sich somit (deutlich) von einem anderen Stoff und bedeutet somit, dass es eine Besonderheit des \dq stofflichen Aufbaus\dq\ (spoiler: Atomaufbau) ist.
+\end{document}

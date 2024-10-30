@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\renewcommand\thesection{\arabic{section}.} 
+
+\newcommand{\vek}[1]{\begin{pmatrix}{#1}\end{pmatrix}}
+
+
+\begin{document}
+	\section*{S. 215 Nr. 4}
+	\begin{align*}
+		E: \overrightarrow x &= \vek{3 \\ 0 \\ 2} + r \cdot \vek{2 \\ 1 \\ 7} + s \cdot \vek{3 \\ 2 \\ 5} \\\\
+		A&(8|3|14) \\
+		B&(1|1|0) \\
+		C&(4|0|11) \\
+		\\
+		I. & 8 = 3 + 2r + 3s \\
+		II. & 3 =r+2s \\
+		III. & 14 = 2 + 7r + 5s \\
+		&III. \cdot 3 - I. \cdot 2 \\\\
+		I.& 8 = 3 + 2r + 3s \\
+		II.& 3 =r+2s \\
+		III.& 26 = 17r + 9s \\
+		&III. -17\cdot II \\\\
+		I.& 8 = 3 + 2r + 3s \\
+		II.& 3 =r+2s \\
+		III. &-25 = -25s \\
+		\Leftrightarrow &s = 1 \\\\
+		I.& 8 = 3 + 2r + 3 \\
+		II.& 3 =r+2 \\
+		III. &1 = s \\\\
+		II.& r=1 \\
+		I.&1=1
+	\end{align*}
+	Der Punkt $A$ liegt auf der Ebene. \newpage
+	
+	\begin{tabularx}{\textwidth}{|x|X|}
+		\hline
+		I. & $1 = 3 + 2r + 3s$ \\
+		II. & $1 = r + 2s$ \\
+		III. & $0 = 2 + 7r +5s$\\
+		\hline
+		& III. $\cdot$ 3 - I. $\cdot$ 2 \\
+		\hline
+		I. & $1 = 3 + 2r + 3s$ \\
+		II. & $1 = r + 2s$ \\
+		III. & $-2 = 17r +9s$\\
+		\hline
+		& III. - $17 \cdot$ II. \\
+		\hline
+		I. & $1 = 3 + 2r + 3s$ \\
+		II. & $1 = r + 2s$ \\
+		III. & $-19 = -25s$\\
+		& $\Leftrightarrow$ s = $\frac{19}{25}$ \\
+		\hline
+		I. & $1 = 3 + 2r + 3 \cdot \frac{19}{25} $ \\
+		& $\Leftrightarrow 1 = 3 + 2r + \frac{57}{25}$ \\
+		II. & $1 = r + 2 \cdot \frac{19}{25} $ \\
+		& $\Leftrightarrow 1 = r + \frac{38}{25}$ \\
+		III. & $s = \frac{19}{25} $\\
+		\hline
+		& II. - $\frac{38}{57}$\\
+		\hline
+		I. & $1 = 3 + 2r + \frac{57}{25}$ \\
+		II. & $\frac{19}{25} = r$ \\
+		III. & $s = \frac{19}{25} $\\
+		\hline
+	\end{tabularx}
+	\\[0.5cm]
+	Der Punkt B liegt auf der Ebene $E$.
+\end{document}
