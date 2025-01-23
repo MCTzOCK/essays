@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ngerman}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\renewcommand\thesection{\arabic{section}.} 
+
+\begin{document}
+	\begin{align*}
+		A(3|0|2) \\
+		B(5|1|9) \\
+		C(6|2|7) \\
+		D(8|3|14) \\
+		E: \overrightarrow x &= \overrightarrow a + r \cdot \overrightarrow{AB} + s \cdot \overrightarrow{AC} \\
+		\overrightarrow{AB} &= \begin{pmatrix}
+			5 \\ 1 \\ 9
+		\end{pmatrix} - \begin{pmatrix}
+			3 \\ 0 \\ 2
+		\end{pmatrix} = \begin{pmatrix}
+			2 \\ 1 \\ 7
+		\end{pmatrix} \\
+		\overrightarrow{AC} &= \begin{pmatrix}
+			6 \\ 2 \\ 7
+		\end{pmatrix} - \begin{pmatrix}
+			3 \\ 0 \\ 2
+		\end{pmatrix} = \begin{pmatrix}
+			3 \\ 2 \\ 5
+		\end{pmatrix} \\
+		\begin{pmatrix}
+			8 \\ 3 \\ 14
+		\end{pmatrix} &= \begin{pmatrix}
+			3 \\ 0 \\ 2
+		\end{pmatrix} +r\cdot \begin{pmatrix}
+			2 \\ 1 \\ 7
+		\end{pmatrix} +s \cdot \begin{pmatrix}
+			3 \\ 2 \\ 5
+		\end{pmatrix} \\\\
+		I.\ \ 8 &= 3 + 2r + 3s \\
+		II.\ \ 3 &= r + 2s \\
+		III.\ \ 14 &= 2 + 7r + 5s \\
+		\\
+		I.\ \ 5 &= 2r + 3s \\
+		II.\ \ 3 &= r + 2s \\
+		III.\ \ 12 &= 7r + 5s \\
+		\\
+		2\cdot II. &- I. \\\\
+		1 &= s \\\\
+		I.\ \ 5 &= 2r + 3 \\
+		\Leftrightarrow 2 &= 2r \Leftrightarrow r = 1 \\\\
+		III.\ \ 12 &= 7 + 5 \Leftrightarrow 12 = 12 \\
+	\end{align*}
+\end{document}
